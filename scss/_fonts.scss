@@ -1,0 +1,21 @@
+@import url("https://use.typekit.net/hbo2vls.css");
+
+$asset-path: "../fonts/";
+
+/* Fonts includer */
+@mixin font-face($font-family, $font-file, $weight: "normal", $style: "normal") {
+    @font-face {
+        font-family: $font-family;
+        src: local($font-file), url($asset-path + $font-file + ".otf") format("opentype");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("Visby", "VisbyThin", 300);
+@include font-face("Visby", "VisbyRegular", 400);
+@include font-face("Visby", "VisbyMedium", 500);
+@include font-face("Visby", "VisbySemibold", 600);
+@include font-face("Visby", "VisbyBold", 700);
+@include font-face("Visby", "VisbyHeavy", 800);
+@include font-face("Visby", "VisbyExtrabold", 900);

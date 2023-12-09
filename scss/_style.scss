@@ -1,0 +1,105 @@
+section.banner {
+    background: imgUrl('banner.jpg') center top;
+    background-size: cover;
+
+    .banner-container {
+        background: imgUrl('banner-staff.png') right top;
+    }
+
+    .mainform {
+        input[type="radio"] {
+            display: none;
+        }
+
+        label.loantype {
+            background: rgba(154, 211, 213, 0.3);
+            border-radius: 15px;
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            text-align: center;
+            height: 131px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.lenderSlider {
+    .slick-track {
+        display: flex;
+    }
+
+    .slick-slide {
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 30px;
+    }
+}
+
+section.testimonials {
+    background: imgUrl('testimonials.jpg');
+    background-size: cover;
+}
+
+section.services {
+    #sertifiedServicesSlider {
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-slide {
+            height: inherit;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 9px;
+            width: 427px;
+            height: 546px;
+
+            .inner {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 40px;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                transition: width 0.5s ease;
+
+                .description {
+                    width: 100%;
+                    transition: width 0.5s ease;
+                }
+
+                .tags {
+                    display: none;
+
+                    .tag {
+                        @apply w-fit h-[42px] bg-secondary text-primary rounded-full flex justify-center items-center px-4 font-visby font-semibold capitalize;
+                    }
+                }
+            }
+
+            &.slick-current.slick-center {
+                width: 867px;
+                transition: width 0.5s ease;
+
+                .inner {
+                    .description {
+                        width: 50%;
+                    }
+
+                    .tags {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
