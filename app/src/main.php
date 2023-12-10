@@ -130,7 +130,7 @@
                     </a>
                 </div>
 
-                <form action="./src/form.php" id="banner_form" method="POST" class="mainform pt-4">
+                <form action="./src/form.php" id="banner_form" method="POST" class="mainform pt-4 lg:pt-12">
                     <input type="hidden" name="token" id="recaptchaResponse1" class="recaptchaResponse" />
                     <input type="hidden" name="formType" value="banner_form" />
 
