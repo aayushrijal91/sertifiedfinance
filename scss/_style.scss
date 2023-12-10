@@ -174,6 +174,10 @@ section.services {
                 flex-direction: column;
                 transition: width 0.5s ease;
 
+                @media screen and (max-width: 540px) {
+                    padding: 20px;
+                }
+
                 .description {
                     width: 100%;
                     transition: width 0.5s ease;
@@ -183,7 +187,7 @@ section.services {
                     display: none;
 
                     .tag {
-                        @apply w-fit h-[42px] bg-secondary text-primary rounded-full flex justify-center items-center px-4 font-visby font-semibold capitalize;
+                        @apply w-fit h-[30px] md:h-[42px] bg-secondary text-primary rounded-full flex justify-center items-center px-3 md:px-4 font-visby font-semibold capitalize text-xs md:text-base;
                     }
                 }
             }
@@ -197,8 +201,10 @@ section.services {
                 }
 
                 .inner {
-                    .description {
-                        width: 50%;
+                    @media screen and (min-width: 540px) {
+                        .description {
+                            width: 50%;
+                        }
                     }
 
                     .tags {

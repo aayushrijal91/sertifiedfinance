@@ -112,6 +112,17 @@ $('#sertifiedServicesSlider').slick({
     initialSlide: 0,
     draggable: false,
     focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerPadding: "20px"
+            }
+        }
+    ]
 });
 
 $("#sertifiedProcesses").slick({
