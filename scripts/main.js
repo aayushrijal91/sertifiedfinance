@@ -114,12 +114,13 @@ $('#sertifiedServicesSlider').slick({
     focusOnSelect: true,
     responsive: [
         {
-            breakpoint: 540,
+            breakpoint: 900,
             settings: {
                 variableWidth: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                centerPadding: "20px"
+                centerPadding: "20px",
+                autoplay: true,
             }
         }
     ]

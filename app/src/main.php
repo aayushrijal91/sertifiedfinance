@@ -60,7 +60,7 @@
                 </a>
             </div>
 
-            <p class="hidden md:block w-fit text-secondary">Achieve your dreams with Sertified!</p>
+            <p class="hidden xl:block w-fit text-secondary">Achieve your dreams with Sertified!</p>
 
             <div class="w-fit hidden md:flex flex-wrap gap-x-4">
                 <a href="tel:<?= $phone_number ?>" class="btn w-fit bg-white text-indigo px-7"><?= $phone_number ?></a>
@@ -72,10 +72,10 @@
 
 <section class="banner mt-[103px]">
     <div class="container relative">
-        <?= renderImg('banner-eclipse.png', 'lib', 'hidden md:block absolute mix-blend-soft-light top-20') ?>
+        <?= renderImg('banner-eclipse.png', 'lib', 'hidden lg:block absolute mix-blend-soft-light top-20') ?>
 
         <div class="flex flex-wrap pt-14 md:pt-32 pb-10 relative banner-container">
-            <div class="w-full md:w-1/2">
+            <div class="w-full lg:w-1/2">
                 <p class="text-primary text-xl md:text-2xl font-extralight text-center md:text-start">Crafting Dreams &amp; Fuelling Potentail</p>
                 <h1 class="capitalize text-4xl md:text-55 leading-none font-medium text-primary pt-3 text-center md:text-start">reach new heights<br /> of Sertified success</h1>
 
@@ -101,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-10/12 bg-white rounded-20 p-5 md:py-7 md:px-9 mt-8">
+            <div class="w-full lg:w-10/12 bg-white rounded-20 p-5 md:py-7 md:px-9 mt-8">
                 <div class="flex flex-wrap justify-between items-center">
                     <div class="w-fit flex flex-wrap gap-x-4 md:gap-x-7">
                         <a href="#form" class="text-indigo btn gap-x-1">
@@ -218,7 +218,7 @@
 
                     <div id="banner-form-tab-2" class="form-tab">
                         <div class="flex flex-wrap justify-between items-center">
-                            <div class="w-2/3 text-35 text-primary font-medium">
+                            <div class="w-2/3 text-35 text-primary font-medium leading-none">
                                 How much do you want to borrow?
                             </div>
 
@@ -243,7 +243,7 @@
 
                     <div id="banner-form-tab-3" class="form-tab">
                         <div class="flex flex-wrap justify-between items-center">
-                            <div class="w-2/3 text-35 text-primary font-medium">
+                            <div class="w-2/3 text-35 text-primary font-medium leading-none">
                                 What’s your preferred loan term?
                             </div>
 
@@ -268,7 +268,7 @@
 
                     <div id="banner-form-tab-4" class="form-tab">
                         <div class="flex flex-wrap justify-between items-center">
-                            <div class="w-2/3 text-35 text-primary font-medium">
+                            <div class="w-2/3 text-35 text-primary font-medium leading-none">
                                 Your Details
                             </div>
 
@@ -298,7 +298,7 @@
 
 <section class="bg-secondary py-14">
     <div class="container">
-        <div class="flex flex-wrap items-center gap-5 justify-center md:justify-start text-center md:text-start">
+        <div class="flex flex-wrap items-center gap-5 justify-center lg:justify-start text-center lg:text-start">
             <div class="w-fit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="76" height="74" viewBox="0 0 76 74" fill="none">
                     <path d="M75.6351 43.3975V59.0779C75.6351 66.8739 58.8915 73.9184 38.2621 73.9184C34.0271 73.9184 29.9231 73.6531 26.1465 73.1668V56.7494C29.9449 57.2358 34.0271 57.501 38.2621 57.501C58.8915 57.501 75.6351 51.1935 75.6351 43.3975Z" fill="#E6E7E7" />
@@ -315,7 +315,7 @@
             <p class="w-full md:w-fit text-4xl md:text-55 text-primary font-medium leading-none">Get the best deal from <span class="text-white">78+ lenders</span>...</p>
         </div>
 
-        <p class="text-white font-light py-8 hidden md:block">
+        <p class="text-white font-light py-8 hidden md:block text-center lg:text-start">
             <span class="text-primary font-medium">We’re proud partners of all the below lenders <span class="px-3">|</span></span> <span class="text-white">78+ lenders to ensure you get the loan best suited to your needs <span class="px-3 text-primary font-medium">|</span> More options Australia-wide</span>
         </p>
 
@@ -345,9 +345,9 @@
             <p class="italic">Casual, Part Time, Full Time, Self Employed Accepted. Consumer & Commercial Loans. Previous Bad Credit Accepted (Case by Case). Visa Holder’s Accepted. Dealership, Original Manufacturer, Private Sales Accepted. New & Used Assets.</p>
         </div>
 
-        <?= renderImg('phone.png', 'lib', 'md:hidden') ?>
-        <div class="bg-secondary/20 rounded-20 md:mt-7 px-5 py-8 md:p-12 flex flex-wrap relative">
-            <div class="w-full md:w-7/12">
+        <?= renderImg('phone.png', 'lib', 'lg:hidden') ?>
+        <div class="bg-secondary/20 rounded-20 lg:mt-7 px-5 py-8 lg:p-12 flex flex-wrap relative">
+            <div class="w-full lg:w-7/12">
                 <div class="flex flex-wrap -mx-2 gap-y-4">
                     <div class="w-full md:w-1/3 px-2">
                         <div class="rounded-20 bg-secondary h-full p-6">
@@ -374,7 +374,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-x-4 gap-y-3 pt-8 md:pt-12">
+                <div class="flex flex-col md:flex-row md:flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-3 pt-8 md:pt-12">
                     <a href="#form" class="btn w-9/12 md:w-fit bg-indigo text-white px-9">Enquire now</a>
 
                     <a href="tel:<?= $phone_number ?>" class="btn w-9/12 md:w-fit border-2 border-indigo text-indigo gap-x-3 px-6">
@@ -385,15 +385,15 @@
                     </a>
                 </div>
             </div>
-            <?= renderImg('phone.png', 'lib', 'hidden md:block absolute bottom-0 right-0') ?>
+            <?= renderImg('phone.png', 'lib', 'hidden lg:block absolute bottom-0 right-0') ?>
         </div>
     </div>
 </section>
 
 <section class="testimonials relative">
     <div class="flex flex-wrap relative z-50">
-        <div class="w-full md:w-7/12 flex justify-end">
-            <div class="w-full md:w-9/12 px-5 md:px-10 py-12 md:py-20">
+        <div class="w-full lg:w-7/12 flex justify-end">
+            <div class="w-full lg:w-9/12 px-5 md:px-10 py-12 md:py-20">
                 <p class="text-4xl md:text-55 font-medium text-primary leading-none text-center md:text-start">Our happy clients</p>
 
                 <div class="flex flex-col items-center md:hidden flex-wrap gap-y-7 pt-7">
@@ -724,7 +724,7 @@
             </div>
         </div>
 
-        <div class="hidden md:block md:w-5/12"><?= renderImg('testimonials.jpg', 'lib', 'h-full w-full object-cover') ?></div>
+        <div class="hidden md:block w-full lg:w-5/12"><?= renderImg('testimonials.jpg', 'lib', 'h-full w-full object-cover') ?></div>
     </div>
     <?= renderImg('testimonials.jpg', 'lib', 'absolute md:hidden bottom-0 w-full object-cover z-40') ?>
 </section>
@@ -1006,8 +1006,8 @@
             <div><?= renderImg('sertified-process-4.png', 'lib') ?></div>
         </div>
 
-        <div class="flex flex-wrap pt-8 md:-mx-7 text-cool-white" id="sertifiedProcessSlider">
-            <div class="w-full md:w-1/4 px-7">
+        <div class="flex flex-wrap pt-8 lg:-mx-7 text-cool-white" id="sertifiedProcessSlider">
+            <div class="w-full md:w-1/4 px-4 lg:px-7">
                 <p class="text-2xl">Enquire today</p>
                 <p class="font-visby pt-3 font-thin">
                     Apply for a quote online
@@ -1015,21 +1015,21 @@
                 </p>
             </div>
 
-            <div class="w-full md:w-1/4 px-7">
+            <div class="w-full md:w-1/4 px-4 lg:px-7">
                 <p class="text-2xl">Best match</p>
                 <p class="font-visby pt-3 font-thin">
                     Get matched with the best loan from our pool of 78+ lenders to find the perfect loan.
                 </p>
             </div>
 
-            <div class="w-full md:w-1/4 px-7">
+            <div class="w-full md:w-1/4 px-4 lg:px-7">
                 <p class="text-2xl">Smooth sailing</p>
                 <p class="font-visby pt-3 font-thin">
                     Our team is working behind the scenes to smooth out any bumps and handle it all from start to finish.
                 </p>
             </div>
 
-            <div class="w-full md:w-1/4 px-7">
+            <div class="w-full md:w-1/4 px-4 lg:px-7">
                 <p class="text-2xl">Loan approved</p>
                 <p class="font-visby pt-3 font-thin">
                     Time to celebrate! Money is in your account, and you can dive right into achieving your goals.
@@ -1045,7 +1045,7 @@
         <p class="text-2xl md:text-35 text-grey font-visby pt-5">What you'll get access to...</p>
 
         <div class="flex flex-wrap -mx-2 mt-10 md:mt-20 gap-y-4" id="sertifiedPartnerSlider">
-            <div class="w-full md:w-1/4 px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2">
                 <div class="h-full rounded-20 bg-secondary/20 flex flex-col overflow-hidden">
                     <?= renderImg('broker.png', 'lib') ?>
 
@@ -1072,7 +1072,7 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-1/4 px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2">
                 <div class="h-full rounded-20 bg-secondary/20 flex flex-col overflow-hidden">
                     <?= renderImg('dealership.png', 'lib') ?>
 
@@ -1099,7 +1099,7 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-1/4 px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2">
                 <div class="h-full rounded-20 bg-secondary/20 flex flex-col overflow-hidden">
                     <?= renderImg('oem.png', 'lib') ?>
 
@@ -1127,7 +1127,7 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-1/4 px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2">
                 <div class="h-full rounded-20 bg-secondary/20 flex flex-col overflow-hidden">
                     <?= renderImg('professional.png', 'lib') ?>
 
@@ -1156,11 +1156,11 @@
         </div>
 
         <div class="flex flex-wrap -mx-2 mt-4 gap-y-4">
-            <div class="w-full md:w-1/2 px-2">
+            <div class="w-full lg:w-1/2 px-2">
                 <div class="h-full rounded-20 bg-primary overflow-hidden relative">
                     <div class="relative z-50 px-5 pt-7 pb-72 md:p-10">
-                        <p class="xl:w-8/12 text-4xl md:text-55 text-secondary leading-none font-medium">Manage everything all in <span class="text-cool-white">one place</span></p>
-                        <p class="xl:w-7/12 py-10 text-secondary font-visby text-lg md:text-xl">
+                        <p class="md:w-8/12 text-4xl md:text-55 text-secondary leading-none font-medium">Manage everything all in <span class="text-cool-white">one place</span></p>
+                        <p class="md:w-7/12 py-10 text-secondary font-visby text-lg md:text-xl">
                             When you partner with Sertified Finance you get access to Sertified’s market leading asset finance CRM that has live deal tracking, instant smart quoting, document & contract E-sign, plus more!
                         </p>
                         <a href="tel:<?= $phone_number ?>" class="btn w-fit bg-indigo text-white px-7">Call us today</a>
@@ -1171,7 +1171,7 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-1/2 px-2">
+            <div class="w-full lg:w-1/2 px-2">
                 <div class="bg-dark-blue rounded-20 h-full px-5 py-7 md:p-9">
                     <p class="text-2xl md:text-35 text-secondary leading-none">Want to become a <span class="text-cool-white">referral partner</span>?</p>
                     <p class="font-visby text-cool-white text-lg md:text-xl py-6">Send us an enquiry and we'll get back to you asap!</p>
@@ -1210,17 +1210,17 @@
 </section>
 
 <div class="container">
-    <section class="bg-secondary/20 rounded-30 p-3.5 md:p-20">
+    <section class="bg-secondary/20 rounded-30 p-3.5 lg:p-20">
         <div class="flex flex-wrap -mx-2 gap-y-4">
-            <div class="w-full md:w-1/2 px-2">
+            <div class="w-full lg:w-1/2 px-2">
                 <div class="h-full relative flex justify-center">
                     <?= renderImg('sertified-growth.jpg', 'lib', 'w-full h-full object-cover rounded-20') ?>
                     <?= renderImg('people.png', 'lib', 'absolute bottom-0') ?>
                 </div>
             </div>
 
-            <div class="w-full md:w-1/2 px-2 flex flex-col">
-                <p class="text-primary text-55 font-medium leading-none grow hidden md:block">Choose Sertified and become part of...</p>
+            <div class="w-full lg:w-1/2 px-2 flex flex-col">
+                <p class="text-primary text-55 font-medium leading-none grow hidden lg:block">Choose Sertified and become part of...</p>
 
                 <div class="bg-secondary rounded-20 px-3 py-10 md:p-7">
                     <div class="flex flex-wrap items-center -mx-2 gap-y-5">
@@ -1259,7 +1259,7 @@
         </div>
     </section>
 
-    <section class="rounded-30 australia-wide p-5 md:p-9 h-[716px] flex items-start md:items-end mt-14 md:mt-36">
+    <section class="rounded-30 australia-wide p-5 md:p-9 h-[716px] flex items-start lg:items-end mt-14 md:mt-28 lg:mt-36">
         <div class="flex flex-wrap justify-between items-start w-full gap-y-4">
             <p class="w-full md:w-fit text-2xl md:text-35 font-medium bg-cool-white rounded-20 text-primary px-8 py-6 leading-none">
                 Servicing Australia-wide
@@ -1274,11 +1274,11 @@
         </div>
     </section>
 
-    <section class="mt-6 mb-28 rounded-20 bg-dark-blue/50 px-5 py-9 md:py-10 md:px-12">
+    <section class="mt-6 mb-28 rounded-20 bg-dark-blue/50 px-5 py-9 md:py-10 lg:px-12">
         <p class="text-4xl md:text-55 font-medium text-cool-white leading-none">Start your journey to success today!</p>
 
         <div class="flex flex-wrap justify-between pt-10 gap-y-10">
-            <div class="w-full md:w-fit flex flex-wrap gap-3 order-2 md:order-1">
+            <div class="w-full md:w-fit flex flex-wrap gap-3 order-2 lg:order-1">
                 <a href="mailto:<?= $admin_email ?>" class="bg-dark-blue rounded-20 w-fit flex flex-wrap items-center gap-3 px-7 py-5">
                     <div class="w-fit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
@@ -1304,7 +1304,7 @@
                 </a>
             </div>
 
-            <div class="w-fit flex flex-wrap gap-x-7 items-center order-1 md:order-2">
+            <div class="w-fit flex flex-wrap gap-x-7 items-center order-1 lg:order-2">
                 <a href="<?= $facebook_link ?>" target="_blank" class="w-fit">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="29" viewBox="0 0 15 29" fill="none">
                         <path d="M13.5792 15.8017L14.3574 10.663H9.84399V7.34765C9.84399 6.18729 10.4665 4.86117 12.4898 4.86117H14.5131V0.551258C14.5131 0.551258 12.6454 0.219727 10.7778 0.219727C7.04255 0.219727 4.55238 2.70621 4.55238 7.01612V10.8287H0.505859V15.9675H4.70802V28.0684C5.4862 28.2341 6.42001 28.2341 7.35382 28.2341C8.28764 28.2341 9.06581 28.2341 9.99963 28.0684V15.8017H13.5792Z" fill="#FAFFFF" />
@@ -1343,10 +1343,10 @@
 </div>
 
 <section class="enquiryForm flex flex-wrap">
-    <div class="w-full md:w-1/2"><?= renderImg('enquire.jpg', 'lib', 'h-full w-full object-cover') ?></div>
+    <div class="w-full lg:w-1/2"><?= renderImg('enquire.jpg', 'lib', 'h-full w-full object-cover') ?></div>
 
-    <div class="w-full md:w-1/2 bg-primary">
-        <div class="py-11 px-5 md:p-16 w-full md:w-9/12">
+    <div class="w-full lg:w-1/2 bg-primary">
+        <div class="py-11 px-5 md:p-16 w-full lg:w-9/12">
             <p class="text-4xl md:text-55 text-secondary font-medium leading-none">Enquire online today</p>
             <p class="text-cool-white font-visby leading-none pt-7">Take control of your financial future and achieve your dreams<br /> with Sertified Finance! Don't wait, enquire today!</p>
 

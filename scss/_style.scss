@@ -2,7 +2,7 @@ section.banner {
     background: imgUrl('banner.jpg') center top;
     background-size: cover;
 
-    @media screen and (min-width: 540px) {
+    @media screen and (min-width: 900px) {
         .banner-container {
             background: imgUrl('banner-staff.png') right top;
         }
