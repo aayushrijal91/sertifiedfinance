@@ -1097,12 +1097,145 @@
                         </div>
 
                         <div class="w-full px-1 5">
-                        <button type="submit" class="btn w-fit bg-indigo text-white px-7 w-full">Submit enquiry</button>
-
+                            <button type="submit" class="btn bg-indigo text-white px-7 w-full">Submit enquiry</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+</section>
+
+<div class="container">
+    <section class="bg-secondary/20 rounded-30 p-20">
+        <div class="flex flex-wrap -mx-2">
+            <div class="w-1/2 px-2">
+                <div class="h-full relative flex justify-center">
+                    <?= renderImg('sertified-growth.jpg', 'lib', 'w-full h-full object-cover rounded-20') ?>
+                    <?= renderImg('people.png', 'lib', 'absolute bottom-0') ?>
+                </div>
+            </div>
+
+            <div class="w-1/2 px-2 flex flex-col">
+                <p class="text-primary text-55 font-medium leading-none grow">Choose Sertified and become part of...</p>
+
+                <div class="bg-secondary rounded-20 p-7">
+                    <div class="flex flex-wrap items-center -mx-2">
+                        <div class="w-5/12 px-2">
+                            <?= renderImg('progress-chart.png', 'lib') ?>
+                        </div>
+
+                        <div class="w-7/12 px-2">
+                            <div class="bg-primary/50 text-white rounded-2xl p-4">
+                                <p class="text-35 font-medium leading-none">515</p>
+                                <p class="text-xl leading-none font-light pt-3">Number of loans funded</p>
+                            </div>
+
+                            <div class="bg-primary/50 text-white rounded-2xl p-4 mt-2">
+                                <p class="text-35 font-medium leading-none">391</p>
+                                <p class="text-xl leading-none font-light pt-3">Number of clients serviced</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center mt-7 -mx-2">
+                        <p class="w-fit px-2 text-55 text-cool-white font-medium">$</p>
+                        <div class="w-fit grow px-2">
+                            <p class="bg-cool-white text-primary text-55 leading-none font-medium rounded-20 px-5 py-7">26,571,783...</p>
+                            <p class="text-xl text-primary pt-3">Total funds disbursed, and counting...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rounded-30 australia-wide p-9 h-[716px] flex items-end mt-36">
+        <div class="flex flex-wrap justify-between items-start w-full">
+            <p class="w-fit text-35 font-medium bg-cool-white rounded-20 text-primary px-8 py-6">
+                Servicing Australia-wide
+            </p>
+
+            <div class="w-fit bg-primary rounded-20 px-6 py-5">
+                <p class="text-2xl text-secondary font-medium pb-5">Servicing time</p>
+
+                <p class="text-white font-visby"><span class="font-medium">Monday - Friday</span> 8am - 7pm ACST</p>
+                <p class="text-white font-visby"><span class="font-medium">Saturday - Sunday</span> 10am - 4pm ACST</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-6 mb-28 rounded-20 bg-dark-blue/50 py-10 px-12">
+        <p class="text-55 font-medium text-cool-white">Start your journey to success today!</p>
+
+        <div class="flex flex-wrap justify-between pt-10">
+            <div class="w-fit flex flex-wrap gap-x-3">
+                <a href="mailto:<?= $admin_email ?>" class="bg-dark-blue rounded-20 w-fit flex items-center gap-x-3 px-7 py-5">
+                    <div class="w-fit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+                            <path d="M8.99288 24.5955V36.8763C8.99288 38.6307 10.9979 39.3826 12.2511 38.1294L18.0155 31.3625L29.7951 40.1345C30.7976 40.8864 32.3014 40.3851 32.5521 39.132L40.0709 2.7907C40.3216 1.28692 39.0684 0.284407 37.5646 0.785666L1.22337 15.3222C-0.0297744 15.8234 -0.280404 17.5778 0.722114 18.5804L4.73218 21.5879L16.2611 16.0741C17.2637 15.5728 18.0155 16.8259 17.2637 17.3272L8.99288 24.5955Z" fill="#798EFE" />
+                        </svg>
+                    </div>
+
+                    <p class="text-indigo text-2xl font-medium">Email</p>
+
+                    <p class="text-xl text-cool-white font-visby"><?= $admin_email ?></p>
+                </a>
+
+                <a href="tel:<?= $phone_number ?>" class="bg-dark-blue rounded-20 w-fit flex items-center gap-x-3 px-7 py-5">
+                    <div class="w-fit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M37.5348 25.4535L29.8766 22.0515C29.0809 21.6956 28.1898 21.6132 27.3423 21.8172C26.4949 22.0212 25.7388 22.5 25.1921 23.1789L22.9851 25.9383C19.3669 23.6165 16.2869 20.548 13.9515 16.9385L16.7109 14.7316C17.3892 14.1851 17.8677 13.4295 18.0716 12.5826C18.2755 11.7358 18.1935 10.8452 17.8384 10.0499L14.4617 2.37201C14.0823 1.51707 13.4115 0.824715 12.5689 0.418429C11.7264 0.0121439 10.767 -0.0816516 9.86175 0.153771L3.37897 1.84493C2.43847 2.08828 1.62079 2.67001 1.08251 3.47873C0.544232 4.28745 0.323193 5.2663 0.461722 6.22785C1.66934 14.6125 5.56016 22.3806 11.5517 28.3691C17.5433 34.3577 25.3133 38.2445 33.6986 39.4479C34.6596 39.5839 35.6371 39.361 36.4441 38.8218C37.2511 38.2826 37.831 37.4649 38.0731 36.525L39.7643 30.0422C39.9995 29.1372 39.9042 28.1779 39.4955 27.3368C39.0869 26.4957 38.3916 25.828 37.5348 25.4535Z" fill="#798EFE" />
+                        </svg>
+                    </div>
+
+                    <p class="text-indigo text-2xl font-medium">Phone</p>
+
+                    <p class="text-xl text-cool-white font-visby"><?= $phone_number ?></p>
+                </a>
+            </div>
+
+            <div class="w-fit flex flex-wrap gap-x-7 items-center">
+                <a href="<?= $facebook_link ?>" target="_blank" class="w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="29" viewBox="0 0 15 29" fill="none">
+                        <path d="M13.5792 15.8017L14.3574 10.663H9.84399V7.34765C9.84399 6.18729 10.4665 4.86117 12.4898 4.86117H14.5131V0.551258C14.5131 0.551258 12.6454 0.219727 10.7778 0.219727C7.04255 0.219727 4.55238 2.70621 4.55238 7.01612V10.8287H0.505859V15.9675H4.70802V28.0684C5.4862 28.2341 6.42001 28.2341 7.35382 28.2341C8.28764 28.2341 9.06581 28.2341 9.99963 28.0684V15.8017H13.5792Z" fill="#FAFFFF" />
+                    </svg>
+                </a>
+
+                <a href="<?= $instagram_link ?>" target="_blank" class="w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                        <path d="M16.7037 4.0105C15.9525 4.0105 15.4517 4.54569 15.4517 5.34848C15.4517 6.15127 15.9525 6.68646 16.7037 6.68646C17.455 6.68646 17.9558 6.15127 17.9558 5.34848C17.9558 4.54569 17.3298 4.0105 16.7037 4.0105Z" fill="#FAFFFF" />
+                        <path d="M11.1953 5.74951C8.31549 5.74951 5.93652 8.29231 5.93652 11.3704C5.93652 14.4486 8.31549 16.9914 11.1953 16.9914C14.0751 16.9914 16.4541 14.4486 16.4541 11.3704C16.3288 8.15848 14.0751 5.74951 11.1953 5.74951ZM11.1953 14.8501C9.31716 14.8501 7.81465 13.2441 7.81465 11.2366C7.81465 9.22913 9.31716 7.75699 11.1953 7.75699C13.0734 7.75699 14.5759 9.36296 14.5759 11.3704C14.5759 13.3779 12.9482 14.8501 11.1953 14.8501Z" fill="#FAFFFF" />
+                        <path d="M15.3266 22.6119H6.81238C3.30655 22.6119 0.426758 19.5339 0.426758 15.7868V6.82054C0.426758 3.07345 3.30655 -0.0045166 6.81238 -0.0045166H15.3266C18.8324 -0.0045166 21.7122 3.07345 21.7122 6.82054V15.7868C21.7122 19.6677 18.8324 22.6119 15.3266 22.6119ZM6.81238 2.00285C4.43342 2.00285 2.43009 4.14405 2.43009 6.68672V15.7868C2.43009 18.3295 4.43342 20.4707 6.81238 20.4707H15.3266C17.7055 20.4707 19.7088 18.3295 19.7088 15.7868V6.82054C19.7088 4.27787 17.7055 2.13668 15.3266 2.13668H6.81238V2.00285Z" fill="#FAFFFF" />
+                    </svg>
+                </a>
+
+                <a href="<?= $youtube_link ?>" target="_blank" class="w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                        <path d="M30.3922 7.85899C30.3922 3.95313 27.4525 0.720703 23.9002 0.720703H7.11897C3.56674 0.720703 0.626953 3.95313 0.626953 7.85899V16.3441C0.626953 20.25 3.56674 23.4824 7.11897 23.4824H23.7777C27.33 23.4824 30.3922 19.9507 30.3922 16.0448V8.26116V7.85899ZM20.593 12.7076L13.121 16.7482C12.876 16.8829 11.7736 16.7482 11.7736 16.3441V7.99367C11.7736 7.58962 12.7536 7.45493 13.121 7.58962L20.2255 11.8995C20.593 12.0342 20.838 12.5729 20.593 12.7076Z" fill="#FAFFFF" />
+                    </svg>
+                </a>
+
+                <a href="<?= $linkedin_link ?>" target="_blank" class="w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                        <path d="M0.577827 8.06112H5.14028V23.9442H0.577827V8.06112ZM2.92424 0.258911C4.35815 0.258911 5.53135 1.51284 5.53135 3.04542C5.53135 4.57799 4.35815 5.83192 2.92424 5.83192C1.49032 5.83192 0.31712 4.57799 0.31712 3.04542C0.186764 1.51284 1.49032 0.258911 2.92424 0.258911Z" fill="#FAFFFF" />
+                        <path d="M8.13867 8.05928H12.5707V10.2884C13.2225 9.03453 14.6563 7.78064 16.8723 7.78064C21.565 7.78064 22.3472 11.1243 22.3472 15.304V23.9419H17.7848V16.2792C17.7848 14.4681 17.7848 12.0996 15.4385 12.0996C13.0921 12.0996 12.701 14.0501 12.701 16.1399V23.9419H8.13867V8.05928Z" fill="#FAFFFF" />
+                    </svg>
+                </a>
+
+                <a href="<?= $tiktok_link ?>" target="_blank" class="w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none">
+                        <path d="M8.20284 9.19693V13.106C7.71037 12.9757 7.19494 12.9577 6.69456 13.0532C6.19419 13.1487 5.72164 13.3554 5.31179 13.6579C4.90194 13.9604 4.56524 14.3511 4.32652 14.8011C4.08781 15.2511 3.95318 15.749 3.93256 16.258C3.93256 18.0067 5.00731 19.5238 7.22063 19.5238C9.65018 19.5238 10.5092 17.8132 10.5092 16.2149V0.720703H14.3772C15.0348 4.81285 17.0809 5.7624 19.8202 6.20081V10.1222C19.8202 10.1222 16.5682 9.89165 14.486 8.32061V16.0655C14.487 19.5703 12.4093 23.4823 7.25279 23.4823C2.46642 23.4823 0.0185547 19.4248 0.0185547 16.0289C0.0487877 15.0219 0.292231 14.0327 0.73282 13.1267C1.17341 12.2206 1.80113 11.4183 2.57455 10.7727C3.34797 10.1271 4.24952 9.65279 5.21969 9.38117C6.18987 9.10955 7.20662 9.04675 8.20284 9.19693Z" fill="#FAFFFF" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="flex flex-wrap">
+    <div class="w-1/2"><?= renderImg('enquire.jpg', 'lib') ?></div>
+
+    <div class="w-1/2 bg-primary"></div>
 </section>
