@@ -49,6 +49,7 @@ $('input[type="radio"].loanType').on('change', function () {
     if ($(this).is(':checked')) {
         $('#banner-form-tab-1').hide();
         $('#banner-form-tab-2').fadeIn();
+        $("#showPrevBannerTab").attr("data-target", "1");
     }
 });
 
@@ -65,12 +66,22 @@ $('.show-form-tab-2').on('click', function () {
 $('.show-form-tab-3').on('click', function () {
     $('.form-tab').hide();
     $('#banner-form-tab-3').fadeIn();
+    $("#showPrevBannerTab").attr("data-target", "2");
 });
 
 $('.show-form-tab-4').on('click', function () {
     $('.form-tab').hide();
     $('#banner-form-tab-4').fadeIn();
+    $("#showPrevBannerTab").attr("data-target", "3");
 });
+
+$('#showPrevBannerTab').on('click', function () {
+    let target = $("#showPrevBannerTab").data("target");
+
+    $('.form-tab').hide();
+    $(`#banner-form-tab-${target}`).fadeIn();
+    $("#showPrevBannerTab").attr("data-target", parseInt(target) - 1);
+})
 
 $('.lenderSlider').slick({
     slidesToShow: 2,
@@ -88,8 +99,7 @@ $('.testimonialSlider').slick({
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    vertical: true, // Enable vertical scrolling
-    verticalSwiping: true,
+    vertical: true,
 });
 
 $('#sertifiedServicesSlider').slick({
