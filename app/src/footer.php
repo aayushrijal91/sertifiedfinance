@@ -1,4 +1,4 @@
-<footer class="bg-secondary py-14">
+<footer class="bg-secondary py-10 md:py-14">
 	<div class="container text-center">
 		<div class="flex flex-wrap flex-col items-center gap-y-10">
 			<div class="w-fit">
@@ -26,7 +26,7 @@
 			</div>
 
 			<div class="w-full">
-				<p class="text-sm text-primary font-visby font-medium">Copyright <?= date('Y') ?> <span class="px-5">/</span> <?= $site ?> <span class="px-5">/</span> All Rights Reserved</p>
+				<p class="text-xs md:text-sm text-primary font-visby font-medium">Copyright <?= date('Y') ?> <span class="px-3 md:px-5">/</span> <?= $site ?> <span class="px-3 md:px-5">/</span> All Rights Reserved</p>
 			</div>
 
 			<a href="https://www.aiims.com.au/this-is-us" target="_blank" class="w-fit">

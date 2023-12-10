@@ -2,12 +2,17 @@ section.banner {
     background: imgUrl('banner.jpg') center top;
     background-size: cover;
 
-    .banner-container {
-        background: imgUrl('banner-staff.png') right top;
+    @media screen and (min-width: 540px) {
+        .banner-container {
+            background: imgUrl('banner-staff.png') right top;
+        }
     }
 
     .mainform {
-        #banner-form-tab-2, #banner-form-tab-3, #banner-form-tab-4 {
+
+        #banner-form-tab-2,
+        #banner-form-tab-3,
+        #banner-form-tab-4 {
             display: none;
         }
 
@@ -30,7 +35,7 @@ section.banner {
             transition: 0.1s all ease-in-out;
 
             &:hover {
-                background: rgba(9,99,119,0.45);
+                background: rgba(9, 99, 119, 0.45);
             }
         }
 
@@ -52,7 +57,8 @@ section.banner {
             outline: none;
         }
 
-        input.form-control, select.form-control {
+        input.form-control,
+        select.form-control {
             height: 57px;
             background: rgba(154, 211, 213, 0.2);
             padding: 4px 21px;
@@ -133,7 +139,7 @@ section.testimonials {
 
     .testimonialSlider {
         .slick-slide {
-            height: 450px;
+            min-height: 450px;
         }
     }
 }
@@ -152,6 +158,10 @@ section.services {
             margin: 0 9px;
             width: 427px;
             height: 546px;
+
+            @media screen and (max-width: 540px) {
+                width: 100%;
+            }
 
             .inner {
                 position: absolute;
@@ -181,6 +191,10 @@ section.services {
             &.slick-current.slick-center {
                 width: 867px;
                 transition: width 0.5s ease;
+
+                @media screen and (max-width: 540px) {
+                    width: 100%;
+                }
 
                 .inner {
                     .description {
@@ -245,7 +259,8 @@ section.enquiryForm {
             outline: none;
         }
 
-        input.form-control, select.form-control {
+        input.form-control,
+        select.form-control {
             height: 57px;
             background: rgba(154, 211, 213, 0.2);
             padding: 4px 21px;

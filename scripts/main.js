@@ -99,7 +99,7 @@ $('.testimonialSlider').slick({
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    vertical: true,
+    // vertical: true,
 });
 
 $('#sertifiedServicesSlider').slick({

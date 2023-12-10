@@ -1,6 +1,6 @@
 <header class="fixed top-0 z-[100000] w-full bg-primary">
     <div class="container">
-        <div class="flex flex-wrap justify-between items-center py-7">
+        <div class="flex flex-wrap justify-center md:justify-between items-center py-7">
             <a href="./" class="w-fit">
                 <svg width="170" height="45" viewBox="0 0 170 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M169.075 43.9468C168.912 43.9603 168.749 43.9862 168.586 43.9862C166.465 43.9891 164.344 43.9878 162.222 43.9878C162.181 43.9878 162.14 43.9886 162.099 43.9878C161.699 43.9788 161.697 43.9788 161.697 43.5673C161.696 40.8987 161.696 38.23 161.697 35.561C161.697 35.113 161.718 35.0904 162.154 35.09C164.289 35.0887 166.424 35.0883 168.559 35.09C168.987 35.09 169.002 35.1076 169.005 35.5232C169.007 35.8243 169.009 36.1253 169.004 36.4263C168.998 36.7627 168.966 36.7972 168.621 36.7984C167.731 36.8017 166.842 36.7996 165.952 36.7996C165.228 36.7996 164.504 36.7996 163.751 36.7996V38.5832C163.865 38.589 163.984 38.6005 164.103 38.6005C165.444 38.6017 166.785 38.6005 168.126 38.6017C168.579 38.6017 168.59 38.614 168.592 39.0563C168.594 39.3298 168.596 39.6038 168.591 39.8773C168.587 40.2169 168.525 40.283 168.184 40.2839C166.843 40.2872 165.502 40.2855 164.161 40.2855C164.027 40.2855 163.893 40.2855 163.74 40.2855V42.2777C163.854 42.2835 163.972 42.295 164.09 42.295C165.595 42.2962 167.1 42.2933 168.606 42.2999C168.762 42.3007 168.918 42.3558 169.074 42.3862V43.9468H169.075Z" fill="#FAFFFF" />
@@ -25,7 +25,7 @@
                 </svg>
             </a>
 
-            <div class="w-fit flex items-center gap-x-7">
+            <div class="w-fit hidden md:flex items-center gap-x-7">
                 <a href="<?= $facebook_link ?>" class="w-fit">
                     <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.75787 11.2549L10.2871 7.76023H7.21768V5.50562C7.21768 4.7165 7.64104 3.81466 9.01698 3.81466H10.3929V0.883664C10.3929 0.883664 9.12282 0.658203 7.85272 0.658203C5.31253 0.658203 3.61907 2.34916 3.61907 5.28016V7.87296H0.867188V11.3676H3.72491V19.5969C4.25411 19.7097 4.88916 19.7097 5.52421 19.7097C6.15926 19.7097 6.68847 19.7097 7.32352 19.5969V11.2549H9.75787Z" fill="#9AD3D5" />
@@ -59,9 +59,10 @@
                     </svg>
                 </a>
             </div>
-            <p class="w-fit text-secondary">Achieve your dreams with Sertified!</p>
 
-            <div class="w-fit flex flex-wrap gap-x-4">
+            <p class="hidden md:block w-fit text-secondary">Achieve your dreams with Sertified!</p>
+
+            <div class="w-fit hidden md:flex flex-wrap gap-x-4">
                 <a href="tel:<?= $phone_number ?>" class="btn w-fit bg-white text-indigo px-7"><?= $phone_number ?></a>
                 <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
             </div>
@@ -71,22 +72,26 @@
 
 <section class="banner mt-[103px]">
     <div class="container relative">
-        <?= renderImg('banner-eclipse.png', 'lib', 'absolute mix-blend-soft-light top-20') ?>
+        <?= renderImg('banner-eclipse.png', 'lib', 'hidden md:block absolute mix-blend-soft-light top-20') ?>
 
-        <div class="flex flex-wrap pt-32 pb-10 relative banner-container">
-            <div class="w-1/2">
-                <p class="text-primary text-2xl font-extralight">Crafting Dreams &amp; Fuelling Potentail</p>
-                <h1 class="capitalize text-55 leading-none font-medium text-primary pt-3">reach new heights<br /> of Sertified success</h1>
+        <div class="flex flex-wrap pt-14 md:pt-32 pb-10 relative banner-container">
+            <div class="w-full md:w-1/2">
+                <p class="text-primary text-xl md:text-2xl font-extralight text-center md:text-start">Crafting Dreams &amp; Fuelling Potentail</p>
+                <h1 class="capitalize text-4xl md:text-55 leading-none font-medium text-primary pt-3 text-center md:text-start">reach new heights<br /> of Sertified success</h1>
 
-                <div class="bg-light rounded-20 mt-16 px-3.5 py-4 flex flex-wrap items-center justify-between">
-                    <div class="w-fit"><?= renderImg('crown.png', 'lib') ?></div>
+                <div class="flex justify-center md:hidden my-8">
+                    <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
+                </div>
 
-                    <div class="w-fit px-5">
-                        <p class="text-2xl font-medium text-primary">We're officially Sertified!</p>
-                        <p class="text-grey font-light">Be confident that you're with the best.</p>
+                <div class="bg-light rounded-20 md:mt-16 px-3.5 py-4 flex flex-wrap items-center justify-between">
+                    <div class="w-2/12 md:w-fit"><?= renderImg('crown.png', 'lib') ?></div>
+
+                    <div class="w-10/12 md:w-fit px-5">
+                        <p class="text-xl md:text-2xl font-medium text-primary leading-none">We're officially Sertified!</p>
+                        <p class="text-grey font-light leading-none pt-2">Be confident that you're with the best.</p>
                     </div>
 
-                    <div class="lenderSlider w-[240px] bg-cool-white/50 rounded-2xl py-5">
+                    <div class="lenderSlider w-full md:w-[240px] bg-cool-white/50 rounded-2xl py-5 mt-2 md:mt-0">
                         <div><?= renderImg('nfc.png', 'logo') ?></div>
                         <div><?= renderImg('mfaa.png', 'logo') ?></div>
                         <div><?= renderImg('afca.png', 'logo') ?></div>
@@ -96,24 +101,24 @@
                 </div>
             </div>
 
-            <div class="w-10/12 bg-white rounded-20 py-7 px-9 mt-8">
+            <div class="w-full md:w-10/12 bg-white rounded-20 p-5 md:py-7 md:px-9 mt-8">
                 <div class="flex flex-wrap justify-between items-center">
-                    <div class="w-fit flex flex-wrap gap-x-7">
-                        <a href="#" class="text-indigo text-lg btn gap-x-1">
+                    <div class="w-fit flex flex-wrap gap-x-4 md:gap-x-7">
+                        <a href="#form" class="text-indigo btn gap-x-1">
                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.27307 6.48949C7.86284 6.48949 9.1516 5.20073 9.1516 3.61096C9.1516 2.02119 7.86284 0.732422 6.27307 0.732422C4.6833 0.732422 3.39453 2.02119 3.39453 3.61096C3.39453 5.20073 4.6833 6.48949 6.27307 6.48949Z" fill="#1C305F" />
                                 <path d="M6.27303 7.53613C3.32017 7.53613 0.868707 9.7636 0.571432 12.7175C0.556778 12.8651 0.604928 13.0116 0.703322 13.1215C0.802762 13.2304 0.944072 13.2943 1.09166 13.2943H11.4544C11.602 13.2943 11.7433 13.2314 11.8427 13.1215C11.9422 13.0116 11.9903 12.8651 11.9746 12.7175C11.6763 9.7636 9.22588 7.53613 6.27303 7.53613Z" fill="#1C305F" />
                             </svg>
 
-                            <span class="border-b-2 border-indigo leading-none">Enquire now</span>
+                            <span class="border-b-2 border-indigo leading-none text-sm md:text-lg">Enquire now</span>
                         </a>
 
-                        <a href="tel:<?= $phone_number ?>" class="text-indigo text-lg btn gap-x-1">
+                        <a href="tel:<?= $phone_number ?>" class="text-indigo btn gap-x-1">
                             <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.1422 8.7868L9.75787 7.72757C9.51012 7.61677 9.23266 7.59112 8.9688 7.65463C8.70495 7.71813 8.46954 7.86721 8.29934 8.0786L7.61219 8.93775C6.48565 8.21486 5.52667 7.25947 4.79956 6.13564L5.6587 5.4485C5.8699 5.27835 6.01885 5.0431 6.08235 4.77943C6.14584 4.51576 6.12031 4.23849 6.00974 3.99084L4.9584 1.60032C4.84026 1.33414 4.6314 1.11857 4.36909 0.992073C4.10677 0.865575 3.80804 0.836371 3.52619 0.909671L1.50776 1.43622C1.21494 1.51198 0.96035 1.69311 0.792756 1.9449C0.625162 2.1967 0.556341 2.50147 0.599473 2.80085C0.975466 5.41144 2.18688 7.83004 4.05237 9.69458C5.91786 11.5591 8.33708 12.7693 10.9479 13.144C11.2471 13.1863 11.5514 13.1169 11.8027 12.949C12.0539 12.7812 12.2345 12.5266 12.3099 12.2339L12.8364 10.2155C12.9096 9.93371 12.88 9.63504 12.7527 9.37317C12.6255 9.11129 12.409 8.90338 12.1422 8.7868Z" fill="#1C305F" />
                             </svg>
 
-                            <span class="border-b-2 border-indigo leading-none"><?= $phone_number ?></span>
+                            <span class="border-b-2 border-indigo leading-none text-sm md:text-lg"><?= $phone_number ?></span>
                         </a>
                     </div>
 
@@ -128,14 +133,14 @@
                 <form action="" id="banner_form" method="POST" class="mainform pt-4">
                     <div id="banner-form-tab-1" class="form-tab">
                         <div class="flex flex-wrap justify-between items-center">
-                            <div class="w-2/3 text-35 text-primary font-medium">
+                            <div class="w-full md:w-2/3 text-xl md:text-35 text-primary font-medium leading-none order-2 md:order-1">
                                 What type of loan are you looking for?
                             </div>
 
-                            <p class="w-fit text-xl text-primary">Explore finance options</p>
+                            <p class="w-full md:w-fit text-base md:text-xl text-primary order-1 md:order-2">Explore finance options</p>
                         </div>
 
-                        <div class="flex flex-wrap justify-between gap-x-2 pt-12">
+                        <div class="flex flex-wrap justify-between gap-2 pt-8 md:pt-12">
                             <label for="loantype-car" class="loantype group">
                                 <div class="grow flex justify-center items-center">
                                     <?= renderImg('option-car.png', 'lib', 'group-hover:scale-105 duration-100') ?>
@@ -293,7 +298,7 @@
 
 <section class="bg-secondary py-14">
     <div class="container">
-        <div class="flex flex-wrap items-center gap-x-5">
+        <div class="flex flex-wrap items-center gap-5 justify-center md:justify-start text-center md:text-start">
             <div class="w-fit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="76" height="74" viewBox="0 0 76 74" fill="none">
                     <path d="M75.6351 43.3975V59.0779C75.6351 66.8739 58.8915 73.9184 38.2621 73.9184C34.0271 73.9184 29.9231 73.6531 26.1465 73.1668V56.7494C29.9449 57.2358 34.0271 57.501 38.2621 57.501C58.8915 57.501 75.6351 51.1935 75.6351 43.3975Z" fill="#E6E7E7" />
@@ -307,12 +312,20 @@
                 </svg>
             </div>
 
-            <p class="w-fit text-55 text-primary font-medium">Get the best deal from <span class="text-white">78+ lenders</span>...</p>
+            <p class="w-full md:w-fit text-4xl md:text-55 text-primary font-medium leading-none">Get the best deal from <span class="text-white">78+ lenders</span>...</p>
         </div>
 
-        <p class="text-white font-light py-8">
+        <p class="text-white font-light py-8 hidden md:block">
             <span class="text-primary font-medium">We’re proud partners of all the below lenders <span class="px-3">|</span></span> <span class="text-white">78+ lenders to ensure you get the loan best suited to your needs <span class="px-3 text-primary font-medium">|</span> More options Australia-wide</span>
         </p>
+
+        <div class="text-white text-center font-light py-8 flex flex-col md:hidden gap-y-5">
+            <p class="text-primary font-medium">We're proud partners of all the below lenders</p>
+            <hr class="border-primary" />
+            <p>78+ lenders to ensure you get the loan best suited to your needs</p>
+            <hr class="border-primary" />
+            <p>More options Australia-wide</p>
+        </div>
 
         <div class="lenderSlider py-5 border-x border-white mt-5">
             <?php for ($i = 1; $i < 36; $i++) : ?>
@@ -322,9 +335,9 @@
     </div>
 </section>
 
-<section class="py-28">
+<section class="py-16 md:py-28">
     <div class="container">
-        <p class="text-55 font-medium text-primary">Take control of your potential</p>
+        <p class="text-4xl md:text-55 font-medium text-primary leading-none">Take control of your potential</p>
 
         <div class="text-grey description py-5 font-visby">
             <p>Explore your loan options with no impact to your credit score.</p>
@@ -332,10 +345,11 @@
             <p class="italic">Casual, Part Time, Full Time, Self Employed Accepted. Consumer & Commercial Loans. Previous Bad Credit Accepted (Case by Case). Visa Holder’s Accepted. Dealership, Original Manufacturer, Private Sales Accepted. New & Used Assets.</p>
         </div>
 
-        <div class="bg-secondary/20 rounded-20 mt-7 p-12 flex flex-wrap relative">
-            <div class="w-7/12">
-                <div class="flex flex-wrap -mx-2">
-                    <div class="w-1/3 px-2">
+        <?= renderImg('phone.png', 'lib', 'md:hidden') ?>
+        <div class="bg-secondary/20 rounded-20 md:mt-7 px-5 py-8 md:p-12 flex flex-wrap relative">
+            <div class="w-full md:w-7/12">
+                <div class="flex flex-wrap -mx-2 gap-y-4">
+                    <div class="w-full md:w-1/3 px-2">
                         <div class="rounded-20 bg-secondary h-full p-6">
                             <p class="bg-primary text-white rounded-full px-2 py-1 inline font-light">Step 01</p>
                             <p class="text-white text-35 leading-none py-5">Fill</p>
@@ -343,7 +357,7 @@
                         </div>
                     </div>
 
-                    <div class="w-1/3 px-2">
+                    <div class="w-full md:w-1/3 px-2">
                         <div class="rounded-20 bg-secondary h-full p-6">
                             <p class="bg-primary text-white rounded-full px-2 py-1 inline font-light">Step 02</p>
                             <p class="text-white text-35 leading-none py-5">Match</p>
@@ -351,7 +365,7 @@
                         </div>
                     </div>
 
-                    <div class="w-1/3 px-2">
+                    <div class="w-full md:w-1/3 px-2">
                         <div class="rounded-20 bg-secondary h-full p-6">
                             <p class="bg-primary text-white rounded-full px-2 py-1 inline font-light">Step 03</p>
                             <p class="text-white text-35 leading-none py-5">Choose</p>
@@ -360,10 +374,10 @@
                     </div>
                 </div>
 
-                <div class="flex flex-wrap gap-x-4 pt-12">
-                    <a href="#form" class="btn w-fit bg-indigo text-white px-9">Enquire now</a>
+                <div class="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-x-4 gap-y-3 pt-8 md:pt-12">
+                    <a href="#form" class="btn w-9/12 md:w-fit bg-indigo text-white px-9">Enquire now</a>
 
-                    <a href="tel:<?= $phone_number ?>" class="btn w-fit border-2 border-indigo text-indigo gap-x-3 px-6">
+                    <a href="tel:<?= $phone_number ?>" class="btn w-9/12 md:w-fit border-2 border-indigo text-indigo gap-x-3 px-6">
                         <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.1422 8.7868L9.75787 7.72757C9.51012 7.61677 9.23266 7.59112 8.9688 7.65463C8.70495 7.71813 8.46954 7.86721 8.29934 8.0786L7.61219 8.93775C6.48565 8.21486 5.52667 7.25947 4.79956 6.13564L5.6587 5.4485C5.8699 5.27835 6.01885 5.0431 6.08235 4.77943C6.14584 4.51576 6.12031 4.23849 6.00974 3.99084L4.9584 1.60032C4.84026 1.33414 4.6314 1.11857 4.36909 0.992073C4.10677 0.865575 3.80804 0.836371 3.52619 0.909671L1.50776 1.43622C1.21494 1.51198 0.96035 1.69311 0.792756 1.9449C0.625162 2.1967 0.556341 2.50147 0.599473 2.80085C0.975466 5.41144 2.18688 7.83004 4.05237 9.69458C5.91786 11.5591 8.33708 12.7693 10.9479 13.144C11.2471 13.1863 11.5514 13.1169 11.8027 12.949C12.0539 12.7812 12.2345 12.5266 12.3099 12.2339L12.8364 10.2155C12.9096 9.93371 12.88 9.63504 12.7527 9.37317C12.6255 9.11129 12.409 8.90338 12.1422 8.7868Z" fill="#1C305F" />
                         </svg>
@@ -371,23 +385,28 @@
                     </a>
                 </div>
             </div>
-            <?= renderImg('phone.png', 'lib', 'absolute bottom-0 right-0') ?>
+            <?= renderImg('phone.png', 'lib', 'hidden md:block absolute bottom-0 right-0') ?>
         </div>
     </div>
 </section>
 
-<section class="testimonials">
-    <div class="flex flex-wrap">
-        <div class="w-7/12 flex justify-end">
-            <div class="w-9/12 px-10 py-20">
-                <p class="text-55 font-medium text-primary">Our happy clients</p>
-    
-                <div class="flex flex-wrap -mx-2 py-20">
-                    <div class="w-1/2 px-2">
+<section class="testimonials relative">
+    <div class="flex flex-wrap relative z-50">
+        <div class="w-full md:w-7/12 flex justify-end">
+            <div class="w-full md:w-9/12 px-5 md:px-10 py-12 md:py-20">
+                <p class="text-4xl md:text-55 font-medium text-primary leading-none text-center md:text-start">Our happy clients</p>
+                
+                <div class="flex flex-col items-center md:hidden flex-wrap gap-y-7 pt-7">
+                    <p class="w-full font-visby text-center text-[#1C305F]">Like our service?</p>
+                    <a href="#form" class="btn w-8/12 bg-indigo text-white px-7">Leave us a review</a>
+                </div>
+
+                <div class="flex flex-wrap -mx-2 py-14 md:py-20 gap-y-4">
+                    <div class="w-full md:w-1/2 px-2">
                         <div class="py-10 px-8 bg-white relative shadow-drop h-full">
                             <?= renderImg('frame-glass.png', 'lib', 'absolute z-10 top-0 left-0 h-full w-full mix-blend-multiply') ?>
                             <?= renderImg('frame.png', 'lib', 'absolute z-50 top-0 left-0 h-full w-full') ?>
-    
+
                             <div class="testimonialSlider">
                                 <div class="z-0">
                                     <div class="flex justify-between">
@@ -397,7 +416,7 @@
                                                 <path d="M24.6537 40.6079L24.6537 24.4403C24.6537 22.6119 23.1715 21.1297 21.3431 21.1297L13.2859 21.1297C12.8296 21.1297 12.4593 20.7594 12.4593 20.3031L12.4593 19.5475C12.4593 17.9893 12.7232 16.4419 13.2397 14.9718L17.573 2.6426C17.9084 1.68822 17.2002 0.688897 16.1889 0.688897L11.0005 0.688897C10.324 0.688896 9.69869 1.04837 9.3582 1.63252C9.35567 1.63758 9.35251 1.64202 9.35061 1.64708L3.07559 14.6382C1.2972 18.3197 0.373823 22.3549 0.373823 26.4433L0.373822 40.6079C0.373822 42.4362 1.85603 43.9185 3.68442 43.9185L21.3437 43.9185C23.1721 43.9185 24.6543 42.4362 24.6543 40.6079L24.6537 40.6079Z" fill="#9AD3D5" />
                                             </svg>
                                         </div>
-    
+
                                         <div class="w-fit bg-cool-white p-2 rounded-md flex items-center gap-x-3">
                                             <div class="w-fit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
@@ -410,9 +429,9 @@
                                             <p class="w-fit text-xs leading-none">Verified<br /> Google Review</p>
                                         </div>
                                     </div>
-    
+
                                     <p class="text-2xl font-medium text-primary py-6">Shreyash Chouhan</p>
-    
+
                                     <svg width="213" height="43" viewBox="0 0 213 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.5589 2.83887C20.9158 2.06243 22.0192 2.06243 22.3761 2.83887L27.0533 13.0137C27.199 13.3305 27.4991 13.5486 27.8455 13.5892L38.9677 14.8934C39.8164 14.9929 40.1573 16.0422 39.5292 16.6216L31.2977 24.2141C31.0414 24.4505 30.9267 24.8034 30.9951 25.1453L33.1918 36.1262C33.3594 36.9641 32.4668 37.6127 31.7216 37.1943L21.9571 31.7119C21.653 31.5412 21.282 31.5412 20.9779 31.7119L11.2133 37.1943C10.4682 37.6127 9.57555 36.9641 9.74318 36.1262L11.9398 25.1453C12.0082 24.8034 11.8936 24.4505 11.6373 24.2141L3.40576 16.6216C2.77762 16.0422 3.11857 14.9929 3.9673 14.8934L15.0895 13.5892C15.4358 13.5486 15.736 13.3305 15.8816 13.0137L20.5589 2.83887Z" fill="#9AD3D5" />
                                         <path d="M63.097 2.83887C63.4539 2.06243 64.5572 2.06243 64.9142 2.83887L69.5914 13.0137C69.737 13.3305 70.0372 13.5486 70.3835 13.5892L81.5057 14.8934C82.3545 14.9929 82.6954 16.0422 82.0673 16.6216L73.8358 24.2141C73.5795 24.4505 73.4648 24.8034 73.5332 25.1453L75.7299 36.1262C75.8975 36.9641 75.0049 37.6127 74.2597 37.1943L64.4951 31.7119C64.1911 31.5412 63.8201 31.5412 63.516 31.7119L53.7514 37.1943C53.0063 37.6127 52.1136 36.9641 52.2813 36.1262L54.4779 25.1453C54.5463 24.8034 54.4317 24.4505 54.1754 24.2141L45.9438 16.6216C45.3157 16.0422 45.6567 14.9929 46.5054 14.8934L57.6276 13.5892C57.9739 13.5486 58.2741 13.3305 58.4197 13.0137L63.097 2.83887Z" fill="#9AD3D5" />
@@ -420,12 +439,12 @@
                                         <path d="M148.179 2.83887C148.536 2.06243 149.639 2.06243 149.996 2.83887L154.673 13.0137C154.819 13.3305 155.119 13.5486 155.466 13.5892L166.588 14.8934C167.437 14.9929 167.777 16.0422 167.149 16.6216L158.918 24.2141C158.661 24.4505 158.547 24.8034 158.615 25.1453L160.812 36.1262C160.98 36.9641 160.087 37.6127 159.342 37.1943L149.577 31.7119C149.273 31.5412 148.902 31.5412 148.598 31.7119L138.833 37.1943C138.088 37.6127 137.196 36.9641 137.363 36.1262L139.56 25.1453C139.628 24.8034 139.514 24.4505 139.257 24.2141L131.026 16.6216C130.398 16.0422 130.739 14.9929 131.587 14.8934L142.71 13.5892C143.056 13.5486 143.356 13.3305 143.502 13.0137L148.179 2.83887Z" fill="#9AD3D5" />
                                         <path d="M190.72 2.83887C191.077 2.06243 192.18 2.06243 192.537 2.83887L197.214 13.0137C197.36 13.3305 197.66 13.5486 198.007 13.5892L209.129 14.8934C209.978 14.9929 210.318 16.0422 209.69 16.6216L201.459 24.2141C201.203 24.4505 201.088 24.8034 201.156 25.1453L203.353 36.1262C203.521 36.9641 202.628 37.6127 201.883 37.1943L192.118 31.7119C191.814 31.5412 191.443 31.5412 191.139 31.7119L181.374 37.1943C180.629 37.6127 179.737 36.9641 179.904 36.1262L182.101 25.1453C182.169 24.8034 182.055 24.4505 181.798 24.2141L173.567 16.6216C172.939 16.0422 173.28 14.9929 174.128 14.8934L185.251 13.5892C185.597 13.5486 185.897 13.3305 186.043 13.0137L190.72 2.83887Z" fill="#9AD3D5" />
                                     </svg>
-    
+
                                     <p class="text-grey pt-3">
                                         I had a great experience with Sertified Finance - their customer service was excellent and they offered great options. I especially want to thank Jemmah for going above and beyond to help me get my car loan approved quickly. Her exceptional assistance made all the difference.
                                     </p>
                                 </div>
-    
+
                                 <div class="z-0">
                                     <div class="flex justify-between">
                                         <div class="w-fit">
@@ -434,7 +453,7 @@
                                                 <path d="M24.6537 40.6079L24.6537 24.4403C24.6537 22.6119 23.1715 21.1297 21.3431 21.1297L13.2859 21.1297C12.8296 21.1297 12.4593 20.7594 12.4593 20.3031L12.4593 19.5475C12.4593 17.9893 12.7232 16.4419 13.2397 14.9718L17.573 2.6426C17.9084 1.68822 17.2002 0.688897 16.1889 0.688897L11.0005 0.688897C10.324 0.688896 9.69869 1.04837 9.3582 1.63252C9.35567 1.63758 9.35251 1.64202 9.35061 1.64708L3.07559 14.6382C1.2972 18.3197 0.373823 22.3549 0.373823 26.4433L0.373822 40.6079C0.373822 42.4362 1.85603 43.9185 3.68442 43.9185L21.3437 43.9185C23.1721 43.9185 24.6543 42.4362 24.6543 40.6079L24.6537 40.6079Z" fill="#9AD3D5" />
                                             </svg>
                                         </div>
-    
+
                                         <div class="w-fit bg-cool-white p-2 rounded-md flex items-center gap-x-3">
                                             <div class="w-fit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
@@ -447,9 +466,9 @@
                                             <p class="w-fit text-xs leading-none">Verified<br /> Google Review</p>
                                         </div>
                                     </div>
-    
+
                                     <p class="text-2xl font-medium text-primary py-6">Shreyash Chouhan</p>
-    
+
                                     <svg width="213" height="43" viewBox="0 0 213 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.5589 2.83887C20.9158 2.06243 22.0192 2.06243 22.3761 2.83887L27.0533 13.0137C27.199 13.3305 27.4991 13.5486 27.8455 13.5892L38.9677 14.8934C39.8164 14.9929 40.1573 16.0422 39.5292 16.6216L31.2977 24.2141C31.0414 24.4505 30.9267 24.8034 30.9951 25.1453L33.1918 36.1262C33.3594 36.9641 32.4668 37.6127 31.7216 37.1943L21.9571 31.7119C21.653 31.5412 21.282 31.5412 20.9779 31.7119L11.2133 37.1943C10.4682 37.6127 9.57555 36.9641 9.74318 36.1262L11.9398 25.1453C12.0082 24.8034 11.8936 24.4505 11.6373 24.2141L3.40576 16.6216C2.77762 16.0422 3.11857 14.9929 3.9673 14.8934L15.0895 13.5892C15.4358 13.5486 15.736 13.3305 15.8816 13.0137L20.5589 2.83887Z" fill="#9AD3D5" />
                                         <path d="M63.097 2.83887C63.4539 2.06243 64.5572 2.06243 64.9142 2.83887L69.5914 13.0137C69.737 13.3305 70.0372 13.5486 70.3835 13.5892L81.5057 14.8934C82.3545 14.9929 82.6954 16.0422 82.0673 16.6216L73.8358 24.2141C73.5795 24.4505 73.4648 24.8034 73.5332 25.1453L75.7299 36.1262C75.8975 36.9641 75.0049 37.6127 74.2597 37.1943L64.4951 31.7119C64.1911 31.5412 63.8201 31.5412 63.516 31.7119L53.7514 37.1943C53.0063 37.6127 52.1136 36.9641 52.2813 36.1262L54.4779 25.1453C54.5463 24.8034 54.4317 24.4505 54.1754 24.2141L45.9438 16.6216C45.3157 16.0422 45.6567 14.9929 46.5054 14.8934L57.6276 13.5892C57.9739 13.5486 58.2741 13.3305 58.4197 13.0137L63.097 2.83887Z" fill="#9AD3D5" />
@@ -457,12 +476,12 @@
                                         <path d="M148.179 2.83887C148.536 2.06243 149.639 2.06243 149.996 2.83887L154.673 13.0137C154.819 13.3305 155.119 13.5486 155.466 13.5892L166.588 14.8934C167.437 14.9929 167.777 16.0422 167.149 16.6216L158.918 24.2141C158.661 24.4505 158.547 24.8034 158.615 25.1453L160.812 36.1262C160.98 36.9641 160.087 37.6127 159.342 37.1943L149.577 31.7119C149.273 31.5412 148.902 31.5412 148.598 31.7119L138.833 37.1943C138.088 37.6127 137.196 36.9641 137.363 36.1262L139.56 25.1453C139.628 24.8034 139.514 24.4505 139.257 24.2141L131.026 16.6216C130.398 16.0422 130.739 14.9929 131.587 14.8934L142.71 13.5892C143.056 13.5486 143.356 13.3305 143.502 13.0137L148.179 2.83887Z" fill="#9AD3D5" />
                                         <path d="M190.72 2.83887C191.077 2.06243 192.18 2.06243 192.537 2.83887L197.214 13.0137C197.36 13.3305 197.66 13.5486 198.007 13.5892L209.129 14.8934C209.978 14.9929 210.318 16.0422 209.69 16.6216L201.459 24.2141C201.203 24.4505 201.088 24.8034 201.156 25.1453L203.353 36.1262C203.521 36.9641 202.628 37.6127 201.883 37.1943L192.118 31.7119C191.814 31.5412 191.443 31.5412 191.139 31.7119L181.374 37.1943C180.629 37.6127 179.737 36.9641 179.904 36.1262L182.101 25.1453C182.169 24.8034 182.055 24.4505 181.798 24.2141L173.567 16.6216C172.939 16.0422 173.28 14.9929 174.128 14.8934L185.251 13.5892C185.597 13.5486 185.897 13.3305 186.043 13.0137L190.72 2.83887Z" fill="#9AD3D5" />
                                     </svg>
-    
+
                                     <p class="text-grey pt-3">
                                         I had a great experience with Sertified Finance - their customer service was excellent and they offered great options. I especially want to thank Jemmah for going above and beyond to help me get my car loan approved quickly. Her exceptional assistance made all the difference.
                                     </p>
                                 </div>
-    
+
                                 <div class="z-0">
                                     <div class="flex justify-between">
                                         <div class="w-fit">
@@ -471,7 +490,7 @@
                                                 <path d="M24.6537 40.6079L24.6537 24.4403C24.6537 22.6119 23.1715 21.1297 21.3431 21.1297L13.2859 21.1297C12.8296 21.1297 12.4593 20.7594 12.4593 20.3031L12.4593 19.5475C12.4593 17.9893 12.7232 16.4419 13.2397 14.9718L17.573 2.6426C17.9084 1.68822 17.2002 0.688897 16.1889 0.688897L11.0005 0.688897C10.324 0.688896 9.69869 1.04837 9.3582 1.63252C9.35567 1.63758 9.35251 1.64202 9.35061 1.64708L3.07559 14.6382C1.2972 18.3197 0.373823 22.3549 0.373823 26.4433L0.373822 40.6079C0.373822 42.4362 1.85603 43.9185 3.68442 43.9185L21.3437 43.9185C23.1721 43.9185 24.6543 42.4362 24.6543 40.6079L24.6537 40.6079Z" fill="#9AD3D5" />
                                             </svg>
                                         </div>
-    
+
                                         <div class="w-fit bg-cool-white p-2 rounded-md flex items-center gap-x-3">
                                             <div class="w-fit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
@@ -484,9 +503,9 @@
                                             <p class="w-fit text-xs leading-none">Verified<br /> Google Review</p>
                                         </div>
                                     </div>
-    
+
                                     <p class="text-2xl font-medium text-primary py-6">Shreyash Chouhan</p>
-    
+
                                     <svg width="213" height="43" viewBox="0 0 213 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.5589 2.83887C20.9158 2.06243 22.0192 2.06243 22.3761 2.83887L27.0533 13.0137C27.199 13.3305 27.4991 13.5486 27.8455 13.5892L38.9677 14.8934C39.8164 14.9929 40.1573 16.0422 39.5292 16.6216L31.2977 24.2141C31.0414 24.4505 30.9267 24.8034 30.9951 25.1453L33.1918 36.1262C33.3594 36.9641 32.4668 37.6127 31.7216 37.1943L21.9571 31.7119C21.653 31.5412 21.282 31.5412 20.9779 31.7119L11.2133 37.1943C10.4682 37.6127 9.57555 36.9641 9.74318 36.1262L11.9398 25.1453C12.0082 24.8034 11.8936 24.4505 11.6373 24.2141L3.40576 16.6216C2.77762 16.0422 3.11857 14.9929 3.9673 14.8934L15.0895 13.5892C15.4358 13.5486 15.736 13.3305 15.8816 13.0137L20.5589 2.83887Z" fill="#9AD3D5" />
                                         <path d="M63.097 2.83887C63.4539 2.06243 64.5572 2.06243 64.9142 2.83887L69.5914 13.0137C69.737 13.3305 70.0372 13.5486 70.3835 13.5892L81.5057 14.8934C82.3545 14.9929 82.6954 16.0422 82.0673 16.6216L73.8358 24.2141C73.5795 24.4505 73.4648 24.8034 73.5332 25.1453L75.7299 36.1262C75.8975 36.9641 75.0049 37.6127 74.2597 37.1943L64.4951 31.7119C64.1911 31.5412 63.8201 31.5412 63.516 31.7119L53.7514 37.1943C53.0063 37.6127 52.1136 36.9641 52.2813 36.1262L54.4779 25.1453C54.5463 24.8034 54.4317 24.4505 54.1754 24.2141L45.9438 16.6216C45.3157 16.0422 45.6567 14.9929 46.5054 14.8934L57.6276 13.5892C57.9739 13.5486 58.2741 13.3305 58.4197 13.0137L63.097 2.83887Z" fill="#9AD3D5" />
@@ -494,12 +513,12 @@
                                         <path d="M148.179 2.83887C148.536 2.06243 149.639 2.06243 149.996 2.83887L154.673 13.0137C154.819 13.3305 155.119 13.5486 155.466 13.5892L166.588 14.8934C167.437 14.9929 167.777 16.0422 167.149 16.6216L158.918 24.2141C158.661 24.4505 158.547 24.8034 158.615 25.1453L160.812 36.1262C160.98 36.9641 160.087 37.6127 159.342 37.1943L149.577 31.7119C149.273 31.5412 148.902 31.5412 148.598 31.7119L138.833 37.1943C138.088 37.6127 137.196 36.9641 137.363 36.1262L139.56 25.1453C139.628 24.8034 139.514 24.4505 139.257 24.2141L131.026 16.6216C130.398 16.0422 130.739 14.9929 131.587 14.8934L142.71 13.5892C143.056 13.5486 143.356 13.3305 143.502 13.0137L148.179 2.83887Z" fill="#9AD3D5" />
                                         <path d="M190.72 2.83887C191.077 2.06243 192.18 2.06243 192.537 2.83887L197.214 13.0137C197.36 13.3305 197.66 13.5486 198.007 13.5892L209.129 14.8934C209.978 14.9929 210.318 16.0422 209.69 16.6216L201.459 24.2141C201.203 24.4505 201.088 24.8034 201.156 25.1453L203.353 36.1262C203.521 36.9641 202.628 37.6127 201.883 37.1943L192.118 31.7119C191.814 31.5412 191.443 31.5412 191.139 31.7119L181.374 37.1943C180.629 37.6127 179.737 36.9641 179.904 36.1262L182.101 25.1453C182.169 24.8034 182.055 24.4505 181.798 24.2141L173.567 16.6216C172.939 16.0422 173.28 14.9929 174.128 14.8934L185.251 13.5892C185.597 13.5486 185.897 13.3305 186.043 13.0137L190.72 2.83887Z" fill="#9AD3D5" />
                                     </svg>
-    
+
                                     <p class="text-grey pt-3">
                                         I had a great experience with Sertified Finance - their customer service was excellent and they offered great options. I especially want to thank Jemmah for going above and beyond to help me get my car loan approved quickly. Her exceptional assistance made all the difference.
                                     </p>
                                 </div>
-    
+
                                 <div class="z-0">
                                     <div class="flex justify-between">
                                         <div class="w-fit">
@@ -508,7 +527,7 @@
                                                 <path d="M24.6537 40.6079L24.6537 24.4403C24.6537 22.6119 23.1715 21.1297 21.3431 21.1297L13.2859 21.1297C12.8296 21.1297 12.4593 20.7594 12.4593 20.3031L12.4593 19.5475C12.4593 17.9893 12.7232 16.4419 13.2397 14.9718L17.573 2.6426C17.9084 1.68822 17.2002 0.688897 16.1889 0.688897L11.0005 0.688897C10.324 0.688896 9.69869 1.04837 9.3582 1.63252C9.35567 1.63758 9.35251 1.64202 9.35061 1.64708L3.07559 14.6382C1.2972 18.3197 0.373823 22.3549 0.373823 26.4433L0.373822 40.6079C0.373822 42.4362 1.85603 43.9185 3.68442 43.9185L21.3437 43.9185C23.1721 43.9185 24.6543 42.4362 24.6543 40.6079L24.6537 40.6079Z" fill="#9AD3D5" />
                                             </svg>
                                         </div>
-    
+
                                         <div class="w-fit bg-cool-white p-2 rounded-md flex items-center gap-x-3">
                                             <div class="w-fit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
@@ -521,9 +540,9 @@
                                             <p class="w-fit text-xs leading-none">Verified<br /> Google Review</p>
                                         </div>
                                     </div>
-    
+
                                     <p class="text-2xl font-medium text-primary py-6">Shreyash Chouhan</p>
-    
+
                                     <svg width="213" height="43" viewBox="0 0 213 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.5589 2.83887C20.9158 2.06243 22.0192 2.06243 22.3761 2.83887L27.0533 13.0137C27.199 13.3305 27.4991 13.5486 27.8455 13.5892L38.9677 14.8934C39.8164 14.9929 40.1573 16.0422 39.5292 16.6216L31.2977 24.2141C31.0414 24.4505 30.9267 24.8034 30.9951 25.1453L33.1918 36.1262C33.3594 36.9641 32.4668 37.6127 31.7216 37.1943L21.9571 31.7119C21.653 31.5412 21.282 31.5412 20.9779 31.7119L11.2133 37.1943C10.4682 37.6127 9.57555 36.9641 9.74318 36.1262L11.9398 25.1453C12.0082 24.8034 11.8936 24.4505 11.6373 24.2141L3.40576 16.6216C2.77762 16.0422 3.11857 14.9929 3.9673 14.8934L15.0895 13.5892C15.4358 13.5486 15.736 13.3305 15.8816 13.0137L20.5589 2.83887Z" fill="#9AD3D5" />
                                         <path d="M63.097 2.83887C63.4539 2.06243 64.5572 2.06243 64.9142 2.83887L69.5914 13.0137C69.737 13.3305 70.0372 13.5486 70.3835 13.5892L81.5057 14.8934C82.3545 14.9929 82.6954 16.0422 82.0673 16.6216L73.8358 24.2141C73.5795 24.4505 73.4648 24.8034 73.5332 25.1453L75.7299 36.1262C75.8975 36.9641 75.0049 37.6127 74.2597 37.1943L64.4951 31.7119C64.1911 31.5412 63.8201 31.5412 63.516 31.7119L53.7514 37.1943C53.0063 37.6127 52.1136 36.9641 52.2813 36.1262L54.4779 25.1453C54.5463 24.8034 54.4317 24.4505 54.1754 24.2141L45.9438 16.6216C45.3157 16.0422 45.6567 14.9929 46.5054 14.8934L57.6276 13.5892C57.9739 13.5486 58.2741 13.3305 58.4197 13.0137L63.097 2.83887Z" fill="#9AD3D5" />
@@ -531,7 +550,7 @@
                                         <path d="M148.179 2.83887C148.536 2.06243 149.639 2.06243 149.996 2.83887L154.673 13.0137C154.819 13.3305 155.119 13.5486 155.466 13.5892L166.588 14.8934C167.437 14.9929 167.777 16.0422 167.149 16.6216L158.918 24.2141C158.661 24.4505 158.547 24.8034 158.615 25.1453L160.812 36.1262C160.98 36.9641 160.087 37.6127 159.342 37.1943L149.577 31.7119C149.273 31.5412 148.902 31.5412 148.598 31.7119L138.833 37.1943C138.088 37.6127 137.196 36.9641 137.363 36.1262L139.56 25.1453C139.628 24.8034 139.514 24.4505 139.257 24.2141L131.026 16.6216C130.398 16.0422 130.739 14.9929 131.587 14.8934L142.71 13.5892C143.056 13.5486 143.356 13.3305 143.502 13.0137L148.179 2.83887Z" fill="#9AD3D5" />
                                         <path d="M190.72 2.83887C191.077 2.06243 192.18 2.06243 192.537 2.83887L197.214 13.0137C197.36 13.3305 197.66 13.5486 198.007 13.5892L209.129 14.8934C209.978 14.9929 210.318 16.0422 209.69 16.6216L201.459 24.2141C201.203 24.4505 201.088 24.8034 201.156 25.1453L203.353 36.1262C203.521 36.9641 202.628 37.6127 201.883 37.1943L192.118 31.7119C191.814 31.5412 191.443 31.5412 191.139 31.7119L181.374 37.1943C180.629 37.6127 179.737 36.9641 179.904 36.1262L182.101 25.1453C182.169 24.8034 182.055 24.4505 181.798 24.2141L173.567 16.6216C172.939 16.0422 173.28 14.9929 174.128 14.8934L185.251 13.5892C185.597 13.5486 185.897 13.3305 186.043 13.0137L190.72 2.83887Z" fill="#9AD3D5" />
                                     </svg>
-    
+
                                     <p class="text-grey pt-3">
                                         I had a great experience with Sertified Finance - their customer service was excellent and they offered great options. I especially want to thank Jemmah for going above and beyond to help me get my car loan approved quickly. Her exceptional assistance made all the difference.
                                     </p>
@@ -539,12 +558,12 @@
                             </div>
                         </div>
                     </div>
-    
-                    <div class="w-1/2 px-2">
+
+                    <div class="w-full md:w-1/2 px-2">
                         <div class="py-10 px-8 bg-white relative shadow-drop h-full">
                             <?= renderImg('frame-glass.png', 'lib', 'absolute z-10 top-0 left-0 h-full w-full mix-blend-multiply') ?>
                             <?= renderImg('frame.png', 'lib', 'absolute z-50 top-0 left-0 h-full w-full') ?>
-    
+
                             <div class="testimonialSlider">
                                 <div class="z-0">
                                     <div class="flex justify-between">
@@ -554,7 +573,7 @@
                                                 <path d="M24.6537 40.6079L24.6537 24.4403C24.6537 22.6119 23.1715 21.1297 21.3431 21.1297L13.2859 21.1297C12.8296 21.1297 12.4593 20.7594 12.4593 20.3031L12.4593 19.5475C12.4593 17.9893 12.7232 16.4419 13.2397 14.9718L17.573 2.6426C17.9084 1.68822 17.2002 0.688897 16.1889 0.688897L11.0005 0.688897C10.324 0.688896 9.69869 1.04837 9.3582 1.63252C9.35567 1.63758 9.35251 1.64202 9.35061 1.64708L3.07559 14.6382C1.2972 18.3197 0.373823 22.3549 0.373823 26.4433L0.373822 40.6079C0.373822 42.4362 1.85603 43.9185 3.68442 43.9185L21.3437 43.9185C23.1721 43.9185 24.6543 42.4362 24.6543 40.6079L24.6537 40.6079Z" fill="#9AD3D5" />
                                             </svg>
                                         </div>
-    
+
                                         <div class="w-fit bg-cool-white p-2 rounded-md flex items-center gap-x-3">
                                             <div class="w-fit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
@@ -567,9 +586,9 @@
                                             <p class="w-fit text-xs leading-none">Verified<br /> Google Review</p>
                                         </div>
                                     </div>
-    
+
                                     <p class="text-2xl font-medium text-primary py-6">Colby Abbot</p>
-    
+
                                     <svg width="213" height="43" viewBox="0 0 213 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.5589 2.83887C20.9158 2.06243 22.0192 2.06243 22.3761 2.83887L27.0533 13.0137C27.199 13.3305 27.4991 13.5486 27.8455 13.5892L38.9677 14.8934C39.8164 14.9929 40.1573 16.0422 39.5292 16.6216L31.2977 24.2141C31.0414 24.4505 30.9267 24.8034 30.9951 25.1453L33.1918 36.1262C33.3594 36.9641 32.4668 37.6127 31.7216 37.1943L21.9571 31.7119C21.653 31.5412 21.282 31.5412 20.9779 31.7119L11.2133 37.1943C10.4682 37.6127 9.57555 36.9641 9.74318 36.1262L11.9398 25.1453C12.0082 24.8034 11.8936 24.4505 11.6373 24.2141L3.40576 16.6216C2.77762 16.0422 3.11857 14.9929 3.9673 14.8934L15.0895 13.5892C15.4358 13.5486 15.736 13.3305 15.8816 13.0137L20.5589 2.83887Z" fill="#9AD3D5" />
                                         <path d="M63.097 2.83887C63.4539 2.06243 64.5572 2.06243 64.9142 2.83887L69.5914 13.0137C69.737 13.3305 70.0372 13.5486 70.3835 13.5892L81.5057 14.8934C82.3545 14.9929 82.6954 16.0422 82.0673 16.6216L73.8358 24.2141C73.5795 24.4505 73.4648 24.8034 73.5332 25.1453L75.7299 36.1262C75.8975 36.9641 75.0049 37.6127 74.2597 37.1943L64.4951 31.7119C64.1911 31.5412 63.8201 31.5412 63.516 31.7119L53.7514 37.1943C53.0063 37.6127 52.1136 36.9641 52.2813 36.1262L54.4779 25.1453C54.5463 24.8034 54.4317 24.4505 54.1754 24.2141L45.9438 16.6216C45.3157 16.0422 45.6567 14.9929 46.5054 14.8934L57.6276 13.5892C57.9739 13.5486 58.2741 13.3305 58.4197 13.0137L63.097 2.83887Z" fill="#9AD3D5" />
@@ -577,12 +596,12 @@
                                         <path d="M148.179 2.83887C148.536 2.06243 149.639 2.06243 149.996 2.83887L154.673 13.0137C154.819 13.3305 155.119 13.5486 155.466 13.5892L166.588 14.8934C167.437 14.9929 167.777 16.0422 167.149 16.6216L158.918 24.2141C158.661 24.4505 158.547 24.8034 158.615 25.1453L160.812 36.1262C160.98 36.9641 160.087 37.6127 159.342 37.1943L149.577 31.7119C149.273 31.5412 148.902 31.5412 148.598 31.7119L138.833 37.1943C138.088 37.6127 137.196 36.9641 137.363 36.1262L139.56 25.1453C139.628 24.8034 139.514 24.4505 139.257 24.2141L131.026 16.6216C130.398 16.0422 130.739 14.9929 131.587 14.8934L142.71 13.5892C143.056 13.5486 143.356 13.3305 143.502 13.0137L148.179 2.83887Z" fill="#9AD3D5" />
                                         <path d="M190.72 2.83887C191.077 2.06243 192.18 2.06243 192.537 2.83887L197.214 13.0137C197.36 13.3305 197.66 13.5486 198.007 13.5892L209.129 14.8934C209.978 14.9929 210.318 16.0422 209.69 16.6216L201.459 24.2141C201.203 24.4505 201.088 24.8034 201.156 25.1453L203.353 36.1262C203.521 36.9641 202.628 37.6127 201.883 37.1943L192.118 31.7119C191.814 31.5412 191.443 31.5412 191.139 31.7119L181.374 37.1943C180.629 37.6127 179.737 36.9641 179.904 36.1262L182.101 25.1453C182.169 24.8034 182.055 24.4505 181.798 24.2141L173.567 16.6216C172.939 16.0422 173.28 14.9929 174.128 14.8934L185.251 13.5892C185.597 13.5486 185.897 13.3305 186.043 13.0137L190.72 2.83887Z" fill="#9AD3D5" />
                                     </svg>
-    
+
                                     <p class="text-grey pt-3">
                                         Harry gave me extremely good service. Communication and friendliness was on point. Will definitely go through them again.
                                     </p>
                                 </div>
-    
+
                                 <div class="z-0">
                                     <div class="flex justify-between">
                                         <div class="w-fit">
@@ -591,7 +610,7 @@
                                                 <path d="M24.6537 40.6079L24.6537 24.4403C24.6537 22.6119 23.1715 21.1297 21.3431 21.1297L13.2859 21.1297C12.8296 21.1297 12.4593 20.7594 12.4593 20.3031L12.4593 19.5475C12.4593 17.9893 12.7232 16.4419 13.2397 14.9718L17.573 2.6426C17.9084 1.68822 17.2002 0.688897 16.1889 0.688897L11.0005 0.688897C10.324 0.688896 9.69869 1.04837 9.3582 1.63252C9.35567 1.63758 9.35251 1.64202 9.35061 1.64708L3.07559 14.6382C1.2972 18.3197 0.373823 22.3549 0.373823 26.4433L0.373822 40.6079C0.373822 42.4362 1.85603 43.9185 3.68442 43.9185L21.3437 43.9185C23.1721 43.9185 24.6543 42.4362 24.6543 40.6079L24.6537 40.6079Z" fill="#9AD3D5" />
                                             </svg>
                                         </div>
-    
+
                                         <div class="w-fit bg-cool-white p-2 rounded-md flex items-center gap-x-3">
                                             <div class="w-fit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
@@ -604,9 +623,9 @@
                                             <p class="w-fit text-xs leading-none">Verified<br /> Google Review</p>
                                         </div>
                                     </div>
-    
+
                                     <p class="text-2xl font-medium text-primary py-6">Shreyash Chouhan</p>
-    
+
                                     <svg width="213" height="43" viewBox="0 0 213 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.5589 2.83887C20.9158 2.06243 22.0192 2.06243 22.3761 2.83887L27.0533 13.0137C27.199 13.3305 27.4991 13.5486 27.8455 13.5892L38.9677 14.8934C39.8164 14.9929 40.1573 16.0422 39.5292 16.6216L31.2977 24.2141C31.0414 24.4505 30.9267 24.8034 30.9951 25.1453L33.1918 36.1262C33.3594 36.9641 32.4668 37.6127 31.7216 37.1943L21.9571 31.7119C21.653 31.5412 21.282 31.5412 20.9779 31.7119L11.2133 37.1943C10.4682 37.6127 9.57555 36.9641 9.74318 36.1262L11.9398 25.1453C12.0082 24.8034 11.8936 24.4505 11.6373 24.2141L3.40576 16.6216C2.77762 16.0422 3.11857 14.9929 3.9673 14.8934L15.0895 13.5892C15.4358 13.5486 15.736 13.3305 15.8816 13.0137L20.5589 2.83887Z" fill="#9AD3D5" />
                                         <path d="M63.097 2.83887C63.4539 2.06243 64.5572 2.06243 64.9142 2.83887L69.5914 13.0137C69.737 13.3305 70.0372 13.5486 70.3835 13.5892L81.5057 14.8934C82.3545 14.9929 82.6954 16.0422 82.0673 16.6216L73.8358 24.2141C73.5795 24.4505 73.4648 24.8034 73.5332 25.1453L75.7299 36.1262C75.8975 36.9641 75.0049 37.6127 74.2597 37.1943L64.4951 31.7119C64.1911 31.5412 63.8201 31.5412 63.516 31.7119L53.7514 37.1943C53.0063 37.6127 52.1136 36.9641 52.2813 36.1262L54.4779 25.1453C54.5463 24.8034 54.4317 24.4505 54.1754 24.2141L45.9438 16.6216C45.3157 16.0422 45.6567 14.9929 46.5054 14.8934L57.6276 13.5892C57.9739 13.5486 58.2741 13.3305 58.4197 13.0137L63.097 2.83887Z" fill="#9AD3D5" />
@@ -614,12 +633,12 @@
                                         <path d="M148.179 2.83887C148.536 2.06243 149.639 2.06243 149.996 2.83887L154.673 13.0137C154.819 13.3305 155.119 13.5486 155.466 13.5892L166.588 14.8934C167.437 14.9929 167.777 16.0422 167.149 16.6216L158.918 24.2141C158.661 24.4505 158.547 24.8034 158.615 25.1453L160.812 36.1262C160.98 36.9641 160.087 37.6127 159.342 37.1943L149.577 31.7119C149.273 31.5412 148.902 31.5412 148.598 31.7119L138.833 37.1943C138.088 37.6127 137.196 36.9641 137.363 36.1262L139.56 25.1453C139.628 24.8034 139.514 24.4505 139.257 24.2141L131.026 16.6216C130.398 16.0422 130.739 14.9929 131.587 14.8934L142.71 13.5892C143.056 13.5486 143.356 13.3305 143.502 13.0137L148.179 2.83887Z" fill="#9AD3D5" />
                                         <path d="M190.72 2.83887C191.077 2.06243 192.18 2.06243 192.537 2.83887L197.214 13.0137C197.36 13.3305 197.66 13.5486 198.007 13.5892L209.129 14.8934C209.978 14.9929 210.318 16.0422 209.69 16.6216L201.459 24.2141C201.203 24.4505 201.088 24.8034 201.156 25.1453L203.353 36.1262C203.521 36.9641 202.628 37.6127 201.883 37.1943L192.118 31.7119C191.814 31.5412 191.443 31.5412 191.139 31.7119L181.374 37.1943C180.629 37.6127 179.737 36.9641 179.904 36.1262L182.101 25.1453C182.169 24.8034 182.055 24.4505 181.798 24.2141L173.567 16.6216C172.939 16.0422 173.28 14.9929 174.128 14.8934L185.251 13.5892C185.597 13.5486 185.897 13.3305 186.043 13.0137L190.72 2.83887Z" fill="#9AD3D5" />
                                     </svg>
-    
+
                                     <p class="text-grey pt-3">
                                         I had a great experience with Sertified Finance - their customer service was excellent and they offered great options. I especially want to thank Jemmah for going above and beyond to help me get my car loan approved quickly. Her exceptional assistance made all the difference.
                                     </p>
                                 </div>
-    
+
                                 <div class="z-0">
                                     <div class="flex justify-between">
                                         <div class="w-fit">
@@ -628,7 +647,7 @@
                                                 <path d="M24.6537 40.6079L24.6537 24.4403C24.6537 22.6119 23.1715 21.1297 21.3431 21.1297L13.2859 21.1297C12.8296 21.1297 12.4593 20.7594 12.4593 20.3031L12.4593 19.5475C12.4593 17.9893 12.7232 16.4419 13.2397 14.9718L17.573 2.6426C17.9084 1.68822 17.2002 0.688897 16.1889 0.688897L11.0005 0.688897C10.324 0.688896 9.69869 1.04837 9.3582 1.63252C9.35567 1.63758 9.35251 1.64202 9.35061 1.64708L3.07559 14.6382C1.2972 18.3197 0.373823 22.3549 0.373823 26.4433L0.373822 40.6079C0.373822 42.4362 1.85603 43.9185 3.68442 43.9185L21.3437 43.9185C23.1721 43.9185 24.6543 42.4362 24.6543 40.6079L24.6537 40.6079Z" fill="#9AD3D5" />
                                             </svg>
                                         </div>
-    
+
                                         <div class="w-fit bg-cool-white p-2 rounded-md flex items-center gap-x-3">
                                             <div class="w-fit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
@@ -641,9 +660,9 @@
                                             <p class="w-fit text-xs leading-none">Verified<br /> Google Review</p>
                                         </div>
                                     </div>
-    
+
                                     <p class="text-2xl font-medium text-primary py-6">Shreyash Chouhan</p>
-    
+
                                     <svg width="213" height="43" viewBox="0 0 213 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.5589 2.83887C20.9158 2.06243 22.0192 2.06243 22.3761 2.83887L27.0533 13.0137C27.199 13.3305 27.4991 13.5486 27.8455 13.5892L38.9677 14.8934C39.8164 14.9929 40.1573 16.0422 39.5292 16.6216L31.2977 24.2141C31.0414 24.4505 30.9267 24.8034 30.9951 25.1453L33.1918 36.1262C33.3594 36.9641 32.4668 37.6127 31.7216 37.1943L21.9571 31.7119C21.653 31.5412 21.282 31.5412 20.9779 31.7119L11.2133 37.1943C10.4682 37.6127 9.57555 36.9641 9.74318 36.1262L11.9398 25.1453C12.0082 24.8034 11.8936 24.4505 11.6373 24.2141L3.40576 16.6216C2.77762 16.0422 3.11857 14.9929 3.9673 14.8934L15.0895 13.5892C15.4358 13.5486 15.736 13.3305 15.8816 13.0137L20.5589 2.83887Z" fill="#9AD3D5" />
                                         <path d="M63.097 2.83887C63.4539 2.06243 64.5572 2.06243 64.9142 2.83887L69.5914 13.0137C69.737 13.3305 70.0372 13.5486 70.3835 13.5892L81.5057 14.8934C82.3545 14.9929 82.6954 16.0422 82.0673 16.6216L73.8358 24.2141C73.5795 24.4505 73.4648 24.8034 73.5332 25.1453L75.7299 36.1262C75.8975 36.9641 75.0049 37.6127 74.2597 37.1943L64.4951 31.7119C64.1911 31.5412 63.8201 31.5412 63.516 31.7119L53.7514 37.1943C53.0063 37.6127 52.1136 36.9641 52.2813 36.1262L54.4779 25.1453C54.5463 24.8034 54.4317 24.4505 54.1754 24.2141L45.9438 16.6216C45.3157 16.0422 45.6567 14.9929 46.5054 14.8934L57.6276 13.5892C57.9739 13.5486 58.2741 13.3305 58.4197 13.0137L63.097 2.83887Z" fill="#9AD3D5" />
@@ -651,12 +670,12 @@
                                         <path d="M148.179 2.83887C148.536 2.06243 149.639 2.06243 149.996 2.83887L154.673 13.0137C154.819 13.3305 155.119 13.5486 155.466 13.5892L166.588 14.8934C167.437 14.9929 167.777 16.0422 167.149 16.6216L158.918 24.2141C158.661 24.4505 158.547 24.8034 158.615 25.1453L160.812 36.1262C160.98 36.9641 160.087 37.6127 159.342 37.1943L149.577 31.7119C149.273 31.5412 148.902 31.5412 148.598 31.7119L138.833 37.1943C138.088 37.6127 137.196 36.9641 137.363 36.1262L139.56 25.1453C139.628 24.8034 139.514 24.4505 139.257 24.2141L131.026 16.6216C130.398 16.0422 130.739 14.9929 131.587 14.8934L142.71 13.5892C143.056 13.5486 143.356 13.3305 143.502 13.0137L148.179 2.83887Z" fill="#9AD3D5" />
                                         <path d="M190.72 2.83887C191.077 2.06243 192.18 2.06243 192.537 2.83887L197.214 13.0137C197.36 13.3305 197.66 13.5486 198.007 13.5892L209.129 14.8934C209.978 14.9929 210.318 16.0422 209.69 16.6216L201.459 24.2141C201.203 24.4505 201.088 24.8034 201.156 25.1453L203.353 36.1262C203.521 36.9641 202.628 37.6127 201.883 37.1943L192.118 31.7119C191.814 31.5412 191.443 31.5412 191.139 31.7119L181.374 37.1943C180.629 37.6127 179.737 36.9641 179.904 36.1262L182.101 25.1453C182.169 24.8034 182.055 24.4505 181.798 24.2141L173.567 16.6216C172.939 16.0422 173.28 14.9929 174.128 14.8934L185.251 13.5892C185.597 13.5486 185.897 13.3305 186.043 13.0137L190.72 2.83887Z" fill="#9AD3D5" />
                                     </svg>
-    
+
                                     <p class="text-grey pt-3">
                                         I had a great experience with Sertified Finance - their customer service was excellent and they offered great options. I especially want to thank Jemmah for going above and beyond to help me get my car loan approved quickly. Her exceptional assistance made all the difference.
                                     </p>
                                 </div>
-    
+
                                 <div class="z-0">
                                     <div class="flex justify-between">
                                         <div class="w-fit">
@@ -665,7 +684,7 @@
                                                 <path d="M24.6537 40.6079L24.6537 24.4403C24.6537 22.6119 23.1715 21.1297 21.3431 21.1297L13.2859 21.1297C12.8296 21.1297 12.4593 20.7594 12.4593 20.3031L12.4593 19.5475C12.4593 17.9893 12.7232 16.4419 13.2397 14.9718L17.573 2.6426C17.9084 1.68822 17.2002 0.688897 16.1889 0.688897L11.0005 0.688897C10.324 0.688896 9.69869 1.04837 9.3582 1.63252C9.35567 1.63758 9.35251 1.64202 9.35061 1.64708L3.07559 14.6382C1.2972 18.3197 0.373823 22.3549 0.373823 26.4433L0.373822 40.6079C0.373822 42.4362 1.85603 43.9185 3.68442 43.9185L21.3437 43.9185C23.1721 43.9185 24.6543 42.4362 24.6543 40.6079L24.6537 40.6079Z" fill="#9AD3D5" />
                                             </svg>
                                         </div>
-    
+
                                         <div class="w-fit bg-cool-white p-2 rounded-md flex items-center gap-x-3">
                                             <div class="w-fit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
@@ -678,9 +697,9 @@
                                             <p class="w-fit text-xs leading-none">Verified<br /> Google Review</p>
                                         </div>
                                     </div>
-    
+
                                     <p class="text-2xl font-medium text-primary py-6">Shreyash Chouhan</p>
-    
+
                                     <svg width="213" height="43" viewBox="0 0 213 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.5589 2.83887C20.9158 2.06243 22.0192 2.06243 22.3761 2.83887L27.0533 13.0137C27.199 13.3305 27.4991 13.5486 27.8455 13.5892L38.9677 14.8934C39.8164 14.9929 40.1573 16.0422 39.5292 16.6216L31.2977 24.2141C31.0414 24.4505 30.9267 24.8034 30.9951 25.1453L33.1918 36.1262C33.3594 36.9641 32.4668 37.6127 31.7216 37.1943L21.9571 31.7119C21.653 31.5412 21.282 31.5412 20.9779 31.7119L11.2133 37.1943C10.4682 37.6127 9.57555 36.9641 9.74318 36.1262L11.9398 25.1453C12.0082 24.8034 11.8936 24.4505 11.6373 24.2141L3.40576 16.6216C2.77762 16.0422 3.11857 14.9929 3.9673 14.8934L15.0895 13.5892C15.4358 13.5486 15.736 13.3305 15.8816 13.0137L20.5589 2.83887Z" fill="#9AD3D5" />
                                         <path d="M63.097 2.83887C63.4539 2.06243 64.5572 2.06243 64.9142 2.83887L69.5914 13.0137C69.737 13.3305 70.0372 13.5486 70.3835 13.5892L81.5057 14.8934C82.3545 14.9929 82.6954 16.0422 82.0673 16.6216L73.8358 24.2141C73.5795 24.4505 73.4648 24.8034 73.5332 25.1453L75.7299 36.1262C75.8975 36.9641 75.0049 37.6127 74.2597 37.1943L64.4951 31.7119C64.1911 31.5412 63.8201 31.5412 63.516 31.7119L53.7514 37.1943C53.0063 37.6127 52.1136 36.9641 52.2813 36.1262L54.4779 25.1453C54.5463 24.8034 54.4317 24.4505 54.1754 24.2141L45.9438 16.6216C45.3157 16.0422 45.6567 14.9929 46.5054 14.8934L57.6276 13.5892C57.9739 13.5486 58.2741 13.3305 58.4197 13.0137L63.097 2.83887Z" fill="#9AD3D5" />
@@ -688,7 +707,7 @@
                                         <path d="M148.179 2.83887C148.536 2.06243 149.639 2.06243 149.996 2.83887L154.673 13.0137C154.819 13.3305 155.119 13.5486 155.466 13.5892L166.588 14.8934C167.437 14.9929 167.777 16.0422 167.149 16.6216L158.918 24.2141C158.661 24.4505 158.547 24.8034 158.615 25.1453L160.812 36.1262C160.98 36.9641 160.087 37.6127 159.342 37.1943L149.577 31.7119C149.273 31.5412 148.902 31.5412 148.598 31.7119L138.833 37.1943C138.088 37.6127 137.196 36.9641 137.363 36.1262L139.56 25.1453C139.628 24.8034 139.514 24.4505 139.257 24.2141L131.026 16.6216C130.398 16.0422 130.739 14.9929 131.587 14.8934L142.71 13.5892C143.056 13.5486 143.356 13.3305 143.502 13.0137L148.179 2.83887Z" fill="#9AD3D5" />
                                         <path d="M190.72 2.83887C191.077 2.06243 192.18 2.06243 192.537 2.83887L197.214 13.0137C197.36 13.3305 197.66 13.5486 198.007 13.5892L209.129 14.8934C209.978 14.9929 210.318 16.0422 209.69 16.6216L201.459 24.2141C201.203 24.4505 201.088 24.8034 201.156 25.1453L203.353 36.1262C203.521 36.9641 202.628 37.6127 201.883 37.1943L192.118 31.7119C191.814 31.5412 191.443 31.5412 191.139 31.7119L181.374 37.1943C180.629 37.6127 179.737 36.9641 179.904 36.1262L182.101 25.1453C182.169 24.8034 182.055 24.4505 181.798 24.2141L173.567 16.6216C172.939 16.0422 173.28 14.9929 174.128 14.8934L185.251 13.5892C185.597 13.5486 185.897 13.3305 186.043 13.0137L190.72 2.83887Z" fill="#9AD3D5" />
                                     </svg>
-    
+
                                     <p class="text-grey pt-3">
                                         I had a great experience with Sertified Finance - their customer service was excellent and they offered great options. I especially want to thank Jemmah for going above and beyond to help me get my car loan approved quickly. Her exceptional assistance made all the difference.
                                     </p>
@@ -697,21 +716,22 @@
                         </div>
                     </div>
                 </div>
-    
-                <div class="flex flex-wrap gap-x-4">
+
+                <div class="hidden md:flex flex-wrap gap-x-4">
                     <p class="w-fit font-visby text-[#1C305F]">Like our service?</p>
-                    <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
+                    <a href="#form" class="btn w-fit bg-indigo text-white px-7">Leave us a review</a>
                 </div>
             </div>
         </div>
 
-        <div class="w-5/12"><?= renderImg('testimonials.jpg', 'lib', 'h-full w-full object-cover') ?></div>
+        <div class="hidden md:block md:w-5/12"><?= renderImg('testimonials.jpg', 'lib', 'h-full w-full object-cover') ?></div>
     </div>
+    <?= renderImg('testimonials.jpg', 'lib', 'absolute md:hidden bottom-0 w-full object-cover z-40') ?>
 </section>
 
-<section class="services bg-primary py-28">
+<section class="services bg-primary py-16 md:py-28">
     <div class="container">
-        <p class="text-55 text-secondary font-medium">Explore our extensive services</p>
+        <p class="text-4xl md:text-55 text-secondary font-medium leading-none">Explore our extensive services</p>
     </div>
 
 
@@ -971,9 +991,9 @@
 
     <div class="container">
         <div class="flex flex-wrap justify-between">
-            <div class="w-2/3">
-                <p class="text-55 text-secondary font-medium">The Sertified Process</p>
-                <p class="text-cool-white font-visby ">Get your loan and achieve your dreams in 4 easy steps!</p>
+            <div class="w-full md:w-2/3">
+                <p class="text-4xl md:text-55 text-secondary font-medium leading-none">The Sertified Process</p>
+                <p class="text-cool-white font-visby pt-7 md:pt-0">Get your loan and achieve your dreams in 4 easy steps!</p>
             </div>
             <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
         </div>
@@ -983,7 +1003,7 @@
         </div>
 
         <div class="flex flex-wrap pt-8 -mx-7 text-cool-white">
-            <div class="w-1/4 px-7">
+            <div class="w-full md:w-1/4 px-7">
                 <p class="text-2xl">Enquire today</p>
                 <p class="font-visby pt-3 font-thin">
                     Apply for a quote online
@@ -991,21 +1011,21 @@
                 </p>
             </div>
 
-            <div class="w-1/4 px-7">
+            <div class="w-full md:w-1/4 px-7">
                 <p class="text-2xl">Best match</p>
                 <p class="font-visby pt-3 font-thin">
                     Get matched with the best loan from our pool of 78+ lenders to find the perfect loan.
                 </p>
             </div>
 
-            <div class="w-1/4 px-7">
+            <div class="w-full md:w-1/4 px-7">
                 <p class="text-2xl">Smooth sailing</p>
                 <p class="font-visby pt-3 font-thin">
                     Our team is working behind the scenes to smooth out any bumps and handle it all from start to finish.
                 </p>
             </div>
 
-            <div class="w-1/4 px-7">
+            <div class="w-full md:w-1/4 px-7">
                 <p class="text-2xl">Loan approved</p>
                 <p class="font-visby pt-3 font-thin">
                     Time to celebrate! Money is in your account, and you can dive right into achieving your goals.
@@ -1313,35 +1333,35 @@
 </div>
 
 <section class="enquiryForm flex flex-wrap">
-    <div class="w-1/2"><?= renderImg('enquire.jpg', 'lib', 'h-full w-full object-cover') ?></div>
+    <div class="w-full md:w-1/2"><?= renderImg('enquire.jpg', 'lib', 'h-full w-full object-cover') ?></div>
 
-    <div class="w-1/2 bg-primary">
-        <div class="p-16 w-9/12">
-            <p class="text-55 text-secondary font-medium leading-none">Enquire online today</p>
+    <div class="w-full md:w-1/2 bg-primary">
+        <div class="py-11 px-5 md:p-16 w-full md:w-9/12">
+            <p class="text-4xl md:text-55 text-secondary font-medium leading-none">Enquire online today</p>
             <p class="text-cool-white font-visby leading-none pt-7">Take control of your financial future and achieve your dreams<br /> with Sertified Finance! Don't wait, enquire today!</p>
 
             <form action="" method="post" id="enquiryForm" class="form mt-12">
                 <div id="enquiryFormSlider">
                     <div class="tab px-1">
-                        <p class="text-secondary font-medium text-2xl pb-5">Let's begin with your name</p>
+                        <p class="text-secondary font-medium text-xl md:text-2xl pb-5">Let's begin with your name</p>
                         <input type="text" class="form-control required" name="name" placeholder="e.g. Jane Doe" />
                         <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
                     </div>
 
                     <div class="tab px-1">
-                        <p class="text-secondary font-medium text-2xl pb-5">Your phone number</p>
+                        <p class="text-secondary font-medium text-xl md:text-2xl pb-5">Your phone number</p>
                         <input type="tel" class="form-control required" name="phone" placeholder="e.g. 0412 345 678" />
                         <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
                     </div>
 
                     <div class="tab px-1">
-                        <p class="text-secondary font-medium text-2xl pb-5">Your email</p>
+                        <p class="text-secondary font-medium text-xl md:text-2xl pb-5">Your email</p>
                         <input type="email" class="form-control required" name="email" placeholder="e.g. janedoe@email.com" />
                         <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
                     </div>
 
                     <div class="tab px-1">
-                        <p class="text-secondary font-medium text-2xl pb-5">Your street address</p>
+                        <p class="text-secondary font-medium text-xl md:text-2xl pb-5">Your street address</p>
 
                         <div class="flex flex-wrap -mx-1.5 gap-y-1">
                             <div class="w-full px-1.5">
@@ -1362,7 +1382,7 @@
                     </div>
 
                     <div class="tab px-1">
-                        <p class="text-secondary font-medium text-2xl pb-5">What service are you after?</p>
+                        <p class="text-secondary font-medium text-xl md:text-2xl pb-5">What service are you after?</p>
 
                         <select name="service" class="form-control required">
                             <option selected disabled>Select loan type</option>
@@ -1376,10 +1396,10 @@
                     </div>
                 </div>
 
-                <div class="flex flex-wrap items-center justify-between mt-11">
-                    <button onclick="nextPrev(-1)" id="prevBtn" class="w-fit text-xl font-visby text-cool-white">Back</button>
+                <div class="flex flex-wrap items-center justify-center md:justify-between mt-11 gap-y-10">
+                    <button onclick="nextPrev(-1)" id="prevBtn" class="w-1/2 md:w-fit text-xl font-visby text-cool-white order-1">Back</button>
 
-                    <div class="w-5/12">
+                    <div class="w-8/12 md:w-5/12 order-3 md:order-2">
                         <div class="enquiryProgressSteps">
                             <div>
                                 <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1474,7 +1494,7 @@
                         </div>
                     </div>
 
-                    <button type="button" id="nextBtn" onclick="nextPrev(1)" class="text-secondary text-xl font-visby btn gap-x-4">
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)" class="text-secondary text-xl font-visby btn gap-x-4 w-1/2 md:w-fit order-2 md:order-3">
                         <span class="label">Next step</span>
                         <div class="h-[50px] w-[50px] flex justify-center items-center bg-indigo rounded-full">
                             <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
