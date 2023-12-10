@@ -221,16 +221,16 @@
 
                     <div id="banner-form-tab-2" class="form-tab">
                         <div class="flex flex-wrap justify-between items-center">
-                            <div class="w-2/3 text-35 text-primary font-medium leading-none">
+                            <div class="w-full md:w-2/3 text-35 text-primary font-medium leading-none">
                                 How much do you want to borrow?
                             </div>
 
                             <p class="w-fit text-xl text-primary">Explore finance options</p>
                         </div>
 
-                        <div class="flex justify-between pt-12">
-                            <div class="w-7/12">
-                                <p class="borrowAmount text-3xl md:text-85 text-secondary pb-16">$<span id="borrowAmount">0</span></p>
+                        <div class="flex flex-wrap justify-between pt-12 gap-y-10">
+                            <div class="w-full md:w-7/12">
+                                <p class="borrowAmount text-4xl md:text-85 text-secondary pb-10 md:pb-16">$<span id="borrowAmount">0</span></p>
 
                                 <div class="range">
                                     <div class="sliderThumb amount"></div>
@@ -238,7 +238,7 @@
                                     <input type="range" id="borrowSlider" name="borrowAmount" min="0" max="2000000" value="0" step="5000">
                                 </div>
                             </div>
-                            <div class="w-fit">
+                            <div class="w-full md:w-fit">
                                 <button type="button" class="btn w-fit bg-indigo text-white px-7 show-form-tab-3">Continue</button>
                             </div>
                         </div>
@@ -246,16 +246,16 @@
 
                     <div id="banner-form-tab-3" class="form-tab">
                         <div class="flex flex-wrap justify-between items-center">
-                            <div class="w-2/3 text-35 text-primary font-medium leading-none">
+                            <div class="w-full md:w-2/3 text-35 text-primary font-medium leading-none">
                                 What’s your preferred loan term?
                             </div>
 
                             <p class="w-fit text-xl text-primary">Explore finance options</p>
                         </div>
 
-                        <div class="flex justify-between pt-12">
-                            <div class="w-7/12">
-                                <p class="borrowAmount text-3xl md:text-85 text-secondary pb-16"><span id="borrowTerm">0</span> Year</p>
+                        <div class="flex flex-wrap justify-between pt-12 gap-y-10">
+                            <div class="w-full md:w-7/12">
+                                <p class="borrowAmount text-4xl md:text-85 text-secondary pb-10 md:pb-16"><span id="borrowTerm">0</span> Year</p>
 
                                 <div class="range">
                                     <div class="sliderThumb year"></div>
@@ -263,7 +263,7 @@
                                     <input type="range" id="termSlider" name="termyear" min="0" max="7" value="0" step="1">
                                 </div>
                             </div>
-                            <div class="w-fit">
+                            <div class="w-full md:w-fit">
                                 <button type="button" class="btn w-fit bg-indigo text-white px-7 show-form-tab-4">Continue</button>
                             </div>
                         </div>
@@ -279,16 +279,16 @@
                         </div>
 
                         <div class="flex flex-wrap -mx-2 gap-y-4 pt-12">
-                            <div class="w-1/2 px-2">
+                            <div class="w-full md:w-1/2 px-2">
                                 <input type="text" class="form-control" placeholder="Your name*" name="fullname" required />
                             </div>
-                            <div class="w-1/2 px-2">
+                            <div class="w-full md:w-1/2 px-2">
                                 <input type="tel" class="form-control" placeholder="Phone number*" name="phone" required />
                             </div>
-                            <div class="w-2/3 px-2">
+                            <div class="w-full md:w-2/3 px-2">
                                 <input type="email" class="form-control" placeholder="Email address*" name="email" required />
                             </div>
-                            <div class="w-1/3 px-2">
+                            <div class="w-full md:w-1/3 px-2">
                                 <button type="submit" class="flex justify-center items-center h-[57px] rounded-md text-lg w-full bg-indigo text-white px-7 show-form-tab-4">Submit</button>
                             </div>
                         </div>
