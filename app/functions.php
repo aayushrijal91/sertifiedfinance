@@ -3,7 +3,7 @@ include __DIR__ . '/env.php';
 
 $site = "Sertified Finance";
 $phone_number = "1300 041 041";
-$admin_email = 'arijal@aiims.com.au';
+$admin_email = 'hello@sertified.finance'; //'arijal@aiims.com.au';
 $bcc_email = "";
 $no_reply_email = 'info@website.com.au';
 $recaptcha_client_secret = $client_secret;

@@ -52,18 +52,11 @@
                         <path d="M6.23047 5.34965H9.24451V6.8656C9.68774 6.01288 10.6629 5.16016 12.1699 5.16016C15.3612 5.16016 15.8931 7.43408 15.8931 10.2765V16.1508H12.7904V10.9397C12.7904 9.708 12.7904 8.09731 11.1948 8.09731C9.59909 8.09731 9.33314 9.42376 9.33314 10.845V16.1508H6.23047V5.34965Z" fill="#9AD3D5" />
                     </svg>
                 </a>
-
-                <a href="<?= $tiktok_link ?>" class="w-fit">
-                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.55848 5.80341V8.4618C5.22357 8.37321 4.87304 8.36094 4.53276 8.4259C4.19248 8.49086 3.87112 8.63139 3.59239 8.83712C3.31367 9.04285 3.08469 9.30854 2.92235 9.61458C2.76001 9.92062 2.66846 10.2592 2.65444 10.6053C2.65444 11.7946 3.38533 12.8263 4.89052 12.8263C6.54276 12.8263 7.12693 11.663 7.12693 10.5761V0.0390625H9.7574C10.2046 2.82196 11.5961 3.46772 13.459 3.76586V6.43267C13.459 6.43267 11.2474 6.27586 9.83143 5.20745V10.4744C9.8321 12.8579 8.41912 15.5183 4.91239 15.5183C1.65737 15.5183 -0.00732422 12.759 -0.00732422 10.4495C0.013236 9.7647 0.178792 9.09201 0.478419 8.47585C0.778046 7.85969 1.20493 7.31408 1.73091 6.87501C2.25688 6.43595 2.86998 6.11342 3.52976 5.9287C4.18954 5.74398 4.88099 5.70128 5.55848 5.80341Z" fill="#9AD3D5" />
-                    </svg>
-                </a>
             </div>
 
-            <p class="hidden xl:block w-fit text-secondary">Achieve your dreams with Sertified!</p>
 
-            <div class="w-fit hidden md:flex flex-wrap gap-x-4">
-                <a href="tel:<?= $phone_number ?>" class="btn w-fit bg-white text-indigo px-7"><?= $phone_number ?></a>
+            <div class="w-fit hidden md:flex flex-wrap items-center gap-x-4 md:gap-x-7">
+                <p class="hidden xl:block w-fit text-secondary">Achieve your dreams with Sertified!</p>
                 <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
             </div>
         </div>
@@ -380,11 +373,12 @@
                 <div class="flex flex-col md:flex-row md:flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-3 pt-8 md:pt-12">
                     <a href="#form" class="btn w-9/12 md:w-fit bg-indigo text-white px-9">Enquire now</a>
 
-                    <a href="tel:<?= $phone_number ?>" class="btn w-9/12 md:w-fit border-2 border-indigo text-indigo gap-x-3 px-6">
+                    <a href="tel:<?= $phone_number ?>" class="text-indigo btn gap-x-1">
                         <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.1422 8.7868L9.75787 7.72757C9.51012 7.61677 9.23266 7.59112 8.9688 7.65463C8.70495 7.71813 8.46954 7.86721 8.29934 8.0786L7.61219 8.93775C6.48565 8.21486 5.52667 7.25947 4.79956 6.13564L5.6587 5.4485C5.8699 5.27835 6.01885 5.0431 6.08235 4.77943C6.14584 4.51576 6.12031 4.23849 6.00974 3.99084L4.9584 1.60032C4.84026 1.33414 4.6314 1.11857 4.36909 0.992073C4.10677 0.865575 3.80804 0.836371 3.52619 0.909671L1.50776 1.43622C1.21494 1.51198 0.96035 1.69311 0.792756 1.9449C0.625162 2.1967 0.556341 2.50147 0.599473 2.80085C0.975466 5.41144 2.18688 7.83004 4.05237 9.69458C5.91786 11.5591 8.33708 12.7693 10.9479 13.144C11.2471 13.1863 11.5514 13.1169 11.8027 12.949C12.0539 12.7812 12.2345 12.5266 12.3099 12.2339L12.8364 10.2155C12.9096 9.93371 12.88 9.63504 12.7527 9.37317C12.6255 9.11129 12.409 8.90338 12.1422 8.7868Z" fill="#1C305F" />
                         </svg>
-                        <?= $phone_number ?>
+
+                        <span class="border-b-2 border-indigo leading-none text-sm md:text-lg"><?= $phone_number ?></span>
                     </a>
                 </div>
             </div>
@@ -1056,7 +1050,7 @@
                         <div class="grow">
                             <p class="text-primary text-35 font-medium">Broker</p>
                             <p class="text-grey font-visby pt-12">
-                                Turn-Key access to specialised Asset Finance CRM System with live deal tracking, instant smart quoting, API lender submissions, document E-sign and built in compliance. Authorised Credit Representative (ACR) options available.
+                                Turn-Key access to custom CRM System with live deal tracking, instant quotes, and compliance.
                             </p>
                         </div>
 
@@ -1164,7 +1158,7 @@
                     <div class="relative z-50 px-5 pt-7 pb-72 md:p-10">
                         <p class="md:w-8/12 text-4xl md:text-55 text-secondary leading-none font-medium">Manage everything all in <span class="text-cool-white">one place</span></p>
                         <p class="md:w-7/12 py-10 text-secondary font-visby text-lg md:text-xl">
-                            When you partner with Sertified Finance you get access to Sertified’s market leading asset finance CRM that has live deal tracking, instant smart quoting, document & contract E-sign, plus more!
+                        When you choose Sertified, get your own custom CRM system with live deal tracking, instant quotes, API submission, E-sign and compliance.
                         </p>
                         <a href="tel:<?= $phone_number ?>" class="btn w-fit bg-indigo text-white px-7">Call us today</a>
                     </div>
@@ -1345,12 +1339,6 @@
                         <path d="M8.13867 8.05928H12.5707V10.2884C13.2225 9.03453 14.6563 7.78064 16.8723 7.78064C21.565 7.78064 22.3472 11.1243 22.3472 15.304V23.9419H17.7848V16.2792C17.7848 14.4681 17.7848 12.0996 15.4385 12.0996C13.0921 12.0996 12.701 14.0501 12.701 16.1399V23.9419H8.13867V8.05928Z" fill="#FAFFFF" />
                     </svg>
                 </a>
-
-                <a href="<?= $tiktok_link ?>" target="_blank" class="w-fit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none">
-                        <path d="M8.20284 9.19693V13.106C7.71037 12.9757 7.19494 12.9577 6.69456 13.0532C6.19419 13.1487 5.72164 13.3554 5.31179 13.6579C4.90194 13.9604 4.56524 14.3511 4.32652 14.8011C4.08781 15.2511 3.95318 15.749 3.93256 16.258C3.93256 18.0067 5.00731 19.5238 7.22063 19.5238C9.65018 19.5238 10.5092 17.8132 10.5092 16.2149V0.720703H14.3772C15.0348 4.81285 17.0809 5.7624 19.8202 6.20081V10.1222C19.8202 10.1222 16.5682 9.89165 14.486 8.32061V16.0655C14.487 19.5703 12.4093 23.4823 7.25279 23.4823C2.46642 23.4823 0.0185547 19.4248 0.0185547 16.0289C0.0487877 15.0219 0.292231 14.0327 0.73282 13.1267C1.17341 12.2206 1.80113 11.4183 2.57455 10.7727C3.34797 10.1271 4.24952 9.65279 5.21969 9.38117C6.18987 9.10955 7.20662 9.04675 8.20284 9.19693Z" fill="#FAFFFF" />
-                    </svg>
-                </a>
             </div>
         </div>
     </section>
@@ -1362,7 +1350,7 @@
     <div class="w-full xl:w-1/2 bg-primary">
         <div class="py-11 px-5 md:p-16 w-full 2xl:w-9/12">
             <p class="text-4xl md:text-55 text-secondary font-medium leading-none">Enquire online today</p>
-            <p class="text-cool-white font-visby leading-none pt-7">Take control of your financial future and achieve your dreams<br /> with Sertified Finance! Don't wait, enquire today!</p>
+            <p class="text-cool-white font-visby leading-none lg:leading-relaxed pt-7">Ready to take control of your future? Don’t wait, start the journey to sertified financial success now!</p>
 
             <form action="./src/form.php" method="POST" id="enquiryForm" class="form mt-12">
                 <input type="hidden" name="token" id="recaptchaResponse3" class="recaptchaResponse" />
