@@ -103,3 +103,35 @@ section.services {
         }
     }
 }
+
+section.partner {
+    form.form {
+        .form-control {
+            font-family: 'Visby', sans-serif;
+            color: #faffff;
+            width: 100%;
+            border: none;
+        }
+
+        input.form-control {
+            height: 57px;
+            background: rgba(154, 211,213, 0.2);
+            padding: 4px 21px;
+            border-radius: 100px;
+        }
+
+        select.form-control {
+            height: 57px;
+            border: 2px solid #9AD3D5;
+            background: transparent;
+            padding: 4px 21px;
+            border-radius: 100px;
+        }
+
+        textarea.form-control {
+            border-radius: 20px;
+            background: rgba(154, 211,213, 0.2);
+            padding: 20px;
+        }
+    }
+}

@@ -78,7 +78,7 @@
                 <p class="text-primary text-2xl font-extralight">Crafting Dreams &amp; Fuelling Potentail</p>
                 <h1 class="capitalize text-55 leading-none font-medium text-primary pt-3">reach new heights<br /> of Sertified success</h1>
 
-                <div class="bg-light rounded-[20px] mt-16 px-3.5 py-4 flex flex-wrap items-center justify-between">
+                <div class="bg-light rounded-20 mt-16 px-3.5 py-4 flex flex-wrap items-center justify-between">
                     <div class="w-fit"><?= renderImg('crown.png', 'lib') ?></div>
 
                     <div class="w-fit px-5">
@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <div class="w-10/12 bg-white rounded-[20px] py-7 px-9 mt-8">
+            <div class="w-10/12 bg-white rounded-20 py-7 px-9 mt-8">
                 <div class="flex flex-wrap justify-between items-center">
                     <div class="w-fit flex flex-wrap gap-x-7">
                         <a href="#" class="text-indigo text-lg btn gap-x-1">
@@ -256,11 +256,11 @@
             <p class="italic">Casual, Part Time, Full Time, Self Employed Accepted. Consumer & Commercial Loans. Previous Bad Credit Accepted (Case by Case). Visa Holder’s Accepted. Dealership, Original Manufacturer, Private Sales Accepted. New & Used Assets.</p>
         </div>
 
-        <div class="bg-secondary/20 rounded-[20px] mt-7 p-12 flex flex-wrap relative">
+        <div class="bg-secondary/20 rounded-20 mt-7 p-12 flex flex-wrap relative">
             <div class="w-7/12">
                 <div class="flex flex-wrap -mx-2">
                     <div class="w-1/3 px-2">
-                        <div class="rounded-[20px] bg-secondary h-full p-6">
+                        <div class="rounded-20 bg-secondary h-full p-6">
                             <p class="bg-primary text-white rounded-full px-2 py-1 inline font-light">Step 01</p>
                             <p class="text-white text-35 leading-none py-5">Fill</p>
                             <p class="text-primary font-visby leading-5">Choose your asset type and enter some the finance details such as the loan amount and your preferred loan term.</p>
@@ -268,7 +268,7 @@
                     </div>
 
                     <div class="w-1/3 px-2">
-                        <div class="rounded-[20px] bg-secondary h-full p-6">
+                        <div class="rounded-20 bg-secondary h-full p-6">
                             <p class="bg-primary text-white rounded-full px-2 py-1 inline font-light">Step 02</p>
                             <p class="text-white text-35 leading-none py-5">Match</p>
                             <p class="text-primary font-visby leading-5">Get matched the most suitable loans for your situation from 78+ leading Australian lenders.</p>
@@ -276,7 +276,7 @@
                     </div>
 
                     <div class="w-1/3 px-2">
-                        <div class="rounded-[20px] bg-secondary h-full p-6">
+                        <div class="rounded-20 bg-secondary h-full p-6">
                             <p class="bg-primary text-white rounded-full px-2 py-1 inline font-light">Step 03</p>
                             <p class="text-white text-35 leading-none py-5">Choose</p>
                             <p class="text-primary font-visby leading-5">Choose the loan that works best for you and enjoy a fast & successful approval.</p>
@@ -932,6 +932,176 @@
                 <p class="font-visby pt-3 font-thin">
                     Time to celebrate! Money is in your account, and you can dive right into achieving your goals.
                 </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partner py-24">
+    <div class="container">
+        <p class="text-primary text-55 font-medium leading-none">Partner with Sertified</p>
+        <p class="text-35 text-grey font-visby pt-5">What you'll get access to...</p>
+
+        <div class="flex flex-wrap -mx-2 mt-20">
+            <div class="w-1/4 px-2">
+                <div class="h-full rounded-20 bg-secondary/20 flex flex-col overflow-hidden">
+                    <?= renderImg('broker.png', 'lib') ?>
+
+                    <div class="px-5 py-6 flex flex-col grow">
+                        <div class="grow">
+                            <p class="text-primary text-35 font-medium">Broker</p>
+                            <p class="text-grey font-visby pt-12">
+                                Turn-Key access to specialised Asset Finance CRM System with live deal tracking, instant smart quoting, API lender submissions, document E-sign and built in compliance. Authorised Credit Representative (ACR) options available.
+                            </p>
+                        </div>
+
+                        <p class="border-y border-secondary text-primary font-visby font-medium py-2 my-5">
+                            Australian based support team available 7 days a week providing...
+                        </p>
+
+                        <div class="tags flex flex-wrap gap-2">
+                            <?php $tags = ["Insurance options", "Asset Finance Specialist", "Access to 78+ lenders", "Marketing & Tech Support"]; ?>
+
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="w-fit h-[42px] bg-primary text-cool-white rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/4 px-2">
+                <div class="h-full rounded-20 bg-secondary/20 flex flex-col overflow-hidden">
+                    <?= renderImg('dealership.png', 'lib') ?>
+
+                    <div class="px-5 py-6 flex flex-col grow">
+                        <div class="grow">
+                            <p class="text-primary text-35 font-medium">Dealership</p>
+                            <p class="text-grey font-visby pt-12">
+                                Comprehensive dealership finance solution ready to collaborate with your business and drive growth in your dealership finance. 
+                            </p>
+                        </div>
+
+                        <p class="border-y border-secondary text-primary font-visby font-medium py-2 my-5">
+                            Australian based support team available 7 days a week providing...
+                        </p>
+
+                        <div class="tags flex flex-wrap gap-2">
+                            <?php $tags = ["Prime & Subprime Lending", "Access to 78+ lenders", "New & Used Assets", "Insurance options"]; ?>
+
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="w-fit h-[42px] bg-secondary text-primary font-medium rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/4 px-2">
+                <div class="h-full rounded-20 bg-secondary/20 flex flex-col overflow-hidden">
+                    <?= renderImg('oem.png', 'lib') ?>
+
+                    <div class="px-5 py-6 flex flex-col grow">
+                        <div class="grow">
+                            <p class="text-primary text-35 font-medium">OEM</p>
+                            <p class="text-lg font-medium text-primary">Original Equipment Manufacturer</p>
+                            <p class="text-grey font-visby pt-5">
+                                Specialist finance products for equipment produced by OEM. Increase sales by offering competitive finance options.
+                            </p>
+                        </div>
+
+                        <p class="border-y border-secondary text-primary font-visby font-medium py-2 my-5">
+                            Australian based support team available 7 days a week providing...
+                        </p>
+
+                        <div class="tags flex flex-wrap gap-2">
+                            <?php $tags = ["High Converting Sales", "Comprehensive Finance Solution", "Marketing Collaboration", "Trusted Finance Partner"]; ?>
+
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="w-fit h-[42px] bg-primary text-cool-white rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/4 px-2">
+                <div class="h-full rounded-20 bg-secondary/20 flex flex-col overflow-hidden">
+                    <?= renderImg('professional.png', 'lib') ?>
+
+                    <div class="px-5 py-6 flex flex-col grow">
+                        <div class="grow">
+                            <p class="text-primary text-35 font-medium">Professional</p>
+                            <p class="text-grey font-visby pt-12">
+                                Trusted finance partner working with you and your team to achieve great outcomes for mutual clients.
+                            </p>
+                        </div>
+
+                        <p class="border-y border-secondary text-primary font-visby font-medium py-2 my-5">
+                            Australian based support team available 7 days a week providing...
+                        </p>
+
+                        <div class="tags flex flex-wrap gap-2">
+                            <?php $tags = ["Client Focused Solutions", "Comprehensive Finance Solution", "Full Training & Support", "Trusted Finance Partner"]; ?>
+
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="w-fit h-[42px] bg-secondary text-primary font-medium rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap -mx-2 mt-4">
+            <div class="w-1/2 px-2">
+                <div class="h-full rounded-20 bg-primary px-10 p-10 relative">
+                    <div class="relative z-50">
+                        <p class="xl:w-8/12 text-55 text-secondary leading-none font-medium">Your comprehensive <span class="text-cool-white">finance partner</span></p>
+                        <p class="xl:w-7/12 py-10 text-secondary font-visby text-xl">
+                            When you partner with Sertified Finance you get access to Sertified’s market leading asset finance CRM that has live deal tracking, instant smart quoting, document & contract E-sign, plus more!
+                        </p>
+                        <a href="tel:<?= $phone_number ?>" class="btn w-fit bg-indigo text-white px-7">Call us today</a>
+                    </div>
+
+                    <?= renderImg('laptop.png', 'lib', 'absolute right-0 bottom-0 z-40') ?>
+                </div>
+            </div>
+
+            <div class="w-1/2 px-2">
+                <div class="bg-dark-blue rounded-20 h-full p-9">
+                    <p class="text-35 text-secondary leading-none">Want to become a <span class="text-cool-white">referral partner</span>?</p>
+                    <p class="font-visby text-cool-white text-xl py-6">Send us an enquiry and we'll get back to you asap!</p>
+
+                    <form action="" method="POST" class="form flex flex-wrap -mx-1.5 gap-y-4">
+                        <div class="w-1/2 px-1.5">
+                            <input type="text" placeholder="Your Name*" name="fullname" class="form-control" required>
+                        </div>
+
+                        <div class="w-1/2 px-1.5">
+                            <select class="form-control" name="business_type" required>
+                                <option selected disabled>Select business type*</option>
+                            </select>
+                        </div>
+
+                        <div class="w-1/2 px-1.5">
+                            <input type="tel" placeholder="Contact no.*" name="phone" class="form-control" required>
+                        </div>
+
+                        <div class="w-1/2 px-1.5">
+                            <input type="email" placeholder="Email address*" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="w-full px-1.5">
+                            <textarea name="message" rows="7" placeholder="Type your message here..." class="form-control"></textarea>
+                        </div>
+
+                        <div class="w-full px-1 5">
+                        <button type="submit" class="btn w-fit bg-indigo text-white px-7 w-full">Submit enquiry</button>
+
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

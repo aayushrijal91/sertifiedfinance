@@ -16,6 +16,7 @@ module.exports = {
         dark: '#2F2F2F',
         light: "#C0DEE0",
         'cool-white': "#faffff",
+        'dark-blue': "#1C305F"
       },
       fontFamily: {
         'niveau-grotesk': ["niveau-grotesk", "sans-serif"],
@@ -27,6 +28,9 @@ module.exports = {
       },
       boxShadow: {
         'drop': '3px 5px 10px 0px rgba(0, 0, 0, 0.41)'
+      },
+      borderRadius: {
+        20: '20px',
       }
     },
   },
