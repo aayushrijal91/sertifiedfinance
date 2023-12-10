@@ -114,6 +114,53 @@ $('#sertifiedServicesSlider').slick({
     focusOnSelect: true,
 });
 
+$("#sertifiedProcesses").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '#sertifiedProcessSlider',
+    responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                arrows: false,
+                autoplay: true,
+                infinite: false,
+                initialSlide: 0,
+                centerPadding: "50px"
+            }
+        }
+    ]
+})
+
+if ($(window).width() < 540) {
+    $("#sertifiedProcessSlider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: false,
+        autoplay: true,
+        infinite: false,
+        initialSlide: 0,
+        centerPadding: "50px",
+        asNavFor: "#sertifiedProcesses"
+    });
+
+    $("#sertifiedPartnerSlider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: false,
+        autoplay: true,
+        infinite: false,
+        initialSlide: 0,
+        centerPadding: "20px"
+    });
+}
+
 let enquiryFormSlider = $('#enquiryFormSlider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

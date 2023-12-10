@@ -245,7 +245,8 @@ section.partner {
 }
 
 section.australia-wide {
-    background: imgUrl('australia-wide.jpg', 'lib');
+    background: imgUrl('australia-wide.jpg', 'lib') center;
+    background-size: cover;
 }
 
 section.enquiryForm {
