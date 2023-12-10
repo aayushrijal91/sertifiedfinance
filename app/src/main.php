@@ -130,7 +130,10 @@
                     </a>
                 </div>
 
-                <form action="" id="banner_form" method="POST" class="mainform pt-4">
+                <form action="./src/form.php" id="banner_form" method="POST" class="mainform pt-4">
+                    <input type="hidden" name="token" id="recaptchaResponse1" class="recaptchaResponse" />
+                    <input type="hidden" name="formType" value="banner_form" />
+
                     <div id="banner-form-tab-1" class="form-tab">
                         <div class="flex flex-wrap justify-between items-center">
                             <div class="w-full md:w-2/3 text-xl md:text-35 text-primary font-medium leading-none order-2 md:order-1">
@@ -1176,7 +1179,9 @@
                     <p class="text-2xl md:text-35 text-secondary leading-none">Want to become a <span class="text-cool-white">referral partner</span>?</p>
                     <p class="font-visby text-cool-white text-lg md:text-xl py-6">Send us an enquiry and we'll get back to you asap!</p>
 
-                    <form action="" method="POST" class="form flex flex-wrap -mx-1.5 gap-y-4">
+                    <form action="./src/form.php" method="POST" class="form flex flex-wrap -mx-1.5 gap-y-4">
+                        <input type="hidden" name="token" id="recaptchaResponse2" class="recaptchaResponse" />
+                        <input type="hidden" name="formType" value="referral_partner_form" />
                         <div class="w-full md:w-1/2 px-1.5">
                             <input type="text" placeholder="Your Name*" name="fullname" class="form-control" required>
                         </div>
@@ -1184,6 +1189,15 @@
                         <div class="w-full md:w-1/2 px-1.5">
                             <select class="form-control" name="business_type" required>
                                 <option selected disabled>Select business type*</option>
+                                <option>Car Finance</option>
+                                <option>Marine Finance</option>
+                                <option>Caravan Finance</option>
+                                <option>Motorbike Finance</option>
+                                <option>Personal Finance</option>
+                                <option>Business Loan</option>
+                                <option>Equipment Finance</option>
+                                <option>Truck & Trailer Finance</option>
+                                <option>Other Finance</option>
                             </select>
                         </div>
 
@@ -1196,7 +1210,7 @@
                         </div>
 
                         <div class="w-full px-1.5">
-                            <textarea name="message" rows="7" placeholder="Type your message here..." class="form-control"></textarea>
+                            <textarea name="enquiry" rows="7" placeholder="Type your message here..." class="form-control"></textarea>
                         </div>
 
                         <div class="w-full px-1 5">
@@ -1350,7 +1364,10 @@
             <p class="text-4xl md:text-55 text-secondary font-medium leading-none">Enquire online today</p>
             <p class="text-cool-white font-visby leading-none pt-7">Take control of your financial future and achieve your dreams<br /> with Sertified Finance! Don't wait, enquire today!</p>
 
-            <form action="" method="post" id="enquiryForm" class="form mt-12">
+            <form action="./src/form.php" method="POST" id="enquiryForm" class="form mt-12">
+                <input type="hidden" name="token" id="recaptchaResponse3" class="recaptchaResponse" />
+                <input type="hidden" name="formType" value="enquire_online_form" />
+
                 <div id="enquiryFormSlider">
                     <div class="tab px-1">
                         <p class="text-secondary font-medium text-xl md:text-2xl pb-5">Let's begin with your name</p>
@@ -1396,6 +1413,15 @@
 
                         <select name="service" class="form-control required">
                             <option selected disabled>Select loan type</option>
+                            <option>Car Finance</option>
+                            <option>Marine Finance</option>
+                            <option>Caravan Finance</option>
+                            <option>Motorbike Finance</option>
+                            <option>Personal Finance</option>
+                            <option>Business Loan</option>
+                            <option>Equipment Finance</option>
+                            <option>Truck & Trailer Finance</option>
+                            <option>Other Finance</option>
                         </select>
                     </div>
 
