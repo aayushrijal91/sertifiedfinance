@@ -111,11 +111,13 @@ section.partner {
             color: #faffff;
             width: 100%;
             border: none;
+            box-shadow: none;
+            outline: none;
         }
 
         input.form-control {
             height: 57px;
-            background: rgba(154, 211,213, 0.2);
+            background: rgba(154, 211, 213, 0.2);
             padding: 4px 21px;
             border-radius: 100px;
         }
@@ -130,7 +132,7 @@ section.partner {
 
         textarea.form-control {
             border-radius: 20px;
-            background: rgba(154, 211,213, 0.2);
+            background: rgba(154, 211, 213, 0.2);
             padding: 20px;
         }
     }
@@ -138,4 +140,30 @@ section.partner {
 
 section.australia-wide {
     background: imgUrl('australia-wide.jpg', 'lib');
+}
+
+section.enquiryForm {
+    form.form {
+        .form-control {
+            font-family: 'Visby', sans-serif;
+            color: #faffff;
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+        input.form-control, select.form-control {
+            height: 57px;
+            background: rgba(154, 211, 213, 0.2);
+            padding: 4px 21px;
+            border-radius: 100px;
+        }
+
+        textarea.form-control {
+            border-radius: 20px;
+            background: rgba(154, 211, 213, 0.2);
+            padding: 20px;
+        }
+    }
 }

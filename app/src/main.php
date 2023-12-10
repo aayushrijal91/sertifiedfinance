@@ -633,259 +633,256 @@
         <p class="text-55 text-secondary font-medium">Explore our extensive services</p>
     </div>
 
-    <div class="flex justify-end my-20">
-        <div class="w-11/12">
-            <div id="sertifiedServicesSlider">
-                <div>
-                    <?= renderImg('slider-1.jpg', 'lib', 'h-full w-full object-cover') ?>
 
-                    <div class="inner">
-                        <div class="grow">
-                            <div class="w-full flex flex-wrap justify-between items-center ">
-                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                                <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
-                            </div>
-                        </div>
+    <div id="sertifiedServicesSlider" class="my-20">
+        <div>
+            <?= renderImg('slider-1.jpg', 'lib', 'h-full w-full object-cover') ?>
 
-                        <p class="text-cool-white text-55 font-medium leading-none">Car Finance<span class="text-secondary">.</span></p>
-
-                        <p class="description font-visby text-cool-white font-light pt-7">
-                            Looking to buy a new car? Get behind the wheel with a car loan through Sertified Finance.
-                        </p>
-
-                        <?php $tags = ["Secured Car Loan", "Private sale car loan", "Luxury car loan", "Novated Leasing", "Electric vehicle Discounted Loan", "Classic Car loan", "Visas Accepted", "Consumer Car loan", "Commercial Car loan", "Low Doc Loan", "Bad Credit car loan", "New & Preowned vehicles"]; ?>
-                        <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
-                            <?php foreach ($tags as $tag) : ?>
-                                <p class="tag">
-                                    <?= $tag ?>
-                                </p>
-                            <?php endforeach; ?>
-                        </div>
+            <div class="inner">
+                <div class="grow">
+                    <div class="w-full flex flex-wrap justify-between items-center ">
+                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                        <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
-                <div>
-                    <?= renderImg('slider-2.jpg', 'lib', 'h-full w-full object-cover') ?>
+                <p class="text-cool-white text-55 font-medium leading-none">Car Finance<span class="text-secondary">.</span></p>
 
-                    <div class="inner">
-                        <div class="grow">
-                            <div class="w-full flex flex-wrap justify-between items-center ">
-                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                                <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
-                            </div>
-                        </div>
+                <p class="description font-visby text-cool-white font-light pt-7">
+                    Looking to buy a new car? Get behind the wheel with a car loan through Sertified Finance.
+                </p>
 
-                        <p class="text-cool-white text-55 font-medium leading-none">Marine<br /> Finance<span class="text-secondary">.</span></p>
-
-                        <p class="description font-visby text-cool-white font-light pt-7">
-                            Ready for your own vessel? Get on the water with a marine loan through Sertified Finance.
+                <?php $tags = ["Secured Car Loan", "Private sale car loan", "Luxury car loan", "Novated Leasing", "Electric vehicle Discounted Loan", "Classic Car loan", "Visas Accepted", "Consumer Car loan", "Commercial Car loan", "Low Doc Loan", "Bad Credit car loan", "New & Preowned vehicles"]; ?>
+                <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
+                    <?php foreach ($tags as $tag) : ?>
+                        <p class="tag">
+                            <?= $tag ?>
                         </p>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
 
-                        <?php $tags = ["Secured Boat Loan", "Commercial Vessel finance", "Ski Boats", "Jet Skis", "Fishing Boats", "Lifestyle cruisers", "House Boats", "Pre-owned Vessel"]; ?>
-                        <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
-                            <?php foreach ($tags as $tag) : ?>
-                                <p class="tag">
-                                    <?= $tag ?>
-                                </p>
-                            <?php endforeach; ?>
-                        </div>
+        <div>
+            <?= renderImg('slider-2.jpg', 'lib', 'h-full w-full object-cover') ?>
+
+            <div class="inner">
+                <div class="grow">
+                    <div class="w-full flex flex-wrap justify-between items-center ">
+                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                        <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
-                <div>
-                    <?= renderImg('slider-3.jpg', 'lib', 'h-full w-full object-cover') ?>
+                <p class="text-cool-white text-55 font-medium leading-none">Marine<br /> Finance<span class="text-secondary">.</span></p>
 
-                    <div class="inner">
-                        <div class="grow">
-                            <div class="w-full flex flex-wrap justify-between items-center ">
-                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                                <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
-                            </div>
-                        </div>
+                <p class="description font-visby text-cool-white font-light pt-7">
+                    Ready for your own vessel? Get on the water with a marine loan through Sertified Finance.
+                </p>
 
-                        <p class="text-cool-white text-55 font-medium leading-none">Caravan<br /> Finance<span class="text-secondary">.</span></p>
-
-                        <p class="description font-visby text-cool-white font-light pt-7">
-                            Ready for your own caravan? Hit the road with a caravan loan through Sertified Finance.
+                <?php $tags = ["Secured Boat Loan", "Commercial Vessel finance", "Ski Boats", "Jet Skis", "Fishing Boats", "Lifestyle cruisers", "House Boats", "Pre-owned Vessel"]; ?>
+                <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
+                    <?php foreach ($tags as $tag) : ?>
+                        <p class="tag">
+                            <?= $tag ?>
                         </p>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
 
-                        <?php $tags = ["Secured Caravan Loan", "Private Sale & Dealership Finance", "Roof Top Tent finance", "Camper Trailer Finance", "Offroad Camper & Caravan Finance", "Commercial Caravan Finance", "Motorhome Finance"]; ?>
-                        <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
-                            <?php foreach ($tags as $tag) : ?>
-                                <p class="tag">
-                                    <?= $tag ?>
-                                </p>
-                            <?php endforeach; ?>
-                        </div>
+        <div>
+            <?= renderImg('slider-3.jpg', 'lib', 'h-full w-full object-cover') ?>
+
+            <div class="inner">
+                <div class="grow">
+                    <div class="w-full flex flex-wrap justify-between items-center ">
+                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                        <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
-                <div>
-                    <?= renderImg('slider-4.jpg', 'lib', 'h-full w-full object-cover') ?>
+                <p class="text-cool-white text-55 font-medium leading-none">Caravan<br /> Finance<span class="text-secondary">.</span></p>
 
-                    <div class="inner">
-                        <div class="grow">
-                            <div class="w-full flex flex-wrap justify-between items-center ">
-                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                                <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
-                            </div>
-                        </div>
+                <p class="description font-visby text-cool-white font-light pt-7">
+                    Ready for your own caravan? Hit the road with a caravan loan through Sertified Finance.
+                </p>
 
-                        <p class="text-cool-white text-55 font-medium leading-none">Motorbike<br /> Finance<span class="text-secondary">.</span></p>
-
-                        <p class="description font-visby text-cool-white font-light pt-7">
-                            Dreaming of your own motorbike? Start cruising with a motorbike loan through Sertified Finance.
+                <?php $tags = ["Secured Caravan Loan", "Private Sale & Dealership Finance", "Roof Top Tent finance", "Camper Trailer Finance", "Offroad Camper & Caravan Finance", "Commercial Caravan Finance", "Motorhome Finance"]; ?>
+                <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
+                    <?php foreach ($tags as $tag) : ?>
+                        <p class="tag">
+                            <?= $tag ?>
                         </p>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
 
-                        <?php $tags = ["Secured Motorbike Loan", "Dirt Bike Loan", "Trail Bike Loan", "Private Sale Motorbike Loan", "Road Bike Loan"]; ?>
-                        <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
-                            <?php foreach ($tags as $tag) : ?>
-                                <p class="tag">
-                                    <?= $tag ?>
-                                </p>
-                            <?php endforeach; ?>
-                        </div>
+        <div>
+            <?= renderImg('slider-4.jpg', 'lib', 'h-full w-full object-cover') ?>
+
+            <div class="inner">
+                <div class="grow">
+                    <div class="w-full flex flex-wrap justify-between items-center ">
+                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                        <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
-                <div>
-                    <?= renderImg('slider-5.jpg', 'lib', 'h-full w-full object-cover') ?>
+                <p class="text-cool-white text-55 font-medium leading-none">Motorbike<br /> Finance<span class="text-secondary">.</span></p>
 
-                    <div class="inner">
-                        <div class="grow">
-                            <div class="w-full flex flex-wrap justify-between items-center ">
-                                <p class="w-fit text-2xl text-primary font-light">Sertified services</p>
-                                <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
-                            </div>
-                        </div>
+                <p class="description font-visby text-cool-white font-light pt-7">
+                    Dreaming of your own motorbike? Start cruising with a motorbike loan through Sertified Finance.
+                </p>
 
-                        <p class="text-primary text-55 font-medium leading-none">Personal<br /> Finance<span class="text-secondary">.</span></p>
-
-                        <p class="description font-visby text-primary font-light pt-7">
-                            Looking to fulfill your personal goals or handle unexpected expenses? Take control with a personal loan through Sertified Finance.
+                <?php $tags = ["Secured Motorbike Loan", "Dirt Bike Loan", "Trail Bike Loan", "Private Sale Motorbike Loan", "Road Bike Loan"]; ?>
+                <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
+                    <?php foreach ($tags as $tag) : ?>
+                        <p class="tag">
+                            <?= $tag ?>
                         </p>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
 
-                        <?php $tags = ["Debt consolidation", "Solar", "Home improvements", "Medical", "Legal costs", "Wedding/Event", "Major Purchase", "Travel"]; ?>
-                        <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
-                            <?php foreach ($tags as $tag) : ?>
-                                <p class="tag">
-                                    <?= $tag ?>
-                                </p>
-                            <?php endforeach; ?>
-                        </div>
+        <div>
+            <?= renderImg('slider-5.jpg', 'lib', 'h-full w-full object-cover') ?>
+
+            <div class="inner">
+                <div class="grow">
+                    <div class="w-full flex flex-wrap justify-between items-center ">
+                        <p class="w-fit text-2xl text-primary font-light">Sertified services</p>
+                        <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
-                <div>
-                    <?= renderImg('slider-6.jpg', 'lib', 'h-full w-full object-cover') ?>
+                <p class="text-primary text-55 font-medium leading-none">Personal<br /> Finance<span class="text-secondary">.</span></p>
 
-                    <div class="inner">
-                        <div class="grow">
-                            <div class="w-full flex flex-wrap justify-between items-center ">
-                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                                <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
-                            </div>
-                        </div>
+                <p class="description font-visby text-primary font-light pt-7">
+                    Looking to fulfill your personal goals or handle unexpected expenses? Take control with a personal loan through Sertified Finance.
+                </p>
 
-                        <p class="text-cool-white text-55 font-medium leading-none">Business<br /> Loan<span class="text-secondary">.</span></p>
-
-                        <p class="description font-visby text-cool-white font-light pt-7">
-                            Ready to elevate your business? Fuel your potential with a business loan through Sertified Finance.
+                <?php $tags = ["Debt consolidation", "Solar", "Home improvements", "Medical", "Legal costs", "Wedding/Event", "Major Purchase", "Travel"]; ?>
+                <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
+                    <?php foreach ($tags as $tag) : ?>
+                        <p class="tag">
+                            <?= $tag ?>
                         </p>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
 
-                        <?php $tags = ["Fixed Business Loans", "Usecured cashflow funding", "Inventory/Stock Loan", "Trade Finance", "Debtor Finance", "Overdraft Facility"]; ?>
-                        <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
-                            <?php foreach ($tags as $tag) : ?>
-                                <p class="tag">
-                                    <?= $tag ?>
-                                </p>
-                            <?php endforeach; ?>
-                        </div>
+        <div>
+            <?= renderImg('slider-6.jpg', 'lib', 'h-full w-full object-cover') ?>
+
+            <div class="inner">
+                <div class="grow">
+                    <div class="w-full flex flex-wrap justify-between items-center ">
+                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                        <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
-                <div>
-                    <?= renderImg('slider-7.jpg', 'lib', 'h-full w-full object-cover') ?>
+                <p class="text-cool-white text-55 font-medium leading-none">Business<br /> Loan<span class="text-secondary">.</span></p>
 
-                    <div class="inner">
-                        <div class="grow">
-                            <div class="w-full flex flex-wrap justify-between items-center ">
-                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                                <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
-                            </div>
-                        </div>
+                <p class="description font-visby text-cool-white font-light pt-7">
+                    Ready to elevate your business? Fuel your potential with a business loan through Sertified Finance.
+                </p>
 
-                        <p class="text-cool-white text-55 font-medium leading-none">Equipment<br /> Finance<span class="text-secondary">.</span></p>
-
-                        <p class="description font-visby text-cool-white font-light pt-7">
-                            In need of new equipment? Drive efficiency with an equipment loan through Sertified Finance.
+                <?php $tags = ["Fixed Business Loans", "Usecured cashflow funding", "Inventory/Stock Loan", "Trade Finance", "Debtor Finance", "Overdraft Facility"]; ?>
+                <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
+                    <?php foreach ($tags as $tag) : ?>
+                        <p class="tag">
+                            <?= $tag ?>
                         </p>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
 
-                        <?php $tags = ["Chattel Mortgage", "Private Sale Purchase", "Debtor Finance", "New & Used Equipment", "Low Doc Options"]; ?>
-                        <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
-                            <?php foreach ($tags as $tag) : ?>
-                                <p class="tag">
-                                    <?= $tag ?>
-                                </p>
-                            <?php endforeach; ?>
-                        </div>
+        <div>
+            <?= renderImg('slider-7.jpg', 'lib', 'h-full w-full object-cover') ?>
+
+            <div class="inner">
+                <div class="grow">
+                    <div class="w-full flex flex-wrap justify-between items-center ">
+                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                        <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
-                <div>
-                    <?= renderImg('slider-8.jpg', 'lib', 'h-full w-full object-cover') ?>
+                <p class="text-cool-white text-55 font-medium leading-none">Equipment<br /> Finance<span class="text-secondary">.</span></p>
 
-                    <div class="inner">
-                        <div class="grow">
-                            <div class="w-full flex flex-wrap justify-between items-center ">
-                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                                <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
-                            </div>
-                        </div>
+                <p class="description font-visby text-cool-white font-light pt-7">
+                    In need of new equipment? Drive efficiency with an equipment loan through Sertified Finance.
+                </p>
 
-                        <p class="text-cool-white text-55 font-medium leading-none">Truck & Trailer<br /> Finance<span class="text-secondary">.</span></p>
-
-                        <p class="description font-visby text-cool-white font-light pt-7">
-                            Time for a new truck or trailer? Hit the road with a truck & trailer loan through Sertified Finance.
+                <?php $tags = ["Chattel Mortgage", "Private Sale Purchase", "Debtor Finance", "New & Used Equipment", "Low Doc Options"]; ?>
+                <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
+                    <?php foreach ($tags as $tag) : ?>
+                        <p class="tag">
+                            <?= $tag ?>
                         </p>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
 
-                        <?php $tags = ["Chattel Mortgage", "Prime Mover Finance", "New & Used Assets", "No GVM Restrictions", "Low Doc Options", "Owner Driver Finance Options", "Interstate Haulage", "Private Sales"]; ?>
-                        <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
-                            <?php foreach ($tags as $tag) : ?>
-                                <p class="tag">
-                                    <?= $tag ?>
-                                </p>
-                            <?php endforeach; ?>
-                        </div>
+        <div>
+            <?= renderImg('slider-8.jpg', 'lib', 'h-full w-full object-cover') ?>
+
+            <div class="inner">
+                <div class="grow">
+                    <div class="w-full flex flex-wrap justify-between items-center ">
+                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                        <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
-                <div>
-                    <?= renderImg('slider-9.jpg', 'lib', 'h-full w-full object-cover') ?>
+                <p class="text-cool-white text-55 font-medium leading-none">Truck & Trailer<br /> Finance<span class="text-secondary">.</span></p>
 
-                    <div class="inner">
-                        <div class="grow">
-                            <div class="w-full flex flex-wrap justify-between items-center ">
-                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                                <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
-                            </div>
-                        </div>
+                <p class="description font-visby text-cool-white font-light pt-7">
+                    Time for a new truck or trailer? Hit the road with a truck & trailer loan through Sertified Finance.
+                </p>
 
-                        <p class="text-cool-white text-55 font-medium leading-none">Other<br /> Finance<span class="text-secondary">.</span></p>
-
-                        <p class="description font-visby text-cool-white font-light pt-7">
-                            Thinking of something else? Set the foundations of a successful future with Sertified Finance.
+                <?php $tags = ["Chattel Mortgage", "Prime Mover Finance", "New & Used Assets", "No GVM Restrictions", "Low Doc Options", "Owner Driver Finance Options", "Interstate Haulage", "Private Sales"]; ?>
+                <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
+                    <?php foreach ($tags as $tag) : ?>
+                        <p class="tag">
+                            <?= $tag ?>
                         </p>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
 
-                        <?php $tags = ["Debt Refinancing", "Wholesale Trade", "Visa Finance", "Complex Lending", "Home Loans", "Commercial Property", "Investment Property"]; ?>
-                        <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
-                            <?php foreach ($tags as $tag) : ?>
-                                <p class="tag">
-                                    <?= $tag ?>
-                                </p>
-                            <?php endforeach; ?>
-                        </div>
+        <div>
+            <?= renderImg('slider-9.jpg', 'lib', 'h-full w-full object-cover') ?>
+
+            <div class="inner">
+                <div class="grow">
+                    <div class="w-full flex flex-wrap justify-between items-center ">
+                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                        <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
+                </div>
+
+                <p class="text-cool-white text-55 font-medium leading-none">Other<br /> Finance<span class="text-secondary">.</span></p>
+
+                <p class="description font-visby text-cool-white font-light pt-7">
+                    Thinking of something else? Set the foundations of a successful future with Sertified Finance.
+                </p>
+
+                <?php $tags = ["Debt Refinancing", "Wholesale Trade", "Visa Finance", "Complex Lending", "Home Loans", "Commercial Property", "Investment Property"]; ?>
+                <div class="tags flex-wrap gap-x-2 gap-y-3 mt-8">
+                    <?php foreach ($tags as $tag) : ?>
+                        <p class="tag">
+                            <?= $tag ?>
+                        </p>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
@@ -1234,8 +1231,178 @@
     </section>
 </div>
 
-<section class="flex flex-wrap">
-    <div class="w-1/2"><?= renderImg('enquire.jpg', 'lib') ?></div>
+<section class="enquiryForm flex flex-wrap">
+    <div class="w-1/2"><?= renderImg('enquire.jpg', 'lib', 'h-full w-full object-cover') ?></div>
 
-    <div class="w-1/2 bg-primary"></div>
+    <div class="w-1/2 bg-primary">
+        <div class="p-16 w-9/12">
+            <p class="text-55 text-secondary font-medium leading-none">Enquire online today</p>
+            <p class="text-cool-white font-visby leading-none pt-7">Take control of your financial future and achieve your dreams<br /> with Sertified Finance! Don't wait, enquire today!</p>
+
+            <form action="" method="post" id="enquiryForm" class="form mt-12">
+                <div id="enquiryFormSlider">
+                    <div class="tab px-1">
+                        <p class="text-secondary font-medium text-2xl pb-5">Let's begin with your name</p>
+                        <input type="text" class="form-control required" name="name" placeholder="e.g. Jane Doe" />
+                        <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
+                    </div>
+
+                    <div class="tab px-1">
+                        <p class="text-secondary font-medium text-2xl pb-5">Your phone number</p>
+                        <input type="tel" class="form-control required" name="phone" placeholder="e.g. 0412 345 678" />
+                        <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
+                    </div>
+
+                    <div class="tab px-1">
+                        <p class="text-secondary font-medium text-2xl pb-5">Your email</p>
+                        <input type="email" class="form-control required" name="email" placeholder="e.g. janedoe@email.com" />
+                        <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
+                    </div>
+
+                    <div class="tab px-1">
+                        <p class="text-secondary font-medium text-2xl pb-5">Your street address</p>
+
+                        <div class="flex flex-wrap -mx-1.5 gap-y-1">
+                            <div class="w-full px-1.5">
+                                <input type="text" class="form-control required" name="streetName" placeholder="e.g. 10 Street Name" />
+                                <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
+                            </div>
+
+                            <div class="w-2/3 px-1.5">
+                                <input type="text" class="form-control required" name="suburb" placeholder="Enter suburb" />
+                                <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
+                            </div>
+
+                            <div class="w-1/3 px-1.5">
+                                <input type="number" class="form-control required" name="postcode" placeholder="Enter postcode" />
+                                <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab px-1">
+                        <p class="text-secondary font-medium text-2xl pb-5">What service are you after?</p>
+
+                        <select name="service" class="form-control required">
+                            <option selected disabled>Select loan type</option>
+                        </select>
+                    </div>
+
+                    <div class="tab px-1">
+                        <p class="text-secondary font-medium text-2xl pb-5">What's your enquiry?</p>
+
+                        <textarea type="email" class="form-control" name="enquiry" rows="7" placeholder="Enter your message here..."></textarea>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-between mt-11">
+                    <button onclick="nextPrev(-1)" id="prevBtn" class="w-fit text-xl font-visby text-cool-white">Back</button>
+
+                    <div class="w-5/12">
+                        <div class="enquiryProgressSteps">
+                            <div>
+                                <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="3.17188" y1="7.97095" x2="218.662" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="8.61133" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="78.6289" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="43.6201" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="113.637" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="148.646" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="183.654" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="218.662" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="79.2021" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="114.21" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="149.22" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="184.228" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="79.2021" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="114.21" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="149.22" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="184.228" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="79.2021" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="114.21" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="149.22" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="184.228" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="79.2021" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="114.21" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="149.22" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="184.228" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="79.2021" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="114.21" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="149.22" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="184.228" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="79.2021" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="114.21" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="149.22" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="184.228" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)" class="text-secondary text-xl font-visby btn gap-x-4">
+                        <span class="label">Next step</span>
+                        <div class="h-[50px] w-[50px] flex justify-center items-center bg-indigo rounded-full">
+                            <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5293 20.8293L10.7381 11.6206L1.5293 2.41181" stroke="#FAFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>
