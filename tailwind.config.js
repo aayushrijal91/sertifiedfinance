@@ -25,6 +25,7 @@ module.exports = {
       fontSize: {
         35: '35px',
         55: '55px',
+        85: '85px',
       },
       boxShadow: {
         'drop': '3px 5px 10px 0px rgba(0, 0, 0, 0.41)'

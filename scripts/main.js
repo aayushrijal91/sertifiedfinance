@@ -24,6 +24,54 @@ $('#return-to-top').on('click', () => {
     }, 500);
 });
 
+let loanCap = 2000000;
+let termCap = 7;
+
+$('#borrowSlider').on('input', function () {
+    let value = $("#borrowSlider").val();
+    let formattedVal = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    $('#borrowAmount').html(formattedVal);
+
+    $(this).parents('.range').find('.sliderThumb.amount').css('left', (value * (97 / loanCap)) + "%");
+    $(this).parents('.range').find('.progressBar.amount').css('width', (value * (100 / loanCap)) + "%");
+});
+
+$('#termSlider').on('input', function () {
+    let value = $("#termSlider").val();
+    let formattedVal2 = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    $('#borrowTerm').html(formattedVal2);
+
+    $(this).parents('.range').find('.sliderThumb.year').css('left', (value * (95 / termCap)) + "%");
+    $(this).parents('.range').find('.progressBar.year').css('width', (value * (100 / termCap)) + "%");
+});
+
+$('input[type="radio"].loanType').on('change', function () {
+    if ($(this).is(':checked')) {
+        $('#banner-form-tab-1').hide();
+        $('#banner-form-tab-2').fadeIn();
+    }
+});
+
+$('.show-form-tab-1').on('click', function () {
+    $('.form-tab').hide();
+    $('#banner-form-tab-1').fadeIn();
+});
+
+$('.show-form-tab-2').on('click', function () {
+    $('.form-tab').hide();
+    $('#form-tab-2').fadeIn();
+});
+
+$('.show-form-tab-3').on('click', function () {
+    $('.form-tab').hide();
+    $('#banner-form-tab-3').fadeIn();
+});
+
+$('.show-form-tab-4').on('click', function () {
+    $('.form-tab').hide();
+    $('#banner-form-tab-4').fadeIn();
+});
+
 $('.lenderSlider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,

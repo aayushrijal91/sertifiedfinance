@@ -126,88 +126,164 @@
                 </div>
 
                 <form action="" id="banner_form" method="POST" class="mainform pt-4">
-                    <div class="flex flex-wrap justify-between items-center">
-                        <div class="w-2/3 text-35 text-primary font-medium">
-                            What type of loan are you looking for?
+                    <div id="banner-form-tab-1" class="form-tab">
+                        <div class="flex flex-wrap justify-between items-center">
+                            <div class="w-2/3 text-35 text-primary font-medium">
+                                What type of loan are you looking for?
+                            </div>
+
+                            <p class="w-fit text-xl text-primary">Explore finance options</p>
                         </div>
 
-                        <p class="w-fit text-xl text-primary">Explore finance options</p>
+                        <div class="flex flex-wrap justify-between gap-x-2 pt-12">
+                            <label for="loantype-car" class="loantype group">
+                                <div class="grow flex justify-center items-center">
+                                    <?= renderImg('option-car.png', 'lib', 'group-hover:scale-105 duration-100') ?>
+                                </div>
+                                <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Car</span>
+                                <input type="radio" class="loanType" id="loantype-car" name="loantype" value="Car Finance">
+                            </label>
+
+                            <label for="loantype-marine" class="loantype group">
+                                <div class="grow flex justify-center items-center">
+                                    <?= renderImg('option-marine.png', 'lib', 'group-hover:scale-105 duration-100') ?>
+                                </div>
+                                <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Marine</span>
+                                <input type="radio" class="loanType" id="loantype-marine" name="loantype" value="Marine Finance">
+                            </label>
+
+                            <label for="loantype-caravan" class="loantype group">
+                                <div class="grow flex justify-center items-center">
+                                    <?= renderImg('option-caravan.png', 'lib', 'group-hover:scale-105 duration-100') ?>
+                                </div>
+                                <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Caravan</span>
+                                <input type="radio" class="loanType" id="loantype-caravan" name="loantype" value="Caravan Finance">
+                            </label>
+
+                            <label for="loantype-motorbike" class="loantype group">
+                                <div class="grow flex justify-center items-center">
+                                    <?= renderImg('option-motorbike.png', 'lib', 'group-hover:scale-105 duration-100') ?>
+                                </div>
+                                <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Motorbike</span>
+                                <input type="radio" class="loanType" id="loantype-motorbike" name="loantype" value="Motorbike Finance">
+                            </label>
+
+                            <label for="loantype-truck" class="loantype group">
+                                <div class="grow flex justify-center items-center">
+                                    <?= renderImg('option-truck.png', 'lib', 'group-hover:scale-105 duration-100') ?>
+                                </div>
+                                <span class="bg-primary text-xs text-white px-1 py-1 rounded-full leading-none">Truck & Trailer</span>
+                                <input type="radio" class="loanType" id="loantype-truck" name="loantype" value="Truck & Trailer Finance">
+                            </label>
+
+                            <label for="loantype-equipment" class="loantype group">
+                                <div class="grow flex justify-center items-center">
+                                    <?= renderImg('option-equipment.png', 'lib', 'group-hover:scale-105 duration-100') ?>
+                                </div>
+                                <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Equipment</span>
+                                <input type="radio" class="loanType" id="loantype-equipment" name="loantype" value="Equipment Finance">
+                            </label>
+
+                            <label for="loantype-personal" class="loantype group">
+                                <div class="grow flex justify-center items-center">
+                                    <?= renderImg('option-personal.png', 'lib', 'group-hover:scale-105 duration-100') ?>
+                                </div>
+                                <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Personal</span>
+                                <input type="radio" class="loanType" id="loantype-personal" name="loantype" value="Personal Finance">
+                            </label>
+
+                            <label for="loantype-business" class="loantype group">
+                                <div class="grow flex justify-center items-center">
+                                    <?= renderImg('option-business.png', 'lib', 'group-hover:scale-105 duration-100') ?>
+                                </div>
+                                <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Business</span>
+                                <input type="radio" class="loanType" id="loantype-business" name="loantype" value="Business Finance">
+
+                            </label>
+
+                            <label for="loantype-other" class="loantype group">
+                                <div class="grow flex justify-center items-center">
+                                    <?= renderImg('option-others.png', 'lib', 'group-hover:scale-105 duration-100') ?>
+                                </div>
+                                <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Other</span>
+                                <input type="radio" class="loanType" id="loantype-other" name="loantype" value="Other Finance">
+                            </label>
+                        </div>
                     </div>
 
-                    <div class="flex flex-wrap justify-between gap-x-2 pt-12">
-                        <label for="loantype-car" class="loantype">
-                            <div class="grow flex justify-center items-center">
-                                <?= renderImg('option-car.png', 'lib') ?>
+                    <div id="banner-form-tab-2" class="form-tab">
+                        <div class="flex flex-wrap justify-between items-center">
+                            <div class="w-2/3 text-35 text-primary font-medium">
+                                How much do you want to borrow?
                             </div>
-                            <span class="bg-primary text-sm text-white px-3 py-1 rounded-full leading-none">Car</span>
-                            <input type="radio" id="loantype-car" name="loantype" value="Car Finance">
-                        </label>
 
-                        <label for="loantype-marine" class="loantype">
-                            <div class="grow flex justify-center items-center">
-                                <?= renderImg('option-marine.png', 'lib') ?>
+                            <p class="w-fit text-xl text-primary">Explore finance options</p>
+                        </div>
+
+                        <div class="flex justify-between pt-12">
+                            <div class="w-7/12">
+                                <p class="borrowAmount text-3xl md:text-85 text-secondary pb-16">$<span id="borrowAmount">0</span></p>
+
+                                <div class="range">
+                                    <div class="sliderThumb amount"></div>
+                                    <div class="progressBar amount"></div>
+                                    <input type="range" id="borrowSlider" name="borrowAmount" min="0" max="2000000" value="0" step="5000">
+                                </div>
                             </div>
-                            <span class="bg-primary text-sm text-white px-3 py-1 rounded-full leading-none">Marine</span>
-                            <input type="radio" id="loantype-marine" name="loantype" value="Marine Finance">
-                        </label>
-
-                        <label for="loantype-caravan" class="loantype">
-                            <div class="grow flex justify-center items-center">
-                                <?= renderImg('option-caravan.png', 'lib') ?>
+                            <div class="w-fit">
+                                <button type="button" class="btn w-fit bg-indigo text-white px-7 show-form-tab-3">Continue</button>
                             </div>
-                            <span class="bg-primary text-sm text-white px-3 py-1 rounded-full leading-none">Caravan</span>
-                            <input type="radio" id="loantype-caravan" name="loantype" value="Caravan Finance">
-                        </label>
+                        </div>
+                    </div>
 
-                        <label for="loantype-motorbike" class="loantype">
-                            <div class="grow flex justify-center items-center">
-                                <?= renderImg('option-motorbike.png', 'lib') ?>
+                    <div id="banner-form-tab-3" class="form-tab">
+                        <div class="flex flex-wrap justify-between items-center">
+                            <div class="w-2/3 text-35 text-primary font-medium">
+                                What’s your preferred loan term?
                             </div>
-                            <span class="bg-primary text-sm text-white px-3 py-1 rounded-full leading-none">Motorbike</span>
-                            <input type="radio" id="loantype-motorbike" name="loantype" value="Motorbike Finance">
-                        </label>
 
-                        <label for="loantype-truck" class="loantype">
-                            <div class="grow flex justify-center items-center">
-                                <?= renderImg('option-truck.png', 'lib') ?>
+                            <p class="w-fit text-xl text-primary">Explore finance options</p>
+                        </div>
+
+                        <div class="flex justify-between pt-12">
+                            <div class="w-7/12">
+                                <p class="borrowAmount text-3xl md:text-85 text-secondary pb-16"><span id="borrowTerm">0</span> Year</p>
+
+                                <div class="range">
+                                    <div class="sliderThumb year"></div>
+                                    <div class="progressBar year"></div>
+                                    <input type="range" id="termSlider" name="termyear" min="0" max="7" value="0" step="1">
+                                </div>
                             </div>
-                            <span class="bg-primary text-xs text-white px-1 py-1 rounded-full leading-none">Truck & Trailer</span>
-                            <input type="radio" id="loantype-truck" name="loantype" value="Truck & Trailer Finance">
-                        </label>
-
-                        <label for="loantype-equipment" class="loantype">
-                            <div class="grow flex justify-center items-center">
-                                <?= renderImg('option-equipment.png', 'lib') ?>
+                            <div class="w-fit">
+                                <button type="button" class="btn w-fit bg-indigo text-white px-7 show-form-tab-4">Continue</button>
                             </div>
-                            <span class="bg-primary text-sm text-white px-3 py-1 rounded-full leading-none">Equipment</span>
-                            <input type="radio" id="loantype-equipment" name="loantype" value="Equipment Finance">
-                        </label>
+                        </div>
+                    </div>
 
-                        <label for="loantype-personal" class="loantype">
-
-                            <div class="grow flex justify-center items-center">
-                                <?= renderImg('option-personal.png', 'lib') ?>
+                    <div id="banner-form-tab-4" class="form-tab">
+                        <div class="flex flex-wrap justify-between items-center">
+                            <div class="w-2/3 text-35 text-primary font-medium">
+                                Your Details
                             </div>
-                            <span class="bg-primary text-sm text-white px-3 py-1 rounded-full leading-none">Personal</span>
-                            <input type="radio" id="loantype-personal" name="loantype" value="Personal Finance">
-                        </label>
 
-                        <label for="loantype-business" class="loantype">
-                            <div class="grow flex justify-center items-center">
-                                <?= renderImg('option-business.png', 'lib') ?>
+                            <p class="w-fit text-xl text-primary">Explore finance options</p>
+                        </div>
+
+                        <div class="flex flex-wrap -mx-2 gap-y-4 pt-12">
+                            <div class="w-1/2 px-2">
+                                <input type="text" class="form-control" placeholder="Your name*" name="fullname" required />
                             </div>
-                            <span class="bg-primary text-sm text-white px-3 py-1 rounded-full leading-none">Business</span>
-                            <input type="radio" id="loantype-business" name="loantype" value="Business Finance">
-
-                        </label>
-
-                        <label for="loantype-other" class="loantype">
-                            <div class="grow flex justify-center items-center">
-                                <?= renderImg('option-others.png', 'lib') ?>
+                            <div class="w-1/2 px-2">
+                                <input type="tel" class="form-control" placeholder="Phone number*" name="phone" required />
                             </div>
-                            <span class="bg-primary text-sm text-white px-3 py-1 rounded-full leading-none">Other</span>
-                            <input type="radio" id="loantype-other" name="loantype" value="Other Finance">
-                        </label>
+                            <div class="w-2/3 px-2">
+                                <input type="email" class="form-control" placeholder="Email address*" name="email" required />
+                            </div>
+                            <div class="w-1/3 px-2">
+                                <button type="submit" class="flex justify-center items-center h-[57px] rounded-md text-lg w-full bg-indigo text-white px-7 show-form-tab-4">Submit</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
