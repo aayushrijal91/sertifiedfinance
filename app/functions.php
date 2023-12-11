@@ -9,11 +9,11 @@ $no_reply_email = 'info@website.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 
-$facebook_link = "#";
-$instagram_link = "#";
-$youtube_link = "#";
-$linkedin_link = "#";
-$tiktok_link = "#";
+$facebook_link = "https://www.facebook.com/SertifiedFinance";
+$instagram_link = "https://www.instagram.com/sertifiedfinance/";
+$youtube_link = "";
+$linkedin_link = "";
+$tiktok_link = "";
 
 function renderImg($filename, $folder, $classname = "")
 {
