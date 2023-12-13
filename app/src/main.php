@@ -124,12 +124,12 @@
                         </a>
                     </div>
 
-                    <a href="javascript:void(0)" id="showPrevBannerTab" data-target="1" class="bg-indigo/30 rounded-full px-4 py-3 w-fit">
+                    <button id="showPrevBannerTab" data-target="1" class="bg-indigo/30 rounded-full px-4 py-3 w-fit">
                         <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.8784 20.4424L1.59142 11.1554L10.8784 1.86838" stroke="#798EFE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M28.8672 12.4053C29.5576 12.4053 30.1172 11.8456 30.1172 11.1553C30.1172 10.4649 29.5576 9.90527 28.8672 9.90527V12.4053ZM1.59131 12.4053H28.8672V9.90527H1.59131V12.4053Z" fill="#798EFE" />
                         </svg>
-                    </a>
+                    </button>
                 </div>
 
                 <form action="./src/form.php" id="banner_form" method="POST" class="mainform pt-4 lg:pt-12">

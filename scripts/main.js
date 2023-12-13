@@ -75,12 +75,19 @@ $('.show-form-tab-4').on('click', function () {
     $("#showPrevBannerTab").attr("data-target", "3");
 });
 
-$('#showPrevBannerTab').on('click', function () {
-    let target = $("#showPrevBannerTab").data("target");
+$('#showPrevBannerTab').on('click', function (e) {
+    e.preventDefault();
+
+    let target = $(this).attr("data-target");
+    
+    if (target === "0") {
+        return true;
+    }
 
     $('.form-tab').hide();
     $(`#banner-form-tab-${target}`).fadeIn();
-    $("#showPrevBannerTab").attr("data-target", parseInt(target) - 1);
+    $(this).attr("data-target", parseInt(target) - 1);
+    console.log(target);
 })
 
 $('.lenderSlider').slick({

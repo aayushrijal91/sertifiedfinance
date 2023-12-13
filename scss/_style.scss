@@ -39,10 +39,6 @@ section.banner {
             }
         }
 
-        input[type="radio"] {
-            display: none;
-        }
-
         input[type="radio"]:checked+label {
             background: #c2bde5;
             color: #ffffff;
