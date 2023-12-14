@@ -72,7 +72,7 @@
     </div>
 </header>
 
-<section class="banner mt-[103px]">
+<section class="banner <?= !$thankyoupage ? 'mt-[103px]' : '' ?>">
     <div class="container relative">
         <?= renderImg('banner-eclipse.png', 'lib', 'hidden xl:block absolute mix-blend-soft-light top-20') ?>
 

@@ -1,4 +1,6 @@
-<?php include __DIR__ . '/functions.php'; ?>
+<?php
+$thankyoupage = false;
+include __DIR__ . '/functions.php'; ?>
 
 <?php include __DIR__ . '/src/header.php'; ?>
 
