@@ -29,9 +29,9 @@
 				<p class="text-xs md:text-sm text-primary font-visby font-medium">Copyright <?= date('Y') ?> <span class="px-3 md:px-5">/</span> <?= $site ?> <span class="px-3 md:px-5">/</span> All Rights Reserved</p>
 			</div>
 
-			<a href="https://www.aiims.com.au/this-is-us" target="_blank" class="w-fit">
-				<?= renderImg('aiims.png', 'logo') ?>
-			</a>
+			<p class="w-fit text-center text-white">
+				ACN: 662 601 916, Australian Credit <span class="px-5">|</span> License #543046
+			</p>
 		</div>
 	</div>
 </footer>

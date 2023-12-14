@@ -3,7 +3,7 @@
 <?php include __DIR__ . '/src/header.php'; ?>
 
 <div class="thankyou-wrapper text-white text-center py-3" style="background-color: green;">
-    Thank you! Your message has been sent. We will contact you shortly.
+    We’ll get back to you asap, in the meantime you can contact us directly by calling <a href="tel:<?= $phone_number ?>"><?= $phone_number ?></a>
 </div>
 
 <?php include __DIR__ . '/src/main.php'; ?>

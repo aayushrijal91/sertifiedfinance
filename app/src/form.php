@@ -24,6 +24,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
         $borrowAmount = $_POST['borrowAmount'];
         $termyear = $_POST['termyear'];
 
+        $zapier_data = array(
+            'fullName' => strip_tags($fullname),
+            'phoneNumber' => strip_tags($phone),
+            'email' => strip_tags($email),
+            'loantype' => strip_tags($loantype),
+            'loanAmount' => strip_tags($borrowAmount),
+            'termYear' => strip_tags($termyear)
+        );
+
         $message = '<!DOCTYPE html>
                 <html>
                     <head>
@@ -72,15 +81,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
             '</tr>' .
             '</tbody></table></body></html>';
 
+        $webhook_url = 'https://hooks.zapier.com/hooks/catch/17033824/3ayssmu/';
+
+        $zapier_data = json_encode($zapier_data);
+
+        $curl_options = array(
+            CURLOPT_URL => $webhook_url,
+            CURLOPT_POST => 1,
+            CURLOPT_POSTFIELDS => $zapier_data,
+            CURLOPT_HTTPHEADER => array(
+                'Content-Type: application/json',
+                'Content-Length: ' . strlen($zapier_data)
+            )
+        );
+
+        // Initialize cURL and send the request
+        $ch = curl_init();
+        curl_setopt_array($ch, $curl_options);
+        $response = curl_exec($ch);
+        curl_close($ch);
+
         $headers = "MIME-Version: 1.0\r\n" .
             "Content-type: text/html; charset=utf-8\r\n" .
             "From: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
             // "Bcc: " . $bcc_email . "\r\n" .
             "Reply-To: " . $site . " <" . $email . ">" . "\r\n" .
             "X-Mailer: PHP/" . phpversion();
+
         $result = mail($to, $subject, $message, $headers);
 
-        if ($result) {
+        if ($result || $response) {
             header('location:./../thankyou');
         } else {
             throw new Exception('Failed, please submit form again or call us directly.');
@@ -191,9 +221,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
         $name = $_POST['name'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
-        $streetName = $_POST['streetName'];
-        $suburb = $_POST['suburb'];
-        $postcode = $_POST['postcode'];
         $service = $_POST['service'];
         $enquiry = $_POST['enquiry'];
 

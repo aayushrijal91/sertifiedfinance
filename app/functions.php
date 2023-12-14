@@ -1,11 +1,12 @@
 <?php
 include __DIR__ . '/env.php';
 
-$site = "Sertified Finance";
+$site = "Sertified Finance Pty Ltd";
 $phone_number = "1300 041 041";
-$admin_email = 'hello@sertified.finance'; //'arijal@aiims.com.au';
+$admin_email = 'arijal@aiims.com.au';
+// $admin_email = 'hello@sertified.finance';
 $bcc_email = "";
-$no_reply_email = 'info@website.com.au';
+$no_reply_email = 'info@sertified.finance';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 

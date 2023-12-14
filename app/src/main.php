@@ -132,7 +132,7 @@
                     </button>
                 </div>
 
-                <form action="./src/form.php" id="banner_form" method="POST" class="mainform pt-4 lg:pt-12">
+                <form action="./src/form" id="banner_form" method="POST" class="mainform pt-4 lg:pt-12">
                     <input type="hidden" name="token" id="recaptchaResponse1" class="recaptchaResponse" />
                     <input type="hidden" name="formType" value="banner_form" />
 
@@ -1000,7 +1000,7 @@
                     <p class="text-2xl md:text-35 text-secondary leading-none">Want to become a <span class="text-cool-white">referral partner</span>?</p>
                     <p class="font-visby text-cool-white text-lg md:text-xl py-6">Send us an enquiry and we'll get back to you asap!</p>
 
-                    <form action="./src/form.php" method="POST" class="form flex flex-wrap -mx-1.5 gap-y-4">
+                    <form action="./src/form" method="POST" class="form flex flex-wrap -mx-1.5 gap-y-4">
                         <input type="hidden" name="token" id="recaptchaResponse2" class="recaptchaResponse" />
                         <input type="hidden" name="formType" value="referral_partner_form" />
                         <div class="w-full md:w-1/2 px-1.5">
@@ -1014,11 +1014,12 @@
                                 <option>Marine Finance</option>
                                 <option>Caravan Finance</option>
                                 <option>Motorbike Finance</option>
-                                <option>Personal Finance</option>
-                                <option>Business Loan</option>
-                                <option>Equipment Finance</option>
                                 <option>Truck & Trailer Finance</option>
-                                <option>Other Finance</option>
+                                <option>Equipment Finance</option>
+                                <option>Personal Loans</option>
+                                <option>Business Loans</option>
+                                <option>Home Loans</option>
+                                <option>Other</option>
                             </select>
                         </div>
 
@@ -1187,7 +1188,7 @@
             <p class="text-4xl md:text-55 text-secondary font-medium leading-none">Enquire online today</p>
             <p class="text-cool-white font-visby leading-none lg:leading-relaxed pt-7">Ready to take control of your future? Don’t wait, start the journey to sertified financial success now!</p>
 
-            <form action="./src/form.php" method="POST" id="enquiryForm" class="form mt-12">
+            <form action="./src/form" method="POST" id="enquiryForm" class="form mt-12">
                 <input type="hidden" name="token" id="recaptchaResponse3" class="recaptchaResponse" />
                 <input type="hidden" name="formType" value="enquire_online_form" />
 
@@ -1211,27 +1212,6 @@
                     </div>
 
                     <div class="tab px-1">
-                        <p class="text-secondary font-medium text-xl md:text-2xl pb-5">Your street address</p>
-
-                        <div class="flex flex-wrap -mx-1.5 gap-y-1">
-                            <div class="w-full px-1.5">
-                                <input type="text" class="form-control required" name="streetName" placeholder="e.g. 10 Street Name" />
-                                <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
-                            </div>
-
-                            <div class="w-2/3 px-1.5">
-                                <input type="text" class="form-control required" name="suburb" placeholder="Enter suburb" />
-                                <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
-                            </div>
-
-                            <div class="w-1/3 px-1.5">
-                                <input type="number" class="form-control required" name="postcode" placeholder="Enter postcode" />
-                                <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab px-1">
                         <p class="text-secondary font-medium text-xl md:text-2xl pb-5">What service are you after?</p>
 
                         <select name="service" class="form-control required">
@@ -1240,11 +1220,12 @@
                             <option>Marine Finance</option>
                             <option>Caravan Finance</option>
                             <option>Motorbike Finance</option>
-                            <option>Personal Finance</option>
-                            <option>Business Loan</option>
-                            <option>Equipment Finance</option>
                             <option>Truck & Trailer Finance</option>
-                            <option>Other Finance</option>
+                            <option>Equipment Finance</option>
+                            <option>Personal Loans</option>
+                            <option>Business Loans</option>
+                            <option>Home Loans</option>
+                            <option>Other</option>
                         </select>
                     </div>
 
@@ -1262,85 +1243,79 @@
                         <div class="enquiryProgressSteps">
                             <div>
                                 <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="3.17188" y1="7.97095" x2="218.662" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <line x1="3.17188" y1="7.97095" x2="185" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="8.61133" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="78.6289" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="43.6201" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="113.637" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="148.646" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="183.654" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
-                                    <circle cx="218.662" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                 </svg>
                             </div>
 
                             <div>
                                 <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <line x1="3.74512" y1="7.97095" x2="185" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="79.2021" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="114.21" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="149.22" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="184.228" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
-                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                 </svg>
                             </div>
 
                             <div>
                                 <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <line x1="3.74512" y1="7.97095" x2="185" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="79.2021" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="114.21" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="149.22" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="184.228" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
-                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                 </svg>
                             </div>
 
                             <div>
                                 <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <line x1="3.74512" y1="7.97095" x2="185" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="79.2021" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="114.21" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="149.22" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="184.228" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
-                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                 </svg>
                             </div>
 
                             <div>
                                 <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <line x1="3.74512" y1="7.97095" x2="185" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="79.2021" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="114.21" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="149.22" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="184.228" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
-                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                 </svg>
                             </div>
 
                             <div>
                                 <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <line x1="3.74512" y1="7.97095" x2="185" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="79.2021" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="114.21" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="149.22" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="184.228" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
-                                    <circle cx="219.235" cy="8.72095" r="7.75" fill="#096377" stroke="#9AD3D5" stroke-width="1.5" />
                                 </svg>
                             </div>
 
                             <div>
                                 <svg width="228" height="18" viewBox="0 0 228 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="3.74512" y1="7.97095" x2="219.235" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
+                                    <line x1="3.74512" y1="7.97095" x2="185" y2="7.97095" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="9.18457" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="79.2021" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />
                                     <circle cx="44.1934" cy="8.72095" r="7.75" fill="#9AD3D5" stroke="#9AD3D5" stroke-width="1.5" />

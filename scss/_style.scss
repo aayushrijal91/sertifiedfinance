@@ -236,6 +236,16 @@ section.partner {
             background: transparent;
             padding: 4px 21px;
             border-radius: 100px;
+            color: #faffff;
+
+            &:focus {
+                color: #faffff;
+
+            }
+
+            option {
+                color: #1C305F;
+            }
         }
 
         textarea.form-control {
@@ -249,6 +259,11 @@ section.partner {
 section.australia-wide {
     background: imgUrl('australia-wide.jpg', 'lib') center;
     background-size: cover;
+
+    @media screen and (max-width: 540px) {
+        background: imgUrl('mobile-map.png') center;
+        background-size: cover;
+    }
 }
 
 section.enquiryForm {
@@ -268,6 +283,19 @@ section.enquiryForm {
             background: rgba(154, 211, 213, 0.2);
             padding: 4px 21px;
             border-radius: 100px;
+        }
+
+        select {
+            color: #faffff;
+
+            &:focus {
+                color: #faffff;
+
+            }
+
+            option {
+                color: #096377;
+            }
         }
 
         textarea.form-control {
