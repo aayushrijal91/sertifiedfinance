@@ -1,8 +1,6 @@
 <?php
 include __DIR__ . '/../functions.php';
 
-$to = $admin_email;
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['formType'] === 'banner_form') {
     $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
     $recaptcha_secret = $recaptcha_server_secret;
@@ -15,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
             throw new Exception('Sorry we could not verify you! Please try again.');
         }
 
+        $to = $admin_email;
         $subject = "Message from " . $site;
 
         $fullname = $_POST['fullname'];
@@ -133,6 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
             throw new Exception('Sorry we could not verify you! Please try again.');
         }
 
+        $to = $admin_email;
         $subject = "Message from " . $site;
 
         $fullname = $_POST['fullname'];
@@ -217,7 +217,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
         }
 
         $subject = "Message from " . $site;
-
+        $to = $admin_email;
         $name = $_POST['name'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
