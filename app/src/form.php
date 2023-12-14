@@ -92,30 +92,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
 
         $zapier_data = json_encode($zapier_data);
 
-        $curl_options = array(
-            CURLOPT_URL => $webhook_url,
-            CURLOPT_POST => 1,
-            CURLOPT_POSTFIELDS => $zapier_data,
-            CURLOPT_HTTPHEADER => array(
-                'Content-Type: application/json',
-                'Content-Length: ' . strlen($zapier_data)
-            )
-        );
+        $ch = curl_init($webhook_url);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $zapier_data);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        // Initialize cURL and send the request
-        $ch = curl_init();
-        curl_setopt_array($ch, $curl_options);
         $response = curl_exec($ch);
         curl_close($ch);
-
-        // $headers = "MIME-Version: 1.0\r\n" .
-        //     "Content-type: text/html; charset=utf-8\r\n" .
-        //     "From: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
-        //     // "Bcc: " . $bcc_email . "\r\n" .
-        //     "Reply-To: " . $site . " <" . $email . ">" . "\r\n" .
-        //     "X-Mailer: PHP/" . phpversion();
-
-        // $result = mail($to, $subject, $message, $headers);
 
         _phpmailer($to, $site, $subject, $message, $no_reply_email, $cc_email, $bcc_email);
 
@@ -281,15 +265,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
             '<td><b>' . strip_tags($enquiry) . '</b></td>' .
             '</tr>' .
             '</tbody></table></body></html>';
-
-        // $headers = "MIME-Version: 1.0\r\n" .
-        //     "Content-type: text/html; charset=utf-8\r\n" .
-        //     "From: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
-        //     // "Bcc: " . $bcc_email . "\r\n" .
-        //     "Reply-To: " . $site . " <" . $email . ">" . "\r\n" .
-        //     "X-Mailer: PHP/" . phpversion();
-
-        // $result = mail($to, $subject, $message, $headers);
 
         _phpmailer($to, $site, $subject, $message, $no_reply_email, $cc_email, $bcc_email);
 
