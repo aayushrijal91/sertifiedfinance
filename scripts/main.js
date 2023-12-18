@@ -98,7 +98,7 @@ $('.lenderSlider').slick({
     speed: 3000,
     autoplay: true,
     cssEase: 'linear',
-    variableWidth: true,,
+    variableWidth: true,
     draggable: false,
 });
 
