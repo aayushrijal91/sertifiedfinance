@@ -1,6 +1,6 @@
 // AOS.init({ duration: 1500 });
 
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
+document.querySelectorAll('a[href="#form"], a[href="#banner_form_wrapper"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -98,7 +98,8 @@ $('.lenderSlider').slick({
     speed: 3000,
     autoplay: true,
     cssEase: 'linear',
-    variableWidth: true,
+    variableWidth: true,,
+    draggable: false,
 });
 
 $('.testimonialSlider').slick({
@@ -146,7 +147,6 @@ $("#sertifiedProcesses").slick({
                 slidesToScroll: 1,
                 centerMode: true,
                 arrows: false,
-                autoplay: true,
                 infinite: false,
                 initialSlide: 0,
                 centerPadding: "50px"
@@ -161,7 +161,6 @@ if ($(window).width() < 540) {
         slidesToScroll: 1,
         centerMode: true,
         arrows: false,
-        autoplay: true,
         infinite: false,
         initialSlide: 0,
         centerPadding: "50px",
@@ -173,7 +172,6 @@ if ($(window).width() < 540) {
         slidesToScroll: 1,
         centerMode: true,
         arrows: false,
-        autoplay: true,
         infinite: false,
         initialSlide: 0,
         centerPadding: "20px"

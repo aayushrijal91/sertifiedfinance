@@ -30,7 +30,7 @@
 			</div>
 
 			<p class="w-fit text-center text-white">
-				ACN: 662 601 916, Australian Credit <span class="px-5">|</span> License #543046
+				ACN: 662 601 916 <span class="px-5">|</span> Australian Credit License #543046
 			</p>
 		</div>
 	</div>

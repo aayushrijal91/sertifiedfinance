@@ -44,10 +44,10 @@
                     </a>
                 <?php endif; ?>
 
-                <?php if (!empty($youtube_link)) : ?>
-                    <a href="<?= $youtube_link ?>" class="w-fit">
-                        <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20.6396 4.89352C20.6396 2.23731 18.6404 0.0390625 16.2247 0.0390625H4.81242C2.39669 0.0390625 0.397461 2.23731 0.397461 4.89352V10.6639C0.397461 13.3201 2.39669 15.5184 4.81242 15.5184H16.1414C18.5571 15.5184 20.6396 13.1166 20.6396 10.4604V5.16702V4.89352ZM13.9756 8.19089L8.89418 10.9387C8.72758 11.0303 7.97787 10.9387 7.97787 10.6639V4.98512C7.97787 4.71034 8.64428 4.61874 8.89418 4.71034L13.7256 7.64133C13.9755 7.73292 14.1422 8.0993 13.9756 8.19089Z" fill="#9AD3D5" />
+                <?php if (!empty($tiktok_link)) : ?>
+                    <a href="<?= $tiktok_link ?>" class="w-fit">
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.55848 5.80341V8.4618C5.22357 8.37321 4.87304 8.36094 4.53276 8.4259C4.19248 8.49086 3.87112 8.63139 3.59239 8.83712C3.31367 9.04285 3.08469 9.30854 2.92235 9.61458C2.76001 9.92062 2.66846 10.2592 2.65444 10.6053C2.65444 11.7946 3.38533 12.8263 4.89052 12.8263C6.54276 12.8263 7.12693 11.663 7.12693 10.5761V0.0390625H9.7574C10.2046 2.82196 11.5961 3.46772 13.459 3.76586V6.43267C13.459 6.43267 11.2474 6.27586 9.83143 5.20745V10.4744C9.8321 12.8579 8.41912 15.5183 4.91239 15.5183C1.65737 15.5183 -0.00732422 12.759 -0.00732422 10.4495C0.013236 9.7647 0.178792 9.09201 0.478419 8.47585C0.778046 7.85969 1.20493 7.31408 1.73091 6.87501C2.25688 6.43595 2.86998 6.11342 3.52976 5.9287C4.18954 5.74398 4.88099 5.70128 5.55848 5.80341Z" fill="#9AD3D5" />
                         </svg>
                     </a>
                 <?php endif; ?>
@@ -66,7 +66,7 @@
 
             <div class="w-fit hidden md:flex flex-wrap items-center gap-x-4">
                 <a href="tel:<?= $phone_number ?>" class="btn w-fit bg-white text-indigo px-7"><?= $phone_number ?></a>
-                <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
+                <a href="#banner_form_wrapper" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
             </div>
         </div>
     </div>
@@ -81,11 +81,7 @@
                 <p class="text-primary text-xl md:text-2xl font-extralight text-center md:text-start">Crafting Dreams &amp; Fuelling Potentail</p>
                 <h1 class="capitalize text-4xl md:text-55 leading-none font-medium text-primary pt-3 text-center md:text-start">reach new heights<br /> of Sertified success</h1>
 
-                <div class="flex justify-center md:hidden my-8">
-                    <a href="#form" class="btn w-fit bg-indigo text-white px-7">Enquire now</a>
-                </div>
-
-                <div class="bg-light rounded-20 md:mt-16 px-3.5 py-4 flex flex-wrap items-center justify-between">
+                <div class="bg-light rounded-20 mt-8 md:mt-16 px-3.5 py-4 flex flex-wrap items-center justify-between">
                     <div class="w-2/12 md:w-fit"><?= renderImg('crown.png', 'lib') ?></div>
 
                     <div class="w-10/12 md:w-fit px-5">
@@ -103,10 +99,10 @@
                 </div>
             </div>
 
-            <div class="w-full xl:w-10/12 bg-white rounded-20 p-5 md:py-7 md:px-9 mt-8">
+            <div class="w-full xl:w-10/12 bg-white rounded-20 p-5 md:py-7 md:px-9 mt-8" id="banner_form_wrapper">
                 <div class="flex flex-wrap justify-between items-center">
                     <div class="w-fit flex flex-wrap gap-x-4 md:gap-x-7">
-                        <a href="#form" class="text-indigo btn gap-x-1">
+                        <a href="#banner_form_wrapper" class="text-indigo btn gap-x-1">
                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.27307 6.48949C7.86284 6.48949 9.1516 5.20073 9.1516 3.61096C9.1516 2.02119 7.86284 0.732422 6.27307 0.732422C4.6833 0.732422 3.39453 2.02119 3.39453 3.61096C3.39453 5.20073 4.6833 6.48949 6.27307 6.48949Z" fill="#1C305F" />
                                 <path d="M6.27303 7.53613C3.32017 7.53613 0.868707 9.7636 0.571432 12.7175C0.556778 12.8651 0.604928 13.0116 0.703322 13.1215C0.802762 13.2304 0.944072 13.2943 1.09166 13.2943H11.4544C11.602 13.2943 11.7433 13.2314 11.8427 13.1215C11.9422 13.0116 11.9903 12.8651 11.9746 12.7175C11.6763 9.7636 9.22588 7.53613 6.27303 7.53613Z" fill="#1C305F" />
@@ -291,7 +287,7 @@
                                 <input type="email" class="form-control" placeholder="Email address*" name="email" required />
                             </div>
                             <div class="w-full md:w-1/3 px-2">
-                                <button type="submit" class="flex justify-center items-center h-[57px] rounded-md text-lg w-full bg-indigo text-white px-7 show-form-tab-4">Submit</button>
+                                <button type="submit" class="flex justify-center items-center h-[57px] rounded-md text-lg w-full bg-indigo text-white px-7 show-form-tab-4">Continue</button>
                             </div>
                         </div>
                     </div>
@@ -347,7 +343,7 @@
         <div class="text-grey description py-5 font-visby">
             <p>Explore your loan options with no impact to your credit score.</p>
 
-            <p class="italic">Casual, Part Time, Full Time, Self Employed Accepted. Consumer & Commercial Loans. Previous Bad Credit Accepted (Case by Case). Visa Holder’s Accepted. Dealership, Original Manufacturer, Private Sales Accepted. New & Used Assets.</p>
+            <<p class="italic">Casual, Part Time, Full Time, Self Employed Accepted. Consumer & Commercial Loans. Previous Bad Credit Accepted (Case by Case). Visa Holder’s<br /> Accepted. Dealership, Original Manufacturer, Private Sales Accepted. New & Used Assets.</p>
         </div>
 
         <?= renderImg('phone.png', 'lib', 'xl:hidden') ?>
@@ -358,7 +354,7 @@
                         <div class="rounded-20 bg-secondary h-full p-6">
                             <p class="bg-primary text-white rounded-full px-2 py-1 inline font-light">Step 01</p>
                             <p class="text-white text-35 leading-none py-5">Fill</p>
-                            <p class="text-primary font-visby leading-5">Choose your asset type and enter some the finance details such as the loan amount and your preferred loan term.</p>
+                            <p class="text-primary font-visby leading-5">Choose your asset type and enter your preferred finance details such as the loan amount and loan term.</p>
                         </div>
                     </div>
 
@@ -366,7 +362,7 @@
                         <div class="rounded-20 bg-secondary h-full p-6">
                             <p class="bg-primary text-white rounded-full px-2 py-1 inline font-light">Step 02</p>
                             <p class="text-white text-35 leading-none py-5">Match</p>
-                            <p class="text-primary font-visby leading-5">Get matched the most suitable loans for your situation from 78+ leading Australian lenders.</p>
+                            <p class="text-primary font-visby leading-5">Get matched with the most suitable loans for your situation from 78+ leading Australian lenders.</p>
                         </div>
                     </div>
 
@@ -380,14 +376,14 @@
                 </div>
 
                 <div class="flex flex-col md:flex-row md:flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-3 pt-8 md:pt-12">
-                    <a href="#form" class="btn w-9/12 md:w-fit bg-indigo text-white px-9">Enquire now</a>
+                    <a href="#banner_form_wrapper" class="btn w-9/12 md:w-fit bg-indigo text-white px-9">Enquire now</a>
 
-                    <a href="tel:<?= $phone_number ?>" class="text-indigo btn border-2 border-indigo gap-x-2 px-5">
+                    <a href="tel:<?= $phone_number ?>" class="w-9/12 md:w-fit text-indigo btn border-2 border-indigo gap-x-2 px-5">
                         <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.1422 8.7868L9.75787 7.72757C9.51012 7.61677 9.23266 7.59112 8.9688 7.65463C8.70495 7.71813 8.46954 7.86721 8.29934 8.0786L7.61219 8.93775C6.48565 8.21486 5.52667 7.25947 4.79956 6.13564L5.6587 5.4485C5.8699 5.27835 6.01885 5.0431 6.08235 4.77943C6.14584 4.51576 6.12031 4.23849 6.00974 3.99084L4.9584 1.60032C4.84026 1.33414 4.6314 1.11857 4.36909 0.992073C4.10677 0.865575 3.80804 0.836371 3.52619 0.909671L1.50776 1.43622C1.21494 1.51198 0.96035 1.69311 0.792756 1.9449C0.625162 2.1967 0.556341 2.50147 0.599473 2.80085C0.975466 5.41144 2.18688 7.83004 4.05237 9.69458C5.91786 11.5591 8.33708 12.7693 10.9479 13.144C11.2471 13.1863 11.5514 13.1169 11.8027 12.949C12.0539 12.7812 12.2345 12.5266 12.3099 12.2339L12.8364 10.2155C12.9096 9.93371 12.88 9.63504 12.7527 9.37317C12.6255 9.11129 12.409 8.90338 12.1422 8.7868Z" fill="#1C305F" />
                         </svg>
 
-                        <span class="leading-none text-sm md:text-lg"><?= $phone_number ?></span>
+                        <span class="leading-none"><?= $phone_number ?></span>
                     </a>
                 </div>
             </div>
@@ -404,7 +400,7 @@
 
                 <div class="flex flex-col items-center md:hidden flex-wrap gap-y-7 pt-7">
                     <p class="w-full font-visby text-center text-[#1C305F]">Like our service?</p>
-                    <a href="#form" class="btn w-8/12 bg-indigo text-white px-7">Leave us a review</a>
+                    <a href="https://g.page/r/CZlFx3efEH8HEB0/review" class="btn w-8/12 bg-indigo text-white px-7">Leave us a review</a>
                 </div>
 
                 <div class="flex flex-wrap -mx-2 py-14 md:py-20 gap-y-4">
@@ -543,7 +539,7 @@
 
                 <div class="hidden md:flex flex-wrap gap-x-4">
                     <p class="w-fit font-visby text-[#1C305F]">Like our service?</p>
-                    <a href="#form" class="btn w-fit bg-indigo text-white px-7">Leave us a review</a>
+                    <a href="https://g.page/r/CZlFx3efEH8HEB0/review" class="btn w-fit bg-indigo text-white px-7">Leave us a review</a>
                 </div>
             </div>
         </div>
@@ -567,7 +563,7 @@
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#form" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
@@ -595,7 +591,7 @@
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#form" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
@@ -623,7 +619,7 @@
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#form" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
@@ -651,7 +647,7 @@
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#form" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
@@ -679,7 +675,7 @@
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-primary font-light">Sertified services</p>
-                        <a href="#form" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
@@ -707,7 +703,7 @@
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#form" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
@@ -735,7 +731,7 @@
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#form" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
@@ -763,7 +759,7 @@
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#form" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
@@ -791,7 +787,7 @@
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#form" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
                     </div>
                 </div>
 
@@ -818,9 +814,14 @@
             <div class="w-full md:w-2/3 order-2 md:order-1">
                 <p class="text-4xl md:text-55 text-secondary font-medium leading-none">The Sertified Process</p>
                 <p class="text-cool-white font-visby pt-7 md:pt-0">Get your loan and achieve your dreams in 4 easy steps!</p>
+                <p class="text-cool-white font-visby pt-4 md:pt-0 italic md:hidden">Swipe now to read! <svg class="ms-3 inline-block" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.2041 12.0227L17.7682 6.4586L12.2041 0.894487" stroke="#FAFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1.42726 7.20825C1.01305 7.20825 0.677261 6.87247 0.677261 6.45825C0.677261 6.04404 1.01305 5.70825 1.42726 5.70825V7.20825ZM17.769 7.20825H1.42726V5.70825H17.769V7.20825Z" fill="#FAFFFF" />
+                    </svg>
+                </p>
             </div>
 
-            <a href="#form" class="btn w-fit bg-indigo text-white px-7 order-1 md:order-2">Enquire now</a>
+            <a href="#banner_form_wrapper" class="btn w-fit bg-indigo text-white px-7 order-1 md:order-2">Enquire now</a>
         </div>
 
         <div class="pt-20" id="sertifiedProcesses">
@@ -860,13 +861,20 @@
                 </p>
             </div>
         </div>
+
+        <div class="flex justify-center md:hidden mt-10">
+            <a href="tel:<?= $phone_number ?>" class="btn w-fit bg-indigo text-white px-12">Call us today</a>
+        </div>
     </div>
 </section>
 
 <section class="partner py-14 md:py-24">
     <div class="container">
         <p class="text-primary text-4xl md:text-55 font-medium leading-none">Partner with Sertified</p>
-        <p class="text-2xl md:text-35 text-grey font-visby pt-5">What you'll get access to...</p>
+        <div class="text-2xl text-grey font-visby pt-5 md:hidden">
+            Swipe to see what you’ll get access to <?= renderImg('arrow.png', 'lib', 'inline-block') ?>
+        </div>
+        <p class="text-35 text-grey font-visby pt-5 hidden md:block">What you'll get access to...</p>
 
         <div class="flex flex-wrap -mx-2 mt-10 md:mt-20 gap-y-4" id="sertifiedPartnerSlider">
             <div class="w-full md:w-1/2 xl:w-1/4 px-2">
@@ -1010,15 +1018,17 @@
                         <div class="w-full md:w-1/2 px-1.5">
                             <select class="form-control" name="business_type" required>
                                 <option selected disabled>Select business type*</option>
-                                <option>Car Finance</option>
-                                <option>Marine Finance</option>
-                                <option>Caravan Finance</option>
-                                <option>Motorbike Finance</option>
-                                <option>Truck & Trailer Finance</option>
-                                <option>Equipment Finance</option>
-                                <option>Personal Loans</option>
-                                <option>Business Loans</option>
-                                <option>Home Loans</option>
+                                <option>Finance Broker</option>
+                                <option>Mortgage Broker</option>
+                                <option>Dealership</option>
+                                <option>Accountant</option>
+                                <option>Lawyer</option>
+                                <option>Financial Planner</option>
+                                <option>Real Estate Agent</option>
+                                <option>Original Equipment Manufacturer</option>
+                                <option>Product Import</option>
+                                <option>Affiliate Marketing</option>
+                                <option>Trade Services Business</option>
                                 <option>Other</option>
                             </select>
                         </div>
@@ -1046,6 +1056,8 @@
 </section>
 
 <div class="container">
+    <p class="text-primary text-4xl font-medium leading-none grow lg:hidden mb-10 ">Choose Sertified and become part of...</p>
+
     <section class="bg-secondary/20 rounded-30 p-3.5 xl:p-20">
         <div class="flex flex-wrap -mx-2 gap-y-4">
             <div class="w-full lg:w-1/2 px-2">
@@ -1056,7 +1068,7 @@
             </div>
 
             <div class="w-full lg:w-1/2 px-2 flex flex-col">
-                <p class="text-primary text-55 font-medium leading-none grow hidden lg:block">Choose Sertified and become part of...</p>
+                <p class="text-primary text-55 font-medium leading-none grow hidden lg:block mb-5">Choose Sertified and become part of...</p>
 
                 <div class="bg-secondary rounded-20 px-3 py-10 md:p-7">
                     <div class="flex flex-wrap items-center -mx-2 gap-y-5">
@@ -1115,7 +1127,7 @@
 
         <div class="flex flex-wrap justify-between pt-10 gap-y-10">
             <div class="w-full md:w-fit flex flex-wrap gap-3 order-2 lg:order-1">
-                <a href="mailto:<?= $admin_email ?>" class="bg-dark-blue rounded-20 w-fit flex flex-wrap items-center gap-3 px-7 py-5">
+                <a href="mailto:<?= $admin_email ?>" class="bg-dark-blue rounded-20 w-full md:w-fit flex flex-wrap items-center gap-3 px-7 py-5">
                     <div class="w-fit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
                             <path d="M8.99288 24.5955V36.8763C8.99288 38.6307 10.9979 39.3826 12.2511 38.1294L18.0155 31.3625L29.7951 40.1345C30.7976 40.8864 32.3014 40.3851 32.5521 39.132L40.0709 2.7907C40.3216 1.28692 39.0684 0.284407 37.5646 0.785666L1.22337 15.3222C-0.0297744 15.8234 -0.280404 17.5778 0.722114 18.5804L4.73218 21.5879L16.2611 16.0741C17.2637 15.5728 18.0155 16.8259 17.2637 17.3272L8.99288 24.5955Z" fill="#798EFE" />
@@ -1127,7 +1139,7 @@
                     <p class="text-xl text-cool-white font-visby w-full md:w-fit"><?= $admin_email ?></p>
                 </a>
 
-                <a href="tel:<?= $phone_number ?>" class="bg-dark-blue rounded-20 w-fit flex flex-wrap items-center gap-3 px-7 py-5">
+                <a href="tel:<?= $phone_number ?>" class="bg-dark-blue rounded-20 w-full md:w-fit flex flex-wrap items-center gap-3 px-7 py-5">
                     <div class="w-fit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path d="M37.5348 25.4535L29.8766 22.0515C29.0809 21.6956 28.1898 21.6132 27.3423 21.8172C26.4949 22.0212 25.7388 22.5 25.1921 23.1789L22.9851 25.9383C19.3669 23.6165 16.2869 20.548 13.9515 16.9385L16.7109 14.7316C17.3892 14.1851 17.8677 13.4295 18.0716 12.5826C18.2755 11.7358 18.1935 10.8452 17.8384 10.0499L14.4617 2.37201C14.0823 1.51707 13.4115 0.824715 12.5689 0.418429C11.7264 0.0121439 10.767 -0.0816516 9.86175 0.153771L3.37897 1.84493C2.43847 2.08828 1.62079 2.67001 1.08251 3.47873C0.544232 4.28745 0.323193 5.2663 0.461722 6.22785C1.66934 14.6125 5.56016 22.3806 11.5517 28.3691C17.5433 34.3577 25.3133 38.2445 33.6986 39.4479C34.6596 39.5839 35.6371 39.361 36.4441 38.8218C37.2511 38.2826 37.831 37.4649 38.0731 36.525L39.7643 30.0422C39.9995 29.1372 39.9042 28.1779 39.4955 27.3368C39.0869 26.4957 38.3916 25.828 37.5348 25.4535Z" fill="#798EFE" />
@@ -1140,7 +1152,7 @@
                 </a>
             </div>
 
-            <div class="w-fit flex flex-wrap gap-x-7 items-center order-1 lg:order-2">
+            <div class="w-full lg:w-fit flex flex-wrap gap-x-7 items-center order-1 lg:order-2">
                 <?php if (!empty($facebook_link)) : ?>
                     <a href="<?= $facebook_link ?>" target="_blank" class="w-fit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="29" viewBox="0 0 15 29" fill="none">
@@ -1159,10 +1171,10 @@
                     </a>
                 <?php endif; ?>
 
-                <?php if (!empty($youtube_link)) : ?>
-                    <a href="<?= $youtube_link ?>" target="_blank" class="w-fit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
-                            <path d="M30.3922 7.85899C30.3922 3.95313 27.4525 0.720703 23.9002 0.720703H7.11897C3.56674 0.720703 0.626953 3.95313 0.626953 7.85899V16.3441C0.626953 20.25 3.56674 23.4824 7.11897 23.4824H23.7777C27.33 23.4824 30.3922 19.9507 30.3922 16.0448V8.26116V7.85899ZM20.593 12.7076L13.121 16.7482C12.876 16.8829 11.7736 16.7482 11.7736 16.3441V7.99367C11.7736 7.58962 12.7536 7.45493 13.121 7.58962L20.2255 11.8995C20.593 12.0342 20.838 12.5729 20.593 12.7076Z" fill="#FAFFFF" />
+                <?php if (!empty($tiktok_link)) : ?>
+                    <a href="<?= $tiktok_link ?>" target="_blank" class="w-fit">
+                        <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.20284 9.19693V13.106C7.71037 12.9757 7.19494 12.9577 6.69456 13.0532C6.19419 13.1487 5.72164 13.3554 5.31179 13.6579C4.90194 13.9604 4.56524 14.3511 4.32652 14.8011C4.08781 15.2511 3.95318 15.749 3.93256 16.258C3.93256 18.0067 5.00731 19.5238 7.22063 19.5238C9.65018 19.5238 10.5092 17.8132 10.5092 16.2149V0.720703H14.3772C15.0348 4.81285 17.0809 5.7624 19.8202 6.20081V10.1222C19.8202 10.1222 16.5682 9.89165 14.486 8.32061V16.0655C14.487 19.5703 12.4093 23.4823 7.25279 23.4823C2.46642 23.4823 0.0185547 19.4248 0.0185547 16.0289C0.0487877 15.0219 0.292231 14.0327 0.73282 13.1267C1.17341 12.2206 1.80113 11.4183 2.57455 10.7727C3.34797 10.1271 4.24952 9.65279 5.21969 9.38117C6.18987 9.10955 7.20662 9.04675 8.20284 9.19693Z" fill="#FAFFFF" />
                         </svg>
                     </a>
                 <?php endif; ?>
@@ -1186,7 +1198,7 @@
     <div class="w-full xl:w-1/2 bg-primary">
         <div class="py-11 px-5 md:p-16 w-full 2xl:w-9/12">
             <p class="text-4xl md:text-55 text-secondary font-medium leading-none">Enquire online today</p>
-            <p class="text-cool-white font-visby leading-none lg:leading-relaxed pt-7">Ready to take control of your future? Don’t wait, start the journey to sertified financial success now!</p>
+            <p class="text-cool-white font-visby leading-none lg:leading-relaxed pt-7">Ready to take control of your future? Don’t wait, start the journey to Sertified financial success now! Changed to: Take control of your financial future and achieve your dreams with Sertified Finance! Don’t wait, enquire today!</p>
 
             <form action="./src/form" method="POST" id="enquiryForm" class="form mt-12">
                 <input type="hidden" name="token" id="recaptchaResponse3" class="recaptchaResponse" />

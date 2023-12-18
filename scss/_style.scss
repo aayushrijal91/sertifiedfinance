@@ -8,6 +8,10 @@ section.banner {
         }
     }
 
+    @media screen and (min-width: 540px) {
+        background-position-x: 23%;
+    }
+
     .mainform {
 
         #banner-form-tab-2,
