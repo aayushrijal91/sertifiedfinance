@@ -570,8 +570,9 @@
     <div id="sertifiedServicesSlider" class="my-20 xl:ml-[-450px]">
         <div>
             <?= renderImg('slider-1.jpg', 'lib', 'h-full w-full object-cover') ?>
+            <?= renderImg('bush.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-            <div class="inner">
+            <div class="inner z-50">
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
@@ -598,8 +599,9 @@
 
         <div>
             <?= renderImg('slider-2.jpg', 'lib', 'h-full w-full object-cover') ?>
+            <?= renderImg('rock.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-            <div class="inner">
+            <div class="inner z-50">
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
@@ -626,8 +628,9 @@
 
         <div>
             <?= renderImg('slider-3.jpg', 'lib', 'h-full w-full object-cover') ?>
+            <?= renderImg('tree.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-            <div class="inner">
+            <div class="inner z-50">
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
@@ -654,8 +657,9 @@
 
         <div>
             <?= renderImg('slider-4.jpg', 'lib', 'h-full w-full object-cover') ?>
+            <?= renderImg('drum.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-            <div class="inner">
+            <div class="inner z-50">
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
@@ -682,8 +686,9 @@
 
         <div>
             <?= renderImg('slider-5.jpg', 'lib', 'h-full w-full object-cover') ?>
+            <?= renderImg('curtain.png', 'lib', 'absolute h-full left-0 top-0 z-40 mix-blend-hard-light') ?>
 
-            <div class="inner">
+            <div class="inner z-50">
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-primary font-light">Sertified services</p>
@@ -710,8 +715,9 @@
 
         <div>
             <?= renderImg('slider-6.jpg', 'lib', 'h-full w-full object-cover') ?>
+            <?= renderImg('light.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-            <div class="inner">
+            <div class="inner z-50">
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
@@ -738,8 +744,9 @@
 
         <div>
             <?= renderImg('slider-7.jpg', 'lib', 'h-full w-full object-cover') ?>
+            <?= renderImg('metal.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-            <div class="inner">
+            <div class="inner z-50">
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
@@ -766,8 +773,9 @@
 
         <div>
             <?= renderImg('slider-8.jpg', 'lib', 'h-full w-full object-cover') ?>
+            <?= renderImg('cloud.png', 'lib', 'absolute h-full left-0 top-0 z-40 mix-blend-exclusion') ?>
 
-            <div class="inner">
+            <div class="inner z-50">
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
@@ -794,8 +802,9 @@
 
         <div>
             <?= renderImg('slider-9.jpg', 'lib', 'h-full w-full object-cover') ?>
+            <?= renderImg('files.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-            <div class="inner">
+            <div class="inner z-50">
                 <div class="grow">
                     <div class="w-full flex flex-wrap justify-between items-center ">
                         <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
