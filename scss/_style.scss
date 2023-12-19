@@ -217,6 +217,15 @@ section.services {
 }
 
 section.partner {
+    .radial {
+        border-radius: 554.775px;
+        opacity: 0.8;
+        background: radial-gradient(50% 50% at 50% 50%, #7EE7EC 0%, rgba(105, 255, 245, 0.00) 100%) no-repeat;
+        filter: blur(21px);
+        height: 555px;
+        width: 555px;
+    }
+
     form.form {
         .form-control {
             font-family: 'Visby', sans-serif;

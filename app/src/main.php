@@ -1012,8 +1012,9 @@
                         <a href="tel:<?= $phone_number ?>" class="btn w-fit bg-indigo text-white px-7">Call us today</a>
                     </div>
 
-                    <?= renderImg('laptop.png', 'lib', 'hidden md:block md:absolute right-0 bottom-0 z-40') ?>
-                    <?= renderImg('laptop-sm.png', 'lib', 'md:hidden absolute right-0 bottom-0 z-40') ?>
+                    <div class="radial absolute -right-[25%] lg:right-0 xl:-right-[25%] -bottom-[25%] lg:-bottom-[25%] md:bottom-0"></div>
+
+                    <?= renderImg('laptop.gif', 'lib', 'absolute -right-[10%] md:-right-[45%] -bottom-[15%] md:-bottom-[20%] lg:-bottom-[70%] xl:-bottom-[20%] z-40') ?>
                 </div>
             </div>
 
