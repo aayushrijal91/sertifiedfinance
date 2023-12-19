@@ -24,8 +24,57 @@ $('#return-to-top').on('click', () => {
     }, 500);
 });
 
-let loanCap = 2000000;
-let termCap = 7;
+var loanCap = 2000000;
+var termCap = 7;
+
+$('input[type="radio"].loanType').on('change', function () {
+    if ($(this).is(':checked')) {
+        $('#banner-form-tab-1').hide();
+        $('#banner-form-tab-2').fadeIn();
+
+        switch ($(this).val()) {
+            case 'Car Finance':
+                loanCap = 250000;
+                termCap = 7;
+                break;
+            case 'Marine Finance':
+                loanCap = 1000000;
+                termCap = 7;
+                break;
+            case 'Caravan Finance':
+                loanCap = 250000;
+                termCap = 7;
+                break;
+            case 'Motorbike Finance':
+                loanCap = 100000;
+                termCap = 7;
+                break;
+            case 'Truck & Trailer Finance':
+                loanCap = 1000000;
+                termCap = 7;
+                break;
+            case 'Equipment Finance':
+                loanCap = 1000000;
+                termCap = 7;
+                break;
+            case 'Personal Finance':
+                loanCap = 150000;
+                termCap = 7;
+                break;
+            case 'Business Finance':
+                loanCap = 1000000;
+                termCap = 7;
+                break;
+            case 'Other Finance':
+                loanCap = 2000000;
+                termCap = 30;
+                break;
+        }
+
+        $('#borrowSlider').prop('max', loanCap);
+        $('#termSlider').prop('max', termCap);
+    }
+});
 
 $('#borrowSlider').on('input', function () {
     let value = $("#borrowSlider").val();
@@ -45,14 +94,6 @@ $('#termSlider').on('input', function () {
     $(this).parents('.range').find('.progressBar.year').css('width', (value * (100 / termCap)) + "%");
 });
 
-$('input[type="radio"].loanType').on('change', function () {
-    if ($(this).is(':checked')) {
-        $('#banner-form-tab-1').hide();
-        $('#banner-form-tab-2').fadeIn();
-        $("#showPrevBannerTab").attr("data-target", "1");
-    }
-});
-
 $('.show-form-tab-1').on('click', function () {
     $('.form-tab').hide();
     $('#banner-form-tab-1').fadeIn();
@@ -66,28 +107,20 @@ $('.show-form-tab-2').on('click', function () {
 $('.show-form-tab-3').on('click', function () {
     $('.form-tab').hide();
     $('#banner-form-tab-3').fadeIn();
-    $("#showPrevBannerTab").attr("data-target", "2");
 });
 
 $('.show-form-tab-4').on('click', function () {
     $('.form-tab').hide();
     $('#banner-form-tab-4').fadeIn();
-    $("#showPrevBannerTab").attr("data-target", "3");
 });
 
-$('#showPrevBannerTab').on('click', function (e) {
+$('.showPrevBannerTab').on('click', function (e) {
     e.preventDefault();
 
     let target = $(this).attr("data-target");
-    
-    if (target === "0") {
-        return true;
-    }
 
     $('.form-tab').hide();
     $(`#banner-form-tab-${target}`).fadeIn();
-    $(this).attr("data-target", parseInt(target) - 1);
-    console.log(target);
 })
 
 $('.lenderSlider').slick({
@@ -95,7 +128,7 @@ $('.lenderSlider').slick({
     slidesToScroll: 1,
     arrows: false,
     autoplaySpeed: 0,
-    speed: 3000,
+    speed: 1000, // Adjust this value
     autoplay: true,
     cssEase: 'linear',
     variableWidth: true,
@@ -250,3 +283,64 @@ function validateForm() {
 }
 
 showTab(currentTab);
+
+function validatePhoneNumber(id, errorId) {
+    let phoneInput = $(id).val();
+    let re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+    if (!re.test(phoneInput)) {
+        $(errorId).fadeIn();
+
+        return false;
+    } else {
+        $(errorId).fadeOut();
+    }
+
+    return true;
+}
+
+$("#referralForm").on('submit', function (e) {
+    e.preventDefault();
+
+    let validation = validatePhoneNumber("#referralPhoneNumber", "#referralPhoneError");
+
+    if (validation) this.submit();
+
+    return validation;
+});
+
+$("#banner_form").on('submit', function (e) {
+    e.preventDefault();
+
+    let validation = validatePhoneNumber("#bannerPhoneNumber", "#bannerPhoneError");
+
+    if (validation) this.submit();
+
+    return validation;
+});
+
+$(() => {
+    var dotsCount = 0;
+    var maxDots = 3;
+    var interval;
+
+    function appendDot() {
+        $('.loading_dots').append('.');
+        dotsCount++;
+
+        if (dotsCount === maxDots) {
+            clearInterval(interval);
+            setTimeout(function () {
+                $('.loading_dots').empty();
+                dotsCount = 0;
+                startAnimation();
+            }, 800);
+        }
+    }
+
+    function startAnimation() {
+        interval = setInterval(appendDot, 800);
+    }
+
+    startAnimation();
+});
