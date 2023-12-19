@@ -101,11 +101,11 @@
                     </div>
 
                     <div class="lenderSlider w-full md:w-[240px] bg-cool-white/50 rounded-2xl py-5 mt-2 md:mt-0">
-                        <div><?= renderImg('mfaa.png', 'logo') ?></div>
-                        <div><?= renderImg('afca.png', 'logo') ?></div>
-                        <div><?= renderImg('redbook-inspect.png', 'logo') ?></div>
-                        <div><?= renderImg('verimoto.png', 'logo') ?></div>
-                        <div><?= renderImg('viking.png', 'logo') ?></div>
+                        <div class="w-[152px] h-[38px]"><?= renderImg('mfaa.png', 'logo') ?></div>
+                        <div class="w-[152px] h-[38px]"><?= renderImg('afca.png', 'logo') ?></div>
+                        <div class="w-[152px] h-[38px]"><?= renderImg('redbook-inspect.png', 'logo') ?></div>
+                        <div class="w-[152px] h-[38px]"><?= renderImg('verimoto.png', 'logo') ?></div>
+                        <div class="w-[152px] h-[38px]"><?= renderImg('viking.png', 'logo') ?></div>
                     </div>
                 </div>
             </div>
@@ -342,7 +342,7 @@
 
         <div class="lenderSlider py-5 border-x border-white mt-5">
             <?php for ($i = 1; $i < 36; $i++) : ?>
-                <div><?= renderImg('lender-' . $i . '.png', 'logo') ?></div>
+                <div class="w-[200px] h-[77px]"><?= renderImg('lender-' . $i . '.png', 'logo') ?></div>
             <?php endfor; ?>
         </div>
     </div>

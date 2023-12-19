@@ -128,7 +128,7 @@ $('.lenderSlider').slick({
     slidesToScroll: 1,
     arrows: false,
     autoplaySpeed: 0,
-    speed: 1000, // Adjust this value
+    speed: 2000, // Adjust this value
     autoplay: true,
     cssEase: 'linear',
     variableWidth: true,
