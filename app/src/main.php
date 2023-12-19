@@ -87,8 +87,6 @@
 
 <section class="banner <?= !$thankyoupage ? 'mt-[103px]' : '' ?>">
     <div class="container relative">
-        <?= renderImg('banner-eclipse.png', 'lib', 'hidden xl:block absolute mix-blend-soft-light top-20') ?>
-
         <div class="flex flex-wrap pt-14 md:pt-32 pb-10 relative banner-container">
             <div class="w-full lg:w-8/12 xl:w-1/2">
                 <p class="text-primary text-xl md:text-2xl font-extralight text-center md:text-start">Crafting Dreams &amp; Fuelling Potentail</p>
