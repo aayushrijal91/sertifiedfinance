@@ -355,11 +355,11 @@
         <div class="text-grey description py-5 font-visby">
             <p>Explore your loan options with no impact to your credit score.</p>
 
-            <<p class="italic">Casual, Part Time, Full Time, Self Employed Accepted. Consumer & Commercial Loans. Previous Bad Credit Accepted (Case by Case). Visa Holder’s<br /> Accepted. Dealership, Original Manufacturer, Private Sales Accepted. New & Used Assets.</p>
+            <p class="italic">Casual, Part Time, Full Time, Self Employed Accepted. Consumer & Commercial Loans. Previous Bad Credit Accepted (Case by Case).<br /> Visa Holder’s Accepted. Dealership, Original Manufacturer, Private Sales Accepted. New & Used Assets.</p>
         </div>
 
         <?= renderImg('phone.png', 'lib', 'xl:hidden') ?>
-        <div class="bg-secondary/20 rounded-20 xl:mt-7 px-5 py-8 lg:p-12 flex flex-wrap relative">
+        <div class="bg-secondary/20 rounded-20 xl:mt-14 px-5 py-8 lg:p-12 flex flex-wrap relative">
             <div class="w-full xl:w-7/12">
                 <div class="flex flex-wrap -mx-2 gap-y-4">
                     <div class="w-full md:w-1/3 px-2">
