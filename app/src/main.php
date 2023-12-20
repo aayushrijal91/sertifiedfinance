@@ -233,12 +233,12 @@
 
                         <div class="flex flex-wrap justify-between pt-12 gap-y-10">
                             <div class="w-full md:w-7/12">
-                                <p class="borrowAmount text-4xl md:text-85 text-secondary pb-10 md:pb-16">$<span id="borrowAmount">0</span></p>
+                                <p class="borrowAmount text-4xl md:text-85 text-secondary pb-10 md:pb-16">$<span id="borrowAmount">5,000</span></p>
 
                                 <div class="range">
                                     <div class="sliderThumb amount"></div>
                                     <div class="progressBar amount"></div>
-                                    <input type="range" id="borrowSlider" name="borrowAmount" min="0" max="2000000" value="0" step="5000">
+                                    <input type="range" id="borrowSlider" name="borrowAmount" min="0" max="2000000" value="5000" step="5000">
                                 </div>
                             </div>
                             <div class="w-full md:w-fit">

@@ -32,8 +32,8 @@ $('input[type="radio"].loanType').on('click', function () {
     $('html, body').animate({
         scrollTop: $('#banner_form_wrapper').offset().top
     });
-    $('#termSlider').val('');
-    $('#borrowSlider').val('');
+    $('#termSlider').val(0);
+    $('#borrowSlider').val(5000);
 
 
     if ($(this).is(':checked')) {
@@ -88,18 +88,15 @@ $('#borrowSlider').on('input', function () {
     let value = $("#borrowSlider").val();
     let formattedVal = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     $('#borrowAmount').html(formattedVal);
-console.log(value);
-    $(this).parents('.range').find('.sliderThumb.amount').css('left', (value * (97 / loanCap)) + "%");
-    $(this).parents('.range').find('.progressBar.amount').css('width', (value * (100 / loanCap)) + "%");
-    // const percentage = (value / loanCap) * 100;
+    const percentage = (value / loanCap) * 100;
 
-    // if (value == 5000) {
-    //     $(this).parents('.range').find('.sliderThumb.amount').css('left', '0%');
-    //     $(this).parents('.range').find('.progressBar.amount').css('width', '0%');
-    // } else {
-    //     $(this).parents('.range').find('.sliderThumb.amount').css('left', `${percentage}%`);
-    //     $(this).parents('.range').find('.progressBar.amount').css('width', `${percentage}%`);
-    // }
+    if (value == 5000) {
+        $(this).parents('.range').find('.sliderThumb.amount').css('left', '0%');
+        $(this).parents('.range').find('.progressBar.amount').css('width', '0%');
+    } else {
+        $(this).parents('.range').find('.sliderThumb.amount').css('left', `${percentage}%`);
+        $(this).parents('.range').find('.progressBar.amount').css('width', `${percentage}%`);
+    }
 });
 
 $('#termSlider').on('input', function () {
