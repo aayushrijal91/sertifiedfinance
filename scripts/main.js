@@ -174,7 +174,6 @@ $('#sertifiedServicesSlider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerPadding: "20px",
-                autoplay: true,
             }
         }
     ]

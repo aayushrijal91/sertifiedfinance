@@ -126,7 +126,7 @@
 
                         <div class="flex flex-wrap lg:justify-center gap-y-2 pt-8 md:pt-12">
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
-                                <input type="radio" class="loanType" id="loantype-car" name="loantype" value="Car Finance" checked>
+                                <input type="radio" class="loanType" id="loantype-car" name="loantype" value="Car Finance">
                                 <label for="loantype-car" class="loantype group">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-car.png', 'lib', 'group-hover:scale-105 duration-100') ?>
