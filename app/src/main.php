@@ -219,7 +219,7 @@
 
                     <div id="banner-form-tab-2" class="form-tab">
                         <div class="flex flex-wrap justify-between items-center">
-                            <div class="w-full md:w-2/3 text-35 text-primary font-medium leading-none">
+                            <div class="w-8/12 md:w-2/3 text-2xl md:text-35 text-primary font-medium leading-none">
                                 How much do you want to borrow?
                             </div>
 
@@ -249,7 +249,7 @@
 
                     <div id="banner-form-tab-3" class="form-tab">
                         <div class="flex flex-wrap justify-between items-center">
-                            <div class="w-full md:w-2/3 text-35 text-primary font-medium leading-none">
+                            <div class="w-8/12 md:w-2/3 text-2xl md:text-35 text-primary font-medium leading-none">
                                 What’s your preferred loan term?
                             </div>
 
@@ -279,7 +279,7 @@
 
                     <div id="banner-form-tab-4" class="form-tab">
                         <div class="flex flex-wrap justify-between items-center">
-                            <div class="w-2/3 text-35 text-primary font-medium leading-none">
+                            <div class="w-8/12 md:w-2/3 text-2xl md:text-35 text-primary font-medium leading-none">
                                 Your Details
                             </div>
 
@@ -571,19 +571,19 @@
 <section class="services bg-primary py-16 md:py-28">
     <div class="container">
         <div class="flex flex-wrap justify-between items-center">
-            <p class="text-4xl md:text-55 text-secondary font-medium leading-none w-2/3">Explore our extensive services</p>
+            <p class="text-4xl md:text-55 text-secondary font-medium leading-none w-8/12">Explore our extensive services</p>
 
             <div class="w-fit flex flex-wrap gap-3">
-                <button id="servicePrev" class="w-fit">
-                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="">
-                        <circle cx="21" cy="21" r="21" fill="#4E4F53"></circle>
-                        <path d="M25 13L17 20.5L25 28" stroke="white" stroke-opacity="0.22" stroke-width="2"></path>
+                <button id="servicePrev" class="w-fit rounded-full outline-none">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="21" fill="#798EFE"></circle>
+                        <path d="M25 13L17 20.5L25 28" stroke="white" stroke-width="2"></path>
                     </svg>
                 </button>
 
-                <button id="serviceNext" class="w-fit">
+                <button id="serviceNext" class="w-fit rounded-full outline-none">
                     <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="">
-                        <circle cx="21" cy="21" r="21" transform="rotate(-180 21 21)" fill="#5CE8E4"></circle>
+                        <circle cx="21" cy="21" r="21" transform="rotate(-180 21 21)" fill="#798EFE"></circle>
                         <path d="M17 29L25 21.5L17 14" stroke="white" stroke-width="2"></path>
                         <path d="M17 29L25 21.5L17 14" stroke="white" stroke-width="2"></path>
                     </svg>
