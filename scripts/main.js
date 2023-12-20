@@ -156,27 +156,31 @@ $('.testimonialSlider').slick({
     autoplay: true,
 });
 
-$('#sertifiedServicesSlider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true,
-    arrows: false,
-    centerMode: true,
-    infinite: false,
-    initialSlide: 0,
-    // draggable: false,
-    focusOnSelect: true,
-    responsive: [
-        {
-            breakpoint: 900,
-            settings: {
-                variableWidth: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                centerPadding: "20px",
+$(() => {
+    $('#sertifiedServicesSlider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        arrows: true,
+        prevArrow: $("#servicePrev"),
+        nextArrow: $("#serviceNext"),
+        infinite: false,
+        initialSlide: 0,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    variableWidth: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    initialSlide: 0,
+                    centerPadding: "20px",
+                }
             }
-        }
-    ]
+        ]
+    });
 });
 
 $("#sertifiedProcesses").slick({

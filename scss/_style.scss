@@ -160,9 +160,9 @@ section.services {
             height: 546px;
             transition: width 0.5s ease;
 
-            @media screen and (max-width: 540px) {
-                width: 100%;
-            }
+            // @media screen and (max-width: 540px) {
+            //     width: 100%;
+            // }
 
             .inner {
                 position: absolute;

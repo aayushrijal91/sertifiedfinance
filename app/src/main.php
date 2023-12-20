@@ -89,7 +89,7 @@
     <div class="container relative">
         <div class="flex flex-wrap pt-14 md:pt-32 pb-10 relative banner-container">
             <div class="w-full lg:w-8/12 xl:w-1/2">
-                <p class="text-primary text-xl md:text-2xl font-extralight text-center md:text-start">Crafting Dreams &amp; Fuelling Potentail</p>
+                <p class="text-primary text-xl md:text-2xl font-extralight text-center md:text-start">Crafting Dreams &amp; Fuelling Potential</p>
                 <h1 class="capitalize text-4xl md:text-55 leading-none font-medium text-primary pt-3 text-center md:text-start">reach new heights<br /> of Sertified success</h1>
 
                 <div class="bg-light rounded-20 mt-8 md:mt-16 px-3.5 py-4 flex flex-wrap items-center justify-between">
@@ -570,268 +570,290 @@
 
 <section class="services bg-primary py-16 md:py-28">
     <div class="container">
-        <p class="text-4xl md:text-55 text-secondary font-medium leading-none">Explore our extensive services</p>
+        <div class="flex flex-wrap justify-between items-center">
+            <p class="text-4xl md:text-55 text-secondary font-medium leading-none w-2/3">Explore our extensive services</p>
+
+            <div class="w-fit flex flex-wrap gap-3">
+                <button id="servicePrev" class="w-fit">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="">
+                        <circle cx="21" cy="21" r="21" fill="#4E4F53"></circle>
+                        <path d="M25 13L17 20.5L25 28" stroke="white" stroke-opacity="0.22" stroke-width="2"></path>
+                    </svg>
+                </button>
+
+                <button id="serviceNext" class="w-fit">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="">
+                        <circle cx="21" cy="21" r="21" transform="rotate(-180 21 21)" fill="#5CE8E4"></circle>
+                        <path d="M17 29L25 21.5L17 14" stroke="white" stroke-width="2"></path>
+                        <path d="M17 29L25 21.5L17 14" stroke="white" stroke-width="2"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
 
+    <div class="flex flex-wrap justify-end">
+        <div class="w-full xl:w-10/12">
+            <div id="sertifiedServicesSlider" class="my-20">
+                <div>
+                    <?= renderImg('slider-1.jpg', 'lib', 'h-full w-full object-cover') ?>
+                    <?= renderImg('bush.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-    <div id="sertifiedServicesSlider" class="my-20 xl:ml-[-450px]">
-        <div>
-            <?= renderImg('slider-1.jpg', 'lib', 'h-full w-full object-cover') ?>
-            <?= renderImg('bush.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
+                    <div class="inner z-50">
+                        <div class="grow">
+                            <div class="w-full flex flex-wrap justify-between items-center ">
+                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                                <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                            </div>
+                        </div>
 
-            <div class="inner z-50">
-                <div class="grow">
-                    <div class="w-full flex flex-wrap justify-between items-center ">
-                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Car Finance<span class="text-secondary">.</span></p>
+
+                        <p class="description font-visby text-cool-white font-light pt-7">
+                            Looking to buy a new car? Get behind the wheel with a car loan through Sertified Finance.
+                        </p>
+
+                        <?php $tags = ["Secured Car Loan", "Private sale car loan", "Luxury car loan", "Novated Leasing", "Electric vehicle Discounted Loan", "Classic Car loan", "Visas Accepted", "Consumer Car loan", "Commercial Car loan", "Low Doc Loan", "Bad Credit car loan", "New & Preowned vehicles"]; ?>
+                        <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="tag">
+                                    <?= $tag ?>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Car Finance<span class="text-secondary">.</span></p>
+                <div>
+                    <?= renderImg('slider-2.jpg', 'lib', 'h-full w-full object-cover') ?>
+                    <?= renderImg('rock.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-                <p class="description font-visby text-cool-white font-light pt-7">
-                    Looking to buy a new car? Get behind the wheel with a car loan through Sertified Finance.
-                </p>
+                    <div class="inner z-50">
+                        <div class="grow">
+                            <div class="w-full flex flex-wrap justify-between items-center ">
+                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                                <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                            </div>
+                        </div>
 
-                <?php $tags = ["Secured Car Loan", "Private sale car loan", "Luxury car loan", "Novated Leasing", "Electric vehicle Discounted Loan", "Classic Car loan", "Visas Accepted", "Consumer Car loan", "Commercial Car loan", "Low Doc Loan", "Bad Credit car loan", "New & Preowned vehicles"]; ?>
-                <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
-                    <?php foreach ($tags as $tag) : ?>
-                        <p class="tag">
-                            <?= $tag ?>
+                        <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Marine<br /> Finance<span class="text-secondary">.</span></p>
+
+                        <p class="description font-visby text-cool-white font-light pt-7">
+                            Ready for your own vessel? Get on the water with a marine loan through Sertified Finance.
                         </p>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <?= renderImg('slider-2.jpg', 'lib', 'h-full w-full object-cover') ?>
-            <?= renderImg('rock.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
-
-            <div class="inner z-50">
-                <div class="grow">
-                    <div class="w-full flex flex-wrap justify-between items-center ">
-                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <?php $tags = ["Secured Boat Loan", "Commercial Vessel finance", "Ski Boats", "Jet Skis", "Fishing Boats", "Lifestyle cruisers", "House Boats", "Pre-owned Vessel"]; ?>
+                        <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="tag">
+                                    <?= $tag ?>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Marine<br /> Finance<span class="text-secondary">.</span></p>
+                <div>
+                    <?= renderImg('slider-3.jpg', 'lib', 'h-full w-full object-cover') ?>
+                    <?= renderImg('tree.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-                <p class="description font-visby text-cool-white font-light pt-7">
-                    Ready for your own vessel? Get on the water with a marine loan through Sertified Finance.
-                </p>
+                    <div class="inner z-50">
+                        <div class="grow">
+                            <div class="w-full flex flex-wrap justify-between items-center ">
+                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                                <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                            </div>
+                        </div>
 
-                <?php $tags = ["Secured Boat Loan", "Commercial Vessel finance", "Ski Boats", "Jet Skis", "Fishing Boats", "Lifestyle cruisers", "House Boats", "Pre-owned Vessel"]; ?>
-                <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
-                    <?php foreach ($tags as $tag) : ?>
-                        <p class="tag">
-                            <?= $tag ?>
+                        <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Caravan<br /> Finance<span class="text-secondary">.</span></p>
+
+                        <p class="description font-visby text-cool-white font-light pt-7">
+                            Ready for your own caravan? Hit the road with a caravan loan through Sertified Finance.
                         </p>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <?= renderImg('slider-3.jpg', 'lib', 'h-full w-full object-cover') ?>
-            <?= renderImg('tree.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
-
-            <div class="inner z-50">
-                <div class="grow">
-                    <div class="w-full flex flex-wrap justify-between items-center ">
-                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <?php $tags = ["Secured Caravan Loan", "Private Sale & Dealership Finance", "Roof Top Tent finance", "Camper Trailer Finance", "Offroad Camper & Caravan Finance", "Commercial Caravan Finance", "Motorhome Finance"]; ?>
+                        <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="tag">
+                                    <?= $tag ?>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Caravan<br /> Finance<span class="text-secondary">.</span></p>
+                <div>
+                    <?= renderImg('slider-4.jpg', 'lib', 'h-full w-full object-cover') ?>
+                    <?= renderImg('drum.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-                <p class="description font-visby text-cool-white font-light pt-7">
-                    Ready for your own caravan? Hit the road with a caravan loan through Sertified Finance.
-                </p>
+                    <div class="inner z-50">
+                        <div class="grow">
+                            <div class="w-full flex flex-wrap justify-between items-center ">
+                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                                <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                            </div>
+                        </div>
 
-                <?php $tags = ["Secured Caravan Loan", "Private Sale & Dealership Finance", "Roof Top Tent finance", "Camper Trailer Finance", "Offroad Camper & Caravan Finance", "Commercial Caravan Finance", "Motorhome Finance"]; ?>
-                <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
-                    <?php foreach ($tags as $tag) : ?>
-                        <p class="tag">
-                            <?= $tag ?>
+                        <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Motorbike<br /> Finance<span class="text-secondary">.</span></p>
+
+                        <p class="description font-visby text-cool-white font-light pt-7">
+                            Dreaming of your own motorbike? Start cruising with a motorbike loan through Sertified Finance.
                         </p>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <?= renderImg('slider-4.jpg', 'lib', 'h-full w-full object-cover') ?>
-            <?= renderImg('drum.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
-
-            <div class="inner z-50">
-                <div class="grow">
-                    <div class="w-full flex flex-wrap justify-between items-center ">
-                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <?php $tags = ["Secured Motorbike Loan", "Dirt Bike Loan", "Trail Bike Loan", "Private Sale Motorbike Loan", "Road Bike Loan"]; ?>
+                        <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="tag">
+                                    <?= $tag ?>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Motorbike<br /> Finance<span class="text-secondary">.</span></p>
+                <div>
+                    <?= renderImg('slider-5.jpg', 'lib', 'h-full w-full object-cover') ?>
+                    <?= renderImg('curtain.png', 'lib', 'absolute h-full left-0 top-0 z-40 mix-blend-hard-light') ?>
 
-                <p class="description font-visby text-cool-white font-light pt-7">
-                    Dreaming of your own motorbike? Start cruising with a motorbike loan through Sertified Finance.
-                </p>
+                    <div class="inner z-50">
+                        <div class="grow">
+                            <div class="w-full flex flex-wrap justify-between items-center ">
+                                <p class="w-fit text-2xl text-primary font-light">Sertified services</p>
+                                <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                            </div>
+                        </div>
 
-                <?php $tags = ["Secured Motorbike Loan", "Dirt Bike Loan", "Trail Bike Loan", "Private Sale Motorbike Loan", "Road Bike Loan"]; ?>
-                <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
-                    <?php foreach ($tags as $tag) : ?>
-                        <p class="tag">
-                            <?= $tag ?>
+                        <p class="text-primary text-4xl md:text-55 font-medium leading-none">Personal<br /> Finance<span class="text-secondary">.</span></p>
+
+                        <p class="description font-visby text-primary font-light pt-7">
+                            Looking to fulfill your personal goals or handle unexpected expenses? Take control with a personal loan through Sertified Finance.
                         </p>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <?= renderImg('slider-5.jpg', 'lib', 'h-full w-full object-cover') ?>
-            <?= renderImg('curtain.png', 'lib', 'absolute h-full left-0 top-0 z-40 mix-blend-hard-light') ?>
-
-            <div class="inner z-50">
-                <div class="grow">
-                    <div class="w-full flex flex-wrap justify-between items-center ">
-                        <p class="w-fit text-2xl text-primary font-light">Sertified services</p>
-                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <?php $tags = ["Debt consolidation", "Solar", "Home improvements", "Medical", "Legal costs", "Wedding/Event", "Major Purchase", "Travel"]; ?>
+                        <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="tag">
+                                    <?= $tag ?>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-primary text-4xl md:text-55 font-medium leading-none">Personal<br /> Finance<span class="text-secondary">.</span></p>
+                <div>
+                    <?= renderImg('slider-6.jpg', 'lib', 'h-full w-full object-cover') ?>
+                    <?= renderImg('light.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-                <p class="description font-visby text-primary font-light pt-7">
-                    Looking to fulfill your personal goals or handle unexpected expenses? Take control with a personal loan through Sertified Finance.
-                </p>
+                    <div class="inner z-50">
+                        <div class="grow">
+                            <div class="w-full flex flex-wrap justify-between items-center ">
+                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                                <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                            </div>
+                        </div>
 
-                <?php $tags = ["Debt consolidation", "Solar", "Home improvements", "Medical", "Legal costs", "Wedding/Event", "Major Purchase", "Travel"]; ?>
-                <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
-                    <?php foreach ($tags as $tag) : ?>
-                        <p class="tag">
-                            <?= $tag ?>
+                        <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Business<br /> Loan<span class="text-secondary">.</span></p>
+
+                        <p class="description font-visby text-cool-white font-light pt-7">
+                            Ready to elevate your business? Fuel your potential with a business loan through Sertified Finance.
                         </p>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <?= renderImg('slider-6.jpg', 'lib', 'h-full w-full object-cover') ?>
-            <?= renderImg('light.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
-
-            <div class="inner z-50">
-                <div class="grow">
-                    <div class="w-full flex flex-wrap justify-between items-center ">
-                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <?php $tags = ["Fixed Business Loans", "Usecured cashflow funding", "Inventory/Stock Loan", "Trade Finance", "Debtor Finance", "Overdraft Facility"]; ?>
+                        <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="tag">
+                                    <?= $tag ?>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Business<br /> Loan<span class="text-secondary">.</span></p>
+                <div>
+                    <?= renderImg('slider-7.jpg', 'lib', 'h-full w-full object-cover') ?>
+                    <?= renderImg('metal.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-                <p class="description font-visby text-cool-white font-light pt-7">
-                    Ready to elevate your business? Fuel your potential with a business loan through Sertified Finance.
-                </p>
+                    <div class="inner z-50">
+                        <div class="grow">
+                            <div class="w-full flex flex-wrap justify-between items-center ">
+                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                                <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                            </div>
+                        </div>
 
-                <?php $tags = ["Fixed Business Loans", "Usecured cashflow funding", "Inventory/Stock Loan", "Trade Finance", "Debtor Finance", "Overdraft Facility"]; ?>
-                <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
-                    <?php foreach ($tags as $tag) : ?>
-                        <p class="tag">
-                            <?= $tag ?>
+                        <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Equipment<br /> Finance<span class="text-secondary">.</span></p>
+
+                        <p class="description font-visby text-cool-white font-light pt-7">
+                            In need of new equipment? Drive efficiency with an equipment loan through Sertified Finance.
                         </p>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <?= renderImg('slider-7.jpg', 'lib', 'h-full w-full object-cover') ?>
-            <?= renderImg('metal.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
-
-            <div class="inner z-50">
-                <div class="grow">
-                    <div class="w-full flex flex-wrap justify-between items-center ">
-                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <?php $tags = ["Chattel Mortgage", "Private Sale Purchase", "Debtor Finance", "New & Used Equipment", "Low Doc Options"]; ?>
+                        <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="tag">
+                                    <?= $tag ?>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Equipment<br /> Finance<span class="text-secondary">.</span></p>
+                <div>
+                    <?= renderImg('slider-8.jpg', 'lib', 'h-full w-full object-cover') ?>
+                    <?= renderImg('cloud.png', 'lib', 'absolute h-full left-0 top-0 z-40 mix-blend-exclusion') ?>
 
-                <p class="description font-visby text-cool-white font-light pt-7">
-                    In need of new equipment? Drive efficiency with an equipment loan through Sertified Finance.
-                </p>
+                    <div class="inner z-50">
+                        <div class="grow">
+                            <div class="w-full flex flex-wrap justify-between items-center ">
+                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                                <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                            </div>
+                        </div>
 
-                <?php $tags = ["Chattel Mortgage", "Private Sale Purchase", "Debtor Finance", "New & Used Equipment", "Low Doc Options"]; ?>
-                <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
-                    <?php foreach ($tags as $tag) : ?>
-                        <p class="tag">
-                            <?= $tag ?>
+                        <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Truck & Trailer<br /> Finance<span class="text-secondary">.</span></p>
+
+                        <p class="description font-visby text-cool-white font-light pt-7">
+                            Time for a new truck or trailer? Hit the road with a truck & trailer loan through Sertified Finance.
                         </p>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <?= renderImg('slider-8.jpg', 'lib', 'h-full w-full object-cover') ?>
-            <?= renderImg('cloud.png', 'lib', 'absolute h-full left-0 top-0 z-40 mix-blend-exclusion') ?>
-
-            <div class="inner z-50">
-                <div class="grow">
-                    <div class="w-full flex flex-wrap justify-between items-center ">
-                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <?php $tags = ["Chattel Mortgage", "Prime Mover Finance", "New & Used Assets", "No GVM Restrictions", "Low Doc Options", "Owner Driver Finance Options", "Interstate Haulage", "Private Sales"]; ?>
+                        <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="tag">
+                                    <?= $tag ?>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Truck & Trailer<br /> Finance<span class="text-secondary">.</span></p>
+                <div>
+                    <?= renderImg('slider-9.jpg', 'lib', 'h-full w-full object-cover') ?>
+                    <?= renderImg('files.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
 
-                <p class="description font-visby text-cool-white font-light pt-7">
-                    Time for a new truck or trailer? Hit the road with a truck & trailer loan through Sertified Finance.
-                </p>
+                    <div class="inner z-50">
+                        <div class="grow">
+                            <div class="w-full flex flex-wrap justify-between items-center ">
+                                <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
+                                <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                            </div>
+                        </div>
 
-                <?php $tags = ["Chattel Mortgage", "Prime Mover Finance", "New & Used Assets", "No GVM Restrictions", "Low Doc Options", "Owner Driver Finance Options", "Interstate Haulage", "Private Sales"]; ?>
-                <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
-                    <?php foreach ($tags as $tag) : ?>
-                        <p class="tag">
-                            <?= $tag ?>
+                        <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Other<br /> Finance<span class="text-secondary">.</span></p>
+
+                        <p class="description font-visby text-cool-white font-light pt-7">
+                            Thinking of something else? Set the foundations of a successful future with Sertified Finance.
                         </p>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <?= renderImg('slider-9.jpg', 'lib', 'h-full w-full object-cover') ?>
-            <?= renderImg('files.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
-
-            <div class="inner z-50">
-                <div class="grow">
-                    <div class="w-full flex flex-wrap justify-between items-center ">
-                        <p class="w-fit text-2xl text-secondary font-light">Sertified services</p>
-                        <a href="#banner_form_wrapper" class="hidden md:inline-flex justify-center items-center h-[47px] rounded-md text-lg w-fit bg-indigo text-white px-7">Enquire now</a>
+                        <?php $tags = ["Debt Refinancing", "Wholesale Trade", "Visa Finance", "Complex Lending", "Home Loans", "Commercial Property", "Investment Property"]; ?>
+                        <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
+                            <?php foreach ($tags as $tag) : ?>
+                                <p class="tag">
+                                    <?= $tag ?>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
-                </div>
-
-                <p class="text-cool-white text-4xl md:text-55 font-medium leading-none">Other<br /> Finance<span class="text-secondary">.</span></p>
-
-                <p class="description font-visby text-cool-white font-light pt-7">
-                    Thinking of something else? Set the foundations of a successful future with Sertified Finance.
-                </p>
-
-                <?php $tags = ["Debt Refinancing", "Wholesale Trade", "Visa Finance", "Complex Lending", "Home Loans", "Commercial Property", "Investment Property"]; ?>
-                <div class="tags flex-wrap gap-x-2 gap-y-2 md:gap-y-3 mt-5 md:mt-8">
-                    <?php foreach ($tags as $tag) : ?>
-                        <p class="tag">
-                            <?= $tag ?>
-                        </p>
-                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
