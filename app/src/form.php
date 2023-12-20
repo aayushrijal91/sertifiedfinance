@@ -245,18 +245,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
             '<td><b>' . strip_tags($email) . '</b></td>' .
             '</tr>' .
             '<tr>' .
-            '<td>Street Name</td>' .
-            '<td><b>' . strip_tags($streetName) . '</b></td>' .
-            '</tr>' .
-            '<tr>' .
-            '<td>Suburb</td>' .
-            '<td><b>' . strip_tags($suburb) . '</b></td>' .
-            '</tr>' .
-            '<tr>' .
-            '<td>Postcode</td>' .
-            '<td><b>' . strip_tags($postcode) . '</b></td>' .
-            '</tr>' .
-            '<tr>' .
             '<td>Service</td>' .
             '<td><b>' . strip_tags($service) . '</b></td>' .
             '</tr>' .
