@@ -27,7 +27,15 @@ $('#return-to-top').on('click', () => {
 var loanCap = 2000000;
 var termCap = 7;
 
-$('input[type="radio"].loanType').on('change', function () {
+$('input[type="radio"].loanType').on('click', function () {
+    $(this).prop('checked', true);
+    $('html, body').animate({
+        scrollTop: $('#banner_form_wrapper').offset().top
+    });
+    $('#termSlider').val('');
+    $('#borrowSlider').val('');
+
+
     if ($(this).is(':checked')) {
         $('#banner-form-tab-1').hide();
         $('#banner-form-tab-2').fadeIn();
@@ -80,9 +88,15 @@ $('#borrowSlider').on('input', function () {
     let value = $("#borrowSlider").val();
     let formattedVal = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     $('#borrowAmount').html(formattedVal);
+    const percentage = (value / loanCap) * 100;
 
-    $(this).parents('.range').find('.sliderThumb.amount').css('left', (value * (97 / loanCap)) + "%");
-    $(this).parents('.range').find('.progressBar.amount').css('width', (value * (100 / loanCap)) + "%");
+    if (value == 5000) {
+        $(this).parents('.range').find('.sliderThumb.amount').css('left', '0%');
+        $(this).parents('.range').find('.progressBar.amount').css('width', '0%');
+    } else {
+        $(this).parents('.range').find('.sliderThumb.amount').css('left', `${percentage}%`);
+        $(this).parents('.range').find('.progressBar.amount').css('width', `${percentage}%`);
+    }
 });
 
 $('#termSlider').on('input', function () {
@@ -128,7 +142,7 @@ $('.lenderSlider').slick({
     slidesToScroll: 1,
     arrows: false,
     autoplaySpeed: 0,
-    speed: 2000, // Adjust this value
+    speed: 2000,
     autoplay: true,
     cssEase: 'linear',
     variableWidth: true,
@@ -140,7 +154,6 @@ $('.testimonialSlider').slick({
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    // vertical: true,
 });
 
 $('#sertifiedServicesSlider').slick({
@@ -151,7 +164,7 @@ $('#sertifiedServicesSlider').slick({
     centerMode: true,
     infinite: false,
     initialSlide: 0,
-    draggable: false,
+    // draggable: false,
     focusOnSelect: true,
     responsive: [
         {
@@ -276,6 +289,28 @@ function validateForm() {
         } else {
             input.removeClass("invalid");
             errorMessage.addClass("text-opacity-0");
+
+            // Check for valid phone number
+            if (input.hasClass("phone-number")) {
+                const phoneNumberRegex = /^\d{10}$/;
+                if (!phoneNumberRegex.test(input.val())) {
+                    input.addClass("invalid");
+                    errorMessage.removeClass("text-opacity-0");
+                    isValid = false;
+                    return; // Exit the loop if phone number is invalid
+                }
+            }
+
+            // Check for valid email address
+            if (input.hasClass("email")) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(input.val())) {
+                    input.addClass("invalid");
+                    errorMessage.removeClass("text-opacity-0");
+                    isValid = false;
+                    return; // Exit the loop if email is invalid
+                }
+            }
         }
     });
 

@@ -43,8 +43,8 @@ section.banner {
             }
         }
 
-        input[type="radio"]:checked+label {
-            background: #c2bde5;
+        input[type="radio"]:checked + label {
+            background: rgba(154, 211, 213, 0.8) !important;
             color: #ffffff;
         }
 
@@ -158,6 +158,7 @@ section.services {
             margin: 0 9px;
             width: 427px;
             height: 546px;
+            transition: width 0.5s ease;
 
             @media screen and (max-width: 540px) {
                 width: 100%;
@@ -184,7 +185,11 @@ section.services {
                 }
 
                 .tags {
-                    display: none;
+                    display: flex;
+                    transition: width 0.5s ease;
+                    width: 0;
+                    height: 0;
+                    overflow: hidden;
 
                     .tag {
                         @apply w-fit h-[30px] md:h-[42px] bg-secondary text-primary rounded-full flex justify-center items-center px-3 md:px-4 font-visby font-semibold capitalize text-xs md:text-base;
@@ -192,7 +197,8 @@ section.services {
                 }
             }
 
-            &.slick-current.slick-center {
+            // &.slick-current.slick-center {
+            &:hover {
                 width: 867px;
                 transition: width 0.5s ease;
 
@@ -208,7 +214,9 @@ section.services {
                     }
 
                     .tags {
-                        display: flex;
+                        // display: flex;
+                        width: auto;
+                        height: auto;
                     }
                 }
             }

@@ -100,17 +100,21 @@
                         <p class="text-grey font-light leading-none pt-2">Be confident that you're with the best.</p>
                     </div>
 
-                    <div class="lenderSlider w-full md:w-[240px] bg-cool-white/50 rounded-2xl py-5 mt-2 md:mt-0">
-                        <div class="w-[152px] h-[38px]"><?= renderImg('mfaa.png', 'logo') ?></div>
-                        <div class="w-[152px] h-[38px]"><?= renderImg('afca.png', 'logo') ?></div>
-                        <div class="w-[152px] h-[38px]"><?= renderImg('redbook-inspect.png', 'logo') ?></div>
-                        <div class="w-[152px] h-[38px]"><?= renderImg('verimoto.png', 'logo') ?></div>
-                        <div class="w-[152px] h-[38px]"><?= renderImg('viking.png', 'logo') ?></div>
+                    <div class="relative overflow-x-hidden">
+                        <div class="absolute h-full w-full bg-white/0 z-50"></div>
+                        <div class="lenderSlider w-full md:w-[240px] bg-cool-white/50 rounded-2xl py-5 mt-2 md:mt-0 z-40">
+                            <div class="w-[152px] h-[38px]"><?= renderImg('mfaa.png', 'logo') ?></div>
+                            <div class="w-[152px] h-[38px]"><?= renderImg('afca.png', 'logo') ?></div>
+                            <div class="w-[152px] h-[38px]"><?= renderImg('redbook-inspect.png', 'logo') ?></div>
+                            <div class="w-[152px] h-[38px]"><?= renderImg('verimoto.png', 'logo') ?></div>
+                            <div class="w-[152px] h-[38px]"><?= renderImg('viking.png', 'logo') ?></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full xl:w-10/12 bg-white rounded-20 p-5 md:py-7 md:px-9 mt-8" id="banner_form_wrapper">
+            <div id="banner_form_wrapper"></div>
+            <div class="w-full xl:w-10/12 bg-white rounded-20 p-5 md:py-7 md:px-9 mt-8">
                 <form action="./src/form" id="banner_form" method="POST" class="mainform">
                     <input type="hidden" name="token" id="recaptchaResponse1" class="recaptchaResponse" />
                     <input type="hidden" name="formType" value="banner_form" />
@@ -122,92 +126,92 @@
 
                         <div class="flex flex-wrap lg:justify-center gap-y-2 pt-8 md:pt-12">
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
+                                <input type="radio" class="loanType" id="loantype-car" name="loantype" value="Car Finance" checked>
                                 <label for="loantype-car" class="loantype group">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-car.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Car</span>
-                                    <input type="radio" class="loanType" id="loantype-car" name="loantype" value="Car Finance">
                                 </label>
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
+                                <input type="radio" class="loanType" id="loantype-marine" name="loantype" value="Marine Finance">
                                 <label for="loantype-marine" class="loantype group">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-marine.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Marine</span>
-                                    <input type="radio" class="loanType" id="loantype-marine" name="loantype" value="Marine Finance">
                                 </label>
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
+                                <input type="radio" class="loanType" id="loantype-caravan" name="loantype" value="Caravan Finance">
                                 <label for="loantype-caravan" class="loantype group">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-caravan.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Caravan</span>
-                                    <input type="radio" class="loanType" id="loantype-caravan" name="loantype" value="Caravan Finance">
                                 </label>
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
+                                <input type="radio" class="loanType" id="loantype-motorbike" name="loantype" value="Motorbike Finance">
                                 <label for="loantype-motorbike" class="loantype group">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-motorbike.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Motorbike</span>
-                                    <input type="radio" class="loanType" id="loantype-motorbike" name="loantype" value="Motorbike Finance">
                                 </label>
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
+                                <input type="radio" class="loanType" id="loantype-truck" name="loantype" value="Truck & Trailer Finance">
                                 <label for="loantype-truck" class="loantype group">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-truck.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary text-xs text-white px-1 py-1 rounded-full leading-none">Truck & Trailer</span>
-                                    <input type="radio" class="loanType" id="loantype-truck" name="loantype" value="Truck & Trailer Finance">
                                 </label>
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
+                                <input type="radio" class="loanType" id="loantype-equipment" name="loantype" value="Equipment Finance">
                                 <label for="loantype-equipment" class="loantype group">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-equipment.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Equipment</span>
-                                    <input type="radio" class="loanType" id="loantype-equipment" name="loantype" value="Equipment Finance">
                                 </label>
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
+                                <input type="radio" class="loanType" id="loantype-personal" name="loantype" value="Personal Finance">
                                 <label for="loantype-personal" class="loantype group">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-personal.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Personal</span>
-                                    <input type="radio" class="loanType" id="loantype-personal" name="loantype" value="Personal Finance">
                                 </label>
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
+                                <input type="radio" class="loanType" id="loantype-business" name="loantype" value="Business Finance">
                                 <label for="loantype-business" class="loantype group">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-business.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Business</span>
-                                    <input type="radio" class="loanType" id="loantype-business" name="loantype" value="Business Finance">
                                 </label>
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
+                                <input type="radio" class="loanType" id="loantype-other" name="loantype" value="Other Finance">
                                 <label for="loantype-other" class="loantype group">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-others.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Other</span>
-                                    <input type="radio" class="loanType" id="loantype-other" name="loantype" value="Other Finance">
                                 </label>
                             </div>
                         </div>
@@ -229,12 +233,12 @@
 
                         <div class="flex flex-wrap justify-between pt-12 gap-y-10">
                             <div class="w-full md:w-7/12">
-                                <p class="borrowAmount text-4xl md:text-85 text-secondary pb-10 md:pb-16">$<span id="borrowAmount">0</span></p>
+                                <p class="borrowAmount text-4xl md:text-85 text-secondary pb-10 md:pb-16">$<span id="borrowAmount">5000</span></p>
 
                                 <div class="range">
                                     <div class="sliderThumb amount"></div>
                                     <div class="progressBar amount"></div>
-                                    <input type="range" id="borrowSlider" name="borrowAmount" min="5000" max="2000000" value="0" step="5000">
+                                    <input type="range" id="borrowSlider" name="borrowAmount" min="5000" max="2000000" value="5000" step="5000">
                                 </div>
                             </div>
                             <div class="w-full md:w-fit">
@@ -340,10 +344,13 @@
             <p>More options Australia-wide</p>
         </div>
 
-        <div class="lenderSlider py-5 border-x border-white mt-5">
-            <?php for ($i = 1; $i < 36; $i++) : ?>
-                <div class="w-[200px] h-[77px]"><?= renderImg('lender-' . $i . '.png', 'logo') ?></div>
-            <?php endfor; ?>
+        <div class="relative overflow-x-hidden">
+            <div class="absolute h-full w-full bg-white/0 z-50"></div>
+            <div class="lenderSlider py-5 border-x border-white mt-5 z-40">
+                <?php for ($i = 1; $i < 36; $i++) : ?>
+                    <div class="w-[200px] h-[77px]"><?= renderImg('lender-' . $i . '.png', 'logo') ?></div>
+                <?php endfor; ?>
+            </div>
         </div>
     </div>
 </section>
@@ -915,10 +922,10 @@
                         </p>
 
                         <div class="tags flex flex-wrap gap-2">
-                            <?php $tags = ["Insurance options", "Asset Finance Specialist", "Access to 78+ lenders", "Marketing & Tech Support"]; ?>
+                            <?php $tags = ["Insurance Options", "Asset Finance Specialist", "Access to 78+ lenders", "Marketing & Tech Support"]; ?>
 
                             <?php foreach ($tags as $tag) : ?>
-                                <p class="w-fit h-[42px] bg-primary text-cool-white rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
+                                <p class="w-fit h-[42px] capitalize bg-primary text-cool-white rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
                             <?php endforeach; ?>
                         </div>
                     </div>
@@ -1014,7 +1021,7 @@
                     <div class="relative z-50 px-5 pt-7 pb-72 md:p-10">
                         <p class="md:w-8/12 text-4xl md:text-55 text-secondary leading-none font-medium">Your comprehensive <span class="text-cool-white">finance partner</span></p>
                         <p class="md:w-7/12 py-10 text-secondary font-visby text-lg md:text-xl">
-                            When you partner with Sertified Finance you get access to Sertified’s market leading asset finance CRM that has live deal tracking, instant smart quoting, document & contract E-sign, plus more!
+                            When you partner with Sertified Finance you get access to<br /> Sertified’s market leading asset finance CRM that has live deal tracking, instant smart quoting, document & contract E-sign, plus more!
                         </p>
                         <a href="tel:<?= $phone_number ?>" class="btn w-fit bg-indigo text-white px-7">Call us today</a>
                     </div>
@@ -1058,7 +1065,7 @@
 
                         <div class="w-full md:w-1/2 px-1.5">
                             <input type="tel" placeholder="Contact no.*" id="referralPhoneNumber" name="phone" class="form-control" required>
-                            <p class="text-sm text-red-500 pt-2 ps-5 hidden" id="referralPhoneError">Invalid Phone Number</p>
+                            <p class="text-sm text-red-500 pt-2 ps-5 hidden" id="referralPhoneError">Invalid Phone Number Eg: 0400000000</p>
 
                         </div>
 
@@ -1121,11 +1128,11 @@
                     <div class="flex flex-wrap items-center mt-5 md:mt-7 -mx-2">
                         <p class="w-fit px-2 text-55 text-cool-white font-medium">$</p>
                         <div class="w-fit grow px-2">
-                            <p class="bg-cool-white text-primary text-35 md:text-55 leading-none font-medium rounded-20 px-5 py-7">26,571,783...</p>
+                            <p class="bg-cool-white text-primary text-35 md:text-55 leading-none font-medium rounded-20 px-5 py-7">26,571,783<span class="loading_dots"></span></p>
                         </div>
                     </div>
                     <div class="flex justify-end">
-                        <p class="w-full md:w-11/12 text-xl text-primary pt-3">Total funds disbursed, and counting...</p>
+                        <p class="w-full md:w-11/12 text-xl text-primary pt-3">Total funds disbursed, and counting<span class="loading_dots"></span></p>
                     </div>
                 </div>
             </div>
