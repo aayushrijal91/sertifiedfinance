@@ -1245,13 +1245,13 @@
 
                     <div class="tab px-1">
                         <p class="text-secondary font-medium text-xl md:text-2xl pb-5">Your phone number</p>
-                        <input type="tel" class="form-control required" name="phone" placeholder="e.g. 0412 345 678" />
+                        <input type="tel" class="phone-number form-control required" name="phone" placeholder="e.g. 0412 345 678" />
                         <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
                     </div>
 
                     <div class="tab px-1">
                         <p class="text-secondary font-medium text-xl md:text-2xl pb-5">Your email</p>
-                        <input type="email" class="form-control required" name="email" placeholder="e.g. janedoe@email.com" />
+                        <input type="email" class="email form-control required" name="email" placeholder="e.g. janedoe@email.com" />
                         <p class="invalid-feedback text-red-500 text-opacity-0">Please fill in this field</p>
                     </div>
 
@@ -1281,7 +1281,7 @@
                 </div>
 
                 <div class="flex flex-wrap items-center justify-center md:justify-between mt-11 gap-y-10">
-                    <button onclick="nextPrev(-1)" id="prevBtn" class="w-1/2 md:w-fit text-xl font-visby text-cool-white order-1">Back</button>
+                    <button type="button" onclick="nextPrev(-1)" id="prevBtn" class="w-1/2 md:w-fit text-xl font-visby text-cool-white order-1">Back</button>
 
                     <div class="w-8/12 md:w-5/12 order-3 md:order-2">
                         <div class="enquiryProgressSteps">

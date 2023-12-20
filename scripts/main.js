@@ -296,6 +296,7 @@ function validateForm() {
                 if (!phoneNumberRegex.test(input.val())) {
                     input.addClass("invalid");
                     errorMessage.removeClass("text-opacity-0");
+                    errorMessage.html('Pleas enter valid phone number. Eg: 0400000000')
                     isValid = false;
                     return; // Exit the loop if phone number is invalid
                 }
@@ -307,6 +308,7 @@ function validateForm() {
                 if (!emailRegex.test(input.val())) {
                     input.addClass("invalid");
                     errorMessage.removeClass("text-opacity-0");
+                    errorMessage.html('Pleas enter valid email address')
                     isValid = false;
                     return; // Exit the loop if email is invalid
                 }
