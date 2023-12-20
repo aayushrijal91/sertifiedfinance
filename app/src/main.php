@@ -593,7 +593,7 @@
     </div>
 
     <div class="flex flex-wrap justify-end">
-        <div class="w-full xl:w-10/12">
+        <div class="w-full xl:w-11/12 2xl:w-10/12">
             <div id="sertifiedServicesSlider" class="my-20">
                 <div>
                     <?= renderImg('slider-1.jpg', 'lib', 'h-full w-full object-cover') ?>
