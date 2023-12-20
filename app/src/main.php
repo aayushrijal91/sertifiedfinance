@@ -233,12 +233,12 @@
 
                         <div class="flex flex-wrap justify-between pt-12 gap-y-10">
                             <div class="w-full md:w-7/12">
-                                <p class="borrowAmount text-4xl md:text-85 text-secondary pb-10 md:pb-16">$<span id="borrowAmount">5000</span></p>
+                                <p class="borrowAmount text-4xl md:text-85 text-secondary pb-10 md:pb-16">$<span id="borrowAmount">0</span></p>
 
                                 <div class="range">
                                     <div class="sliderThumb amount"></div>
                                     <div class="progressBar amount"></div>
-                                    <input type="range" id="borrowSlider" name="borrowAmount" min="5000" max="2000000" value="5000" step="5000">
+                                    <input type="range" id="borrowSlider" name="borrowAmount" min="0" max="2000000" value="0" step="5000">
                                 </div>
                             </div>
                             <div class="w-full md:w-fit">
@@ -594,7 +594,7 @@
 
     <div class="flex flex-wrap justify-end">
         <div class="w-full xl:w-11/12 2xl:w-10/12">
-            <div id="sertifiedServicesSlider" class="my-20">
+            <div id="sertifiedServicesSlider" class="my-10 md:my-20">
                 <div>
                     <?= renderImg('slider-1.jpg', 'lib', 'h-full w-full object-cover') ?>
                     <?= renderImg('bush.png', 'lib', 'absolute h-full left-0 top-0 z-40') ?>
@@ -974,7 +974,7 @@
                             <?php $tags = ["Prime & Subprime Lending", "Access to 78+ lenders", "New & Used Assets", "Insurance options"]; ?>
 
                             <?php foreach ($tags as $tag) : ?>
-                                <p class="w-fit h-[42px] bg-secondary text-primary font-medium rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
+                                <p class="w-fit capitalize h-[42px] bg-secondary text-primary font-medium rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
                             <?php endforeach; ?>
                         </div>
                     </div>
@@ -1002,7 +1002,7 @@
                             <?php $tags = ["High Converting Sales", "Comprehensive Finance Solution", "Marketing Collaboration", "Trusted Finance Partner"]; ?>
 
                             <?php foreach ($tags as $tag) : ?>
-                                <p class="w-fit h-[42px] bg-primary text-cool-white rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
+                                <p class="w-fit capitalize h-[42px] bg-primary text-cool-white rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
                             <?php endforeach; ?>
                         </div>
                     </div>
@@ -1029,7 +1029,7 @@
                             <?php $tags = ["Client Focused Solutions", "Comprehensive Finance Solution", "Full Training & Support", "Trusted Finance Partner"]; ?>
 
                             <?php foreach ($tags as $tag) : ?>
-                                <p class="w-fit h-[42px] bg-secondary text-primary font-medium rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
+                                <p class="w-fit capitalize h-[42px] bg-secondary text-primary font-medium rounded-full flex justify-center items-center px-4 font-visby"><?= $tag ?></p>
                             <?php endforeach; ?>
                         </div>
                     </div>
