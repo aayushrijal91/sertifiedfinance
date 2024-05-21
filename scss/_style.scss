@@ -116,6 +116,10 @@ section.banner {
                 }
             }
         }
+
+        #banner_form_submit.disabled {
+            opacity: 0.4;
+        }
     }
 }
 

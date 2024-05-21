@@ -352,6 +352,8 @@ $("#referralForm").on('submit', function (e) {
 $("#banner_form").on('submit', function (e) {
     e.preventDefault();
 
+    $('#banner_form_submit').addClass('disabled').prop('disabled', true);
+
     let validation = validatePhoneNumber("#bannerPhoneNumber", "#bannerPhoneError");
 
     if (validation) this.submit();

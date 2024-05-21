@@ -303,7 +303,7 @@
                                 <input type="email" class="form-control" placeholder="Email address*" name="email" required />
                             </div>
                             <div class="w-full md:w-1/3 px-2">
-                                <button type="submit" class="flex justify-center items-center h-[57px] rounded-md text-lg w-full bg-indigo text-white px-7 show-form-tab-4">Continue</button>
+                                <button id="banner_form_submit" type="submit" class="flex justify-center items-center h-[57px] rounded-md text-lg w-full bg-indigo text-white px-7 show-form-tab-4">Continue</button>
                             </div>
                         </div>
                     </div>
