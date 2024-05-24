@@ -417,10 +417,10 @@
             <div class="w-full xl:w-11/12 2xl:w-9/12 px-5 md:px-10 py-12 md:py-20">
                 <p class="text-4xl md:text-55 font-medium text-primary leading-none text-center md:text-start">Our happy clients</p>
 
-                <div class="flex flex-col items-center md:hidden flex-wrap gap-y-7 pt-7">
+                <!-- <div class="flex flex-col items-center md:hidden flex-wrap gap-y-7 pt-7">
                     <p class="w-full font-visby text-center text-[#1C305F]">Like our service?</p>
                     <a href="https://g.page/r/CZlFx3efEH8HEB0/review" class="btn w-8/12 bg-indigo text-white px-7">Leave us a review</a>
-                </div>
+                </div> -->
 
                 <div class="flex flex-wrap -mx-2 py-14 md:py-20 gap-y-4">
                     <div class="w-full md:w-1/2 px-2">
@@ -430,19 +430,19 @@
 
                             <?php $testimonials = [
                                 [
-                                    "name" => "Shreyash Chouhan",
+                                    "name" => "Shreyash C",
                                     "review" => "I had a great experience with Sertified Finance - their customer service was excellent and they offered great options. I especially want to thank Jemmah for going above and beyond to help me get my car loan approved quickly. Her exceptional assistance made all the difference.",
                                 ],
                                 [
-                                    "name" => "Zelia Co",
+                                    "name" => "Zelia C",
                                     "review" => "Harry was fantastic. He goes out of his way to help. I would recommend him to anyone who is looking for finance",
                                 ],
                                 [
-                                    "name" => "Vivek Singh",
+                                    "name" => "Vivek S",
                                     "review" => "Best finance company with great customer service and awesome service and it was a wonderful experience working with this finance firm thank you so much looking forward to work you with guys in future",
                                 ],
                                 [
-                                    "name" => "Shariful Khan",
+                                    "name" => "Shariful K",
                                     "review" => "Jemmah Wilson is an wonderful person to deal with about finance, I just bought a car through sertified finance . Jemmah took me through step by step processing my finance, made it so easy for me to buy my car. I really appreciate her hardwork and positivity made my financing successful. I will definitely recommend Jemmah Wilson as a finance broker to everyone.",
                                 ],
                             ]; ?>
@@ -496,19 +496,19 @@
 
                             <?php $testimonials = [
                                 [
-                                    "name" => "Colby Abbot",
+                                    "name" => "Colby A",
                                     "review" => "Harry gave me extremely good service. Communication and friendliness was on point. Will definitely go through them again",
                                 ],
                                 [
-                                    "name" => "Nathaniel Owen",
+                                    "name" => "Nathaniel O",
                                     "review" => "Absolutely stoked with the work done by Harry Dubois and Sertified Finance! I spoke to Harry in preparation of purchasing a new vehicle for my business, he got me multiple quotes and found me the best deal. Harry also worked with the private seller to organise everything and I’ve just picked up the keys! Cheers Sertified Finance. 10/10 from me!",
                                 ],
                                 [
-                                    "name" => "Brendan Shoard",
+                                    "name" => "Brendan S",
                                     "review" => "I have been dealing with Harry for a while now and from day one he has sought the best possible outcome for myself. He keeps you up to date with each phase of the finance process which is why I recommend Sertified Finance to my family and friends",
                                 ],
                                 [
-                                    "name" => "Shiladitya Mazumdar",
+                                    "name" => "Shiladitya M",
                                     "review" => "Extremely pleased with the way my car finance process was handled by Harry. The entire process was very transparent, well documented and the loan was actioned after consultation with the best possible resources for my situation. Sertified Finance was always readily responsive in every step of the way and made it a very smooth process in securing the finance.",
                                 ],
                             ]; ?>
@@ -556,10 +556,10 @@
                     </div>
                 </div>
 
-                <div class="hidden md:flex flex-wrap gap-x-4">
+                <!-- <div class="hidden md:flex flex-wrap gap-x-4">
                     <p class="w-fit font-visby text-[#1C305F]">Like our service?</p>
                     <a href="https://g.page/r/CZlFx3efEH8HEB0/review" class="btn w-fit bg-indigo text-white px-7">Leave us a review</a>
-                </div>
+                </div> -->
             </div>
         </div>
 

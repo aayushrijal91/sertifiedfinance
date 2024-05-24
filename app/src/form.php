@@ -17,9 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
     $recaptcha = json_decode($recaptcha);
 
     try {
-        if ($recaptcha->score < 0.5) {
-            throw new Exception('Sorry we could not verify you! Please try again.');
-        }
+        // if ($recaptcha->score < 0) {
+        //     throw new Exception('Sorry we could not verify you! Please try again.');
+        // }
 
         $to = $admin_email;
         $subject = "Message from " . $site;
@@ -124,9 +124,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
     $recaptcha = json_decode($recaptcha);
 
     try {
-        if ($recaptcha->score < 0.5) {
-            throw new Exception('Sorry we could not verify you! Please try again.');
-        }
+        // if ($recaptcha->score < 0.5) {
+        //     throw new Exception('Sorry we could not verify you! Please try again.');
+        // }
 
         $to = $admin_email;
         $subject = "Message from " . $site;
@@ -198,9 +198,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token']) && $_POST['f
     $recaptcha = json_decode($recaptcha);
 
     try {
-        if ($recaptcha->score < 0.5) {
-            throw new Exception('Sorry we could not verify you! Please try again.');
-        }
+        // if ($recaptcha->score < 0.5) {
+        //     throw new Exception('Sorry we could not verify you! Please try again.');
+        // }
 
         $subject = "Message from " . $site;
         $to = $admin_email;

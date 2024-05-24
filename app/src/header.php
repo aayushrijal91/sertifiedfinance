@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Sertified Finance is your market leading consumer and commercial asset finance specialist working with 78+ lenders to secure you the best deal.">
+	<meta name="description" content="Sertified Finance provides market leading finance for cars, marine, caravans, motorbikes, trucks & trailers, equipment, personal and business loans, + more">
 	<link rel="icon" href="./assets/images/favicon.png" type="image/png">
 	<title><?= $site ?></title>
 	<meta property="og:type" content="website">

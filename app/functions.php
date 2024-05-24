@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/env.php';
 
-$site = "Sertified Finance";
+$site = "Sertified Finance Pty Ltd";
 $phone_number = "1300 041 041";
 // $admin_email = 'arijal@aiims.com.au';
 $admin_email = 'hello@sertified.finance';

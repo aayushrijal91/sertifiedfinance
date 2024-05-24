@@ -32,6 +32,12 @@
 			<p class="w-fit text-center text-white">
 				ACN: 662 601 916 <span class="px-5">|</span> Australian Credit License #543046
 			</p>
+
+			<p class="w-fit text-center text-primary">
+				<a href="./assets/files/Website Terms of Use doc .pdf" target="_blank">Website Terms of Use</a>
+				<span class="px-5">/</span> <a href="./assets/files/IDR doc .pdf" target="_blank">IDR</a>
+				<span class="px-5">/</span> <a href="./assets/files/Privacy Policy doc .pdf" target="_blank">Privacy Policy</a>
+			</p>
 		</div>
 	</div>
 </footer>
