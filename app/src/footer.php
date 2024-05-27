@@ -34,10 +34,215 @@
 			</p>
 
 			<p class="w-fit text-center text-primary">
-				<a href="./assets/files/Website Terms of Use doc .pdf" target="_blank">Website Terms of Use</a>
-				<span class="px-5">/</span> <a href="./assets/files/IDR doc .pdf" target="_blank">IDR</a>
-				<span class="px-5">/</span> <a href="./assets/files/Privacy Policy doc .pdf" target="_blank">Privacy Policy</a>
+				<button class="openModal underline" data-target="#modal1">Website Terms of Use</button>
+				<span class="px-5">|</span><button class="openModal underline" data-target="#modal2">IDR</button>
+				<span class="px-5">|</span><button class="openModal underline" data-target="#modal3">Privacy Policy</button>
 			</p>
+
+			<!-- Modal -->
+			<div id="modal1" class="modal fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-[1000000] text-start hidden">
+				<div class="bg-white rounded-lg shadow-lg overflow-x-hidden overflow-y-scroll w-11/12 h-[75vh] relative">
+					<button data-target="#modal1" class="closeModal absolute top-[10px] right-[10px] text-gray-800">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+							<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+						</svg>
+					</button>
+
+					<div class="p-4 text">
+						<p class="font-bold text-lg md:text-2xl">Website Terms of Use</p>
+						<p>To customise our website for you, for statistical purposes, to identify if you have accessed a Third Party website and for security purposes.</p>
+
+						<p class="font-bold text-xl pt-5">IP addresses</p>
+						<p>Your IP address is the identifier for your computer when you are using the internet. It may be necessary for us to collect your IP address for your interaction with various parts of our website.</p>
+
+						<p class="font-bold text-xl pt-5">Online applications</p>
+						<p>When you send a completed online application on to us, we retain the information contained in that application. We are able to then use that information on to provide any financial services that you require.</p>
+						<p>You can also suspend and save online applications, so you can complete and send the applications later. If you suspend or save your application, the informal on that you have entered will be retained in our systems so that you may recover the information on when you resume your application. Online applications that have been suspended or saved may be viewed by us.</p>
+
+						<p class="font-bold text-xl pt-5">Security of information</p>
+						<p>The security of your information is very important to us. We regularly review developments in security and encryption technologies. Unfortunately, no data transmission over the internet can be guaranteed as totally secure. We take all reasonable steps to protect the information in our systems from misuse, interference, loss, and any unauthorised access, modification on or disclosure. If we no longer require your information, and we are legally permitted to, we will take all reasonable steps to destroy or de-identify the information. We take reasonable steps to preserve the security of cookie and personal information on in accordance with this policy. If your browser is suitably configured, it will advise you whether the information you are sending us will be secure (encrypted) or not secure (unencrypted).</p>
+
+						<p class="font-bold text-xl pt-5">Direct marketing</p>
+						<p>We will not use or disclose sensitive information about you for direct marketing purposes unless you have consented to that kind of use or disclosure. We may use your personal information for direct marketing purposes. If you do not wish to receive direct marketing communications from us or from other organisations or wish to know the source of the information being used, you may submit a written request to <a href="mailto:<?= $admin_email ?>" class="text-primary underline"><?= $admin_email ?></a> , We will respond to your request as soon as practicable.</p>
+
+						<p class="font-bold text-xl pt-5">Disclosure to overseas entities</p>
+						<p>We do not generally disclose personal information obtained from cookies to overseas entities in the course of our activities. Please contact us on <a href="tel:<?= $phone_number ?>" class="text-primary underline"><?= $phone_number ?></a> if you would like further information.</p>
+
+						<p class="pt-5"><b>Disclaimer:</b> This website is designed to provide you with information only. This information contained within does not take into account your needs, objectives or financial situation. To understand whether a credit product is right for you, speak to one of our licensed Finance Brokers. Terms, conditions, fee’s, charges and minimum loan amounts may apply. Credit is subject to approval by the credit provider under their responsible lending policy.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="modal2" class="modal fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-[1000000] text-start hidden">
+				<div class="bg-white rounded-lg shadow-lg overflow-x-hidden overflow-y-scroll w-11/12 h-[75vh] relative">
+					<button data-target="#modal2" class="closeModal absolute top-[10px] right-[10px] text-gray-800">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+							<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+						</svg>
+					</button>
+
+					<div class="p-4 text">
+						<p class="font-bold text-lg md:text-2xl">IDR</p>
+						<p class="font-bold text-xl pt-5">Internal Dispute Resolution (IDR) Process</p>
+						<p class="pt-3">This policy provides information about our internal dispute resolution (IDR) process. Our IDR service is provided to you free of charge.</p>
+						<p class="pt-3">NATIONAL FINANCE CONNECTIONS PTY LTD | ACN 661 296 457 | Australian Credit Licence 543046 (we/us/our) believes that it is essential for us to have the ability, authority and proper training to hear and respond appropriately to any complaints or disputes raised by our customers.</p>
+
+						<p class="font-bold text-xl pt-5">How you may lodge a complaint</p>
+						<p class="pt-3">You can lodge complaints by contacting:</p>
+						<p>Mr Rob Ryan | Chief Operations Officer</p>
+						<p>National Finance Connections Pty Ltd</p>
+						<p>Avaya House, Level 9, 123 Epping Rd</p>
+						<p>Macquarie Park NSW 2113</p>
+						<p>T: 02 8985 7358</p>
+						<p>E: complaints@vikingaggregation.com.au</p>
+						<p class="pt-3">You may also lodge a complaint by speaking to any representative of our business who will refer you to the Complaints Officer. You should explain the details of your complaint as clearly as you can. You may do this verbally or in writing.</p>
+						<p class="pt-3">To assist complainants who might need additional assistance to lodge a complaint, we:</p>
+						<ul class="list-disc ps-10 pt-3">
+							<li>offer multiple methods for lodging complaints, including phone, email, le er, social media, in person, or online;</li>
+							<li>do not require complaints to be in writing;</li>
+							<li>ensure that information provided to the public about our IDR process, including this policy, is available in a range of languages and formats (including large print and audiotape);</li>
+							<li>provide training to all staff (not just complaints management staff) to enable staff to be able to identify, support and assist complainants who need additional assistance, including cross-cultural training; and</li>
+							<li>allow representatives to lodge complaints on behalf of complainants, including financial counsellors, legal representatives, family members and friends.</li>
+						</ul>
+
+						<p class="font-bold text-xl pt-5">Dealing with complaints</p>
+						<p class="pt-3">Our process for dealing with complaints is as follows:</p>
+
+						<p class="pt-3"><b>Acknowledgement:</b> We will acknowledge receipt of your complaint promptly – that is, within one business day of receiving it, or as soon as practicable.</p>
+						<p class="pt-3"><b>Assessment and investigation:</b> We will review your complaint carefully and promptly, taking such steps and reviewing such documents as reasonably necessary.</p>
+						<p class="pt-3"><b>IDR response:</b> We will provide an ‘IDR response’, which is a written communication that sets out the final outcome of your complaint through our IDR process and your right to take your complaint to AFCA if you are not satisfied with the IDR response. If we reject or partially reject your complaint, we will clearly set out the reasons for our decision.</p>
+
+						<p class="font-bold text-xl pt-5">Response timeframes</p>
+						<p class="pt-3">Generally, we will provide an IDR response to you no later than 30 calendar days after receiving the complaint. However, for some specific types of credit-related complaints, the following response timeframes apply.</p>
+
+						<ul class="list-disc ps-10 pt-3">
+							<li>Credit-related complaints involving default notices: No later than 21 calendar days a er receiving the complaint;</li>
+							<li>Credit-related complaints involving hardship notices or requests to postpone enforcement proceedings: No later than 21 calendar days a er receiving the complaint. Exceptions apply</li>
+							<li>If we do not have sufficient information on to make a decision, or if we reach an agreement with you.</li>
+						</ul>
+
+						<p class="pt-3">We do not need to provide an IDR response to you if we close your complaint by the end of the fifth business day a er receipt because we have:</p>
+
+						<ul class="ps-10 pt-3">
+							<li>a) resolved the complaint to your satisfaction; or</li>
+							<li>b) given you an explanation on and/or apology we can take no further ac on to reasonably address your complaint.</li>
+						</ul>
+
+						<p class="pt-3">However, we must provide a written IDR response for complaints closed by the end of the fifth business day after receipt if:</p>
+						<ul class="pt-3">
+							<li>a) the complainant requests a written response; or</li>
+							<li>b) the complaint is about hardship.</li>
+						</ul>
+
+						<p class="font-bold text-xl pt-5">Our external dispute resolution scheme – AFCA</p>
+						<p class="pt-3">If we do not reach agreement on your complaint, you may refer your complaint to the Australian Financial Complaints Authority (AFCA).</p>
+
+						<p class="pt-3">You can contact the AFCA scheme:</p>
+						<ul class="list-disc ps-10 pt-3">
+							<li>by phone on 1800 931 678;</li>
+							<li>by email at info@afca.org.au; or</li>
+							<li>in writing to GPO Box 3, Melbourne VIC 3001.</li>
+						</ul>
+						<p class="pt-3">The AFCA scheme is a free service established to provide you with an independent mechanism to resolve specific complaints.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="modal3" class="modal fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-[1000000] text-start hidden">
+				<div class="bg-white rounded-lg shadow-lg overflow-x-hidden overflow-y-scroll w-11/12 h-[75vh] relative">
+					<button data-target="#modal3" class="closeModal absolute top-[10px] right-[10px] text-gray-800">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+							<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+						</svg>
+					</button>
+
+					<div class="p-4 text">
+						<p class="font-bold text-lg md:text-2xl">Privacy Policy</p>
+						<p class="pt-3">Who are we? We’ , ‘us’ and ‘our’ refer to [Sertified Finance] ACN [662601916], Australian Credit Licence [543046] and our related businesses.</p>
+
+						<p class="font-bold text-xl pt-5">Our commitment to protect your privacy</p>
+						<p class="pt-3">We understand how important it is to protect your personal information. This document sets out our privacy policy commitment in respect of the personal information (including credit-related information) we hold about you and what we do with that information. We recognise that any personal information on we collect about you will only be used for the purposes we have collected it or as allowed under the law. It is important to us that you are confident that any personal information we hold about you will be treated in a way which ensures protection of your personal information. Our commitment in respect of personal information is to abide by the Australian Privacy Principles (APPs) and Part IIIA of the Privacy Act, the Privacy (Credit Reporting) Code 2014 and any other relevant law.</p>
+
+						<p class="font-bold text-xl pt-5">Personal information</p>
+						<p class="pt-3">When we refer to personal information, we mean information from which your identity is reasonably apparent. This information may include information or an opinion about you. The personal information we hold about you may also include credit-related information.</p>
+
+						<p class="font-bold text-xl pt-5">Credit-related information means</p>
+						<p class="pt-3">Credit information, which includes your identity: the type, terms and maximum amount of credit provided to you, including when that credit was provided and when it was repaid; repayment history information; financial hardship information (including information that any repayments are affected by a financial hardship arrangement); default information (including overdue payments); payment information; new arrangement information; details of any serious credit infringements; court proceedings information, personal insolvency information and publicly available information; and;</p>
+						<p class="pt-3">Credit eligibility information, which is credit reporting information supplied to us by a credit reporting body, and any information that we derive from it.</p>
+						<p class="pt-3">We use your credit-related information to assess your eligibility to be provided with any finance. Usually, credit related information is exchanged between credit and finance providers and credit reporting bodies. The kinds of personal information we may collect about you include your name, date of birth, address, account details, occupation, and any other information we made need to identify you.</p>
+						<p class="pt-3">If you are applying for finance or provide a guarantee we may also collect the number and ages of your dependants and cohabitants, the length of time at your current address, your employment details and proof of earnings and expenses. If you apply for any insurance product through us, we may collect information about what is being insured, the beneficiaries and your health information including medical and lifestyle information from you or your health professionals. We will only collect health information from you with your consent.</p>
+
+
+						<p class="font-bold text-xl pt-5">Why we collect your personal information</p>
+						<p class="pt-3">We collect personal information for the purposes of assessing your application for finance and managing that finance, establishing your identity, contacting you, managing our risk and to comply with our legal obligations.</p>
+
+						<p class="font-bold text-xl pt-5">How do we collect your personal information?</p>
+						<p class="pt-3">Where reasonable and practical we will collect your personal information directly from you. We may collect information about you that is publicly available, for example from public registers or social media, or made available by third parties. We may also collect your personal information from credit reporting bodies, mortgage and finance brokers, employers and other people such as accountants and lawyers.</p>
+						<p class="pt-3">We will not ask you to supply personal information publicly over Facebook, X , or any other social media platform that we use.</p>
+
+						<p class="font-bold text-xl pt-5">Do we disclose your personal information? We may disclose your personal information:</p>
+						<ul class="pt-3 list-disc ps-10">
+							<li>to prospective funders or other intermediaries in relation to your finance requirements</li>
+							<li>to other organisations that are involved in managing or administering your finance such as third party suppliers, printing and postal services, call centres, lenders mortgage insurers, trade insurers and credit reporting bodies;</li>
+							<li>to associated businesses that may want to market products to you</li>
+							<li>to companies that provide information and infrastructure systems to us</li>
+							<li>to our agents, contractors, external service providers to outsource certain functions, for example, statement production, debt recovery and information technology support</li>
+							<li>to any person or entity who represents you, including finance brokers, lawyers, mortgage brokers, guardians, persons holding power of attorney and accountants</li>
+							<li>to any person or entity, where you have provided us consent</li>
+							<li>other guarantors or borrowers (if more than one) or prospective borrowers including in relation to any credit you guarantee or propose to guarantee</li>
+							<li>to our auditors, insurers, re-insurers and health care providers</li>
+							<li>to claims related providers, such as assessors and investigators who help us with claims ;</li>
+							<li>where we are authorised to do so by law, such as under the An-Money Laundering and Counter Terrorism Financing Act 2006 (Cth), government and law enforcement agencies or regulators</li>
+							<li>to investors, agents or advisers, trustees, rating agencies or any entity that has an interest in your finance or our business</li>
+							<li>to other financial institutions, for example to process a claim for mistaken payment</li>
+							<li>organisations that provide products or services used or marketed by us or</li>
+							<li>to your employer, former employer, referees or identity verification services.</li>
+						</ul>
+						<p class="pt-3">Prior to disclosing any of your personal information to another person or organisation, we will take all reasonable steps to satisfy ourselves that:</p>
+						<ul class="list-disc ps-10 pt-3">
+							<li>the person or organisation has a commitment to protecting your personal information at least equal to our commitment, or</li>
+							<li>you have consented to us making the disclosure.</li>
+						</ul>
+
+						<p class="font-bold text-xl pt-5">Credit related information</p>
+						<p class="pt-3">We exchange credit-related information for the purposes of assessing your application for finance and managing that finance. If you propose to be a guarantor, one of our checks may involve obtaining a credit report about you. This credit-related information may be held by us in electronic form on our secure servers and may also be held in paper form. We may use cloud storage to store the credit-related information we hold about you.</p>
+						<p class="pt-3">When we obtain credit eligibility information from a credit reporting body about you, we may also seek publicly available information and information about any serious credit infringement that you may have committed.</p>
+
+						<p class="font-bold text-xl pt-5">Direct marketing</p>
+						<p class="pt-3">From time to time we may use your personal information to provide you with current information about finance, offers you may find of interest, changes to our organisation, or new products or services being offered by us or any company with whom we are associated.</p>
+						<p class="pt-3">If you do not wish to receive marketing information, you may at any me decline to receive such information by telephoning us on <a href="tel:<?= $phone_number ?>" class="underline text-primary"><?= $phone_number ?></a> or by writing to us at <a href="mailto:<?= $admin_email ?>" class="underline text-primary"><?= $admin_email ?></a> and If the direct marketing is by email you may also use the unsubscribe function. We will not charge you for giving effect to your request and will take all reasonable steps to meet your request at the earliest possible opportunity.</p>
+
+						<p class="font-bold text-xl pt-5">Updating your personal information</p>
+						<p class="pt-3">It is important to us that the personal information we hold about you is accurate and up to date. During the course of our relationship with you we may ask you to inform us if any of your personal information has changed. If you wish to make any changes to your personal information, you may contact us. We will generally rely on you to ensure the information we hold about you is accurate or complete.</p>
+
+						<p class="font-bold text-xl pt-5">Access and correction to your personal and credit information</p>
+						<p class="pt-3">We will provide you with access to the personal and credit-related information we hold about you. You may request access to any of the personal information we hold about you at any me. We may charge a fee for our costs of retrieving and supplying the information to you.</p>
+						<p class="pt-3">Depending on the type of request that you make we may respond to your request immediately, otherwise we will usually respond within seven days of receiving your request. We may need to contact other entities to properly investigate your request.</p>
+						<p class="pt-3">There may be situations where we are not required to provide you with access to your personal or credit-related information, for example, if the information relates to existing or anticipated legal proceedings, if your request is vexatious or if the information is commercially sensitive.</p>
+						<p class="pt-3">An explanation will be provided to you if we deny you access to the personal or credit-related information we hold about you. If any of the personal or credit-related information we hold about you is incorrect, inaccurate or out of date you may request that we correct the information by telephoning us on <a href="tel:<?= $phone_number ?>" class="underline text-primary"><?= $phone_number ?></a> or by writing to us at <a href="mailto:<?= $admin_email ?>" class="underline text-primary"><?= $admin_email ?></a> ; If appropriate we will correct the personal information at the time of the request. Otherwise, we will provide an initial response to you within seven days of receiving your request. Where reasonable, and after our investigation, we will provide you with details about whether we have corrected the personal or credit-related information within 30 days.</p>
+						<p class="pt-3">We may need to consult with other finance providers or credit reporting bodies or entities as part of our investigation. If we refuse to correct personal or credit-related information we will provide you with our reasons for not correcting the information.</p>
+
+						<p class="font-bold text-xl pt-5">Business without identifying you</p>
+						<p class="pt-3">In most circumstances it will be necessary for us to identify you in order to successfully do business with you. However, where it is lawful and practicable to do so, we will offer you the opportunity of doing business with us without providing us with personal information, for example, if you make general inquiries about interest rates or current promotional offers.</p>
+
+						<p class="font-bold text-xl pt-5">Sensitive information</p>
+						<p class="pt-3">We will only collect sensitive information about you with your consent. Sensitive information is personal information that includes information relating to your racial or ethnic origin, political persuasion, memberships in trade or professional associations or trade unions, sexual preferences, criminal record, or health.</p>
+
+						<p class="font-bold text-xl pt-5">How safe and secure is your personal information that we hold?</p>
+						<p class="pt-3">We will take a range of measures and reasonable steps to protect your personal information. Your personal information will always be stored in a secure environment. We may store your personal information in paper and electronic form. We will also take reasonable steps to protect any personal information from misuse, loss and unauthorised access, modification or disclosure.</p>
+
+						<p class="font-bold text-xl pt-5">Complaints</p>
+						<p class="pt-3">If you are dissatisfied with how we have dealt with your personal information, or you have a complaint about our compliance with the Privacy Act and the Credit Reporting Code, you may contact our complaints officer on <a href="tel:<?= $phone_number ?>" class="underline text-primary"><?= $phone_number ?></a>.</p>
+						<p class="pt-3">We will acknowledge your complaint within seven days and aim to resolve the complaint as quickly as possible. We will provide you with a decision on your complaint within 30 days.</p>
+						<p class="pt-3">If you are dissatisfied with the response of our complaints officer you may make a complaint to our External Dispute Resolution Scheme, Australian Financial Complaints Authority who can be contacted by phone on 1800 931 678 or by email at info@afca.org.au; or the Office of the Australian Commissioner who can be contacted at oaic.gov.au or by phone on 1300 363 992.</p>
+
+						<p class="font-bold text-xl pt-5">Further information</p>
+						<p class="pt-3">You may request further information about the way we manage your personal or credit-related information by contacting us. We are constantly reviewing all of our policies and attempt to keep up to date with market expectations. Technology is constantly changing, as is the law and market practice. As a consequence we may change this policy from time to time or as the need arises. We will post any changes to this policy on our website.</p>
+						<p class="pt-3">You may request this policy in an alternative form by telephoning us on <a href="tel:<?= $phone_number ?>" class="underline text-primary"><?= $phone_number ?></a> or by writing to us at <a href="mailto:<?= $admin_email ?>" class="underline text-primary"><?= $admin_email ?></a></p>
+						<p class="pt-3">This privacy and credit reporting policy came into existence on 02/05/2024</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>

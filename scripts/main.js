@@ -385,4 +385,27 @@ $(() => {
     }
 
     startAnimation();
+
+    $('.openModal').on('click', function () {
+        $($(this).data('target')).removeClass('hidden');
+    });
+
+    // jQuery to handle closing the modal
+    $('.closeModal').on('click', function () {
+        $($(this).data('target')).addClass('hidden');
+    });
+
+    // Close the modal when clicking outside of it
+    $(window).on('click', function (event) {
+        const modal = $('.modal');
+        if ($(event.target).is(modal)) {
+            modal.addClass('hidden');
+        }
+    });
+});
+
+$('label.loantype').on('touchstart', function () {
+    $(this).addClass('focused');
+}).on('touchend', function () {
+    $(this).removeClass('focused');
 });

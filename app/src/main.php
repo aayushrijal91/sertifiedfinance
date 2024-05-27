@@ -125,94 +125,97 @@
                         </p>
 
                         <div class="flex flex-wrap lg:justify-center gap-y-2 pt-8 md:pt-12">
+                            <!-- <a href="javascrip:;" class="loantype group">test 1</a> -->
+                            <!-- <a href="javascrip:;" class="loantype group">test 2</a> -->
+                            <!-- <a href="javascrip:;" class="loantype group">test 3</a> -->
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
-                                <input type="radio" class="loanType" id="loantype-car" name="loantype" value="Car Finance">
-                                <label for="loantype-car" class="loantype group">
+                                <label for="loantype-car" class="loantype group duration-500">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-car.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Car</span>
                                 </label>
+                                <input type="radio" class="loanType" id="loantype-car" name="loantype" value="Car Finance">
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
-                                <input type="radio" class="loanType" id="loantype-marine" name="loantype" value="Marine Finance">
-                                <label for="loantype-marine" class="loantype group">
+                                <label for="loantype-marine" class="loantype group duration-500">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-marine.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Marine</span>
                                 </label>
+                                <input type="radio" class="loanType" id="loantype-marine" name="loantype" value="Marine Finance">
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
-                                <input type="radio" class="loanType" id="loantype-caravan" name="loantype" value="Caravan Finance">
-                                <label for="loantype-caravan" class="loantype group">
+                                <label for="loantype-caravan" class="loantype group duration-500">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-caravan.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Caravan</span>
                                 </label>
+                                <input type="radio" class="loanType" id="loantype-caravan" name="loantype" value="Caravan Finance">
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
-                                <input type="radio" class="loanType" id="loantype-motorbike" name="loantype" value="Motorbike Finance">
-                                <label for="loantype-motorbike" class="loantype group">
+                                <label for="loantype-motorbike" class="loantype group duration-500">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-motorbike.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Motorbike</span>
                                 </label>
+                                <input type="radio" class="loanType" id="loantype-motorbike" name="loantype" value="Motorbike Finance">
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
-                                <input type="radio" class="loanType" id="loantype-truck" name="loantype" value="Truck & Trailer Finance">
-                                <label for="loantype-truck" class="loantype group">
+                                <label for="loantype-truck" class="loantype group duration-500">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-truck.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary text-xs text-white px-1 py-1 rounded-full leading-none">Truck & Trailer</span>
                                 </label>
+                                <input type="radio" class="loanType" id="loantype-truck" name="loantype" value="Truck & Trailer Finance">
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
-                                <input type="radio" class="loanType" id="loantype-equipment" name="loantype" value="Equipment Finance">
-                                <label for="loantype-equipment" class="loantype group">
+                                <label for="loantype-equipment" class="loantype group duration-500">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-equipment.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Equipment</span>
                                 </label>
+                                <input type="radio" class="loanType" id="loantype-equipment" name="loantype" value="Equipment Finance">
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
-                                <input type="radio" class="loanType" id="loantype-personal" name="loantype" value="Personal Finance">
-                                <label for="loantype-personal" class="loantype group">
+                                <label for="loantype-personal" class="loantype group duration-500">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-personal.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Personal</span>
                                 </label>
+                                <input type="radio" class="loanType" id="loantype-personal" name="loantype" value="Personal Finance">
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
-                                <input type="radio" class="loanType" id="loantype-business" name="loantype" value="Business Finance">
-                                <label for="loantype-business" class="loantype group">
+                                <label for="loantype-business" class="loantype group duration-500">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-business.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Business</span>
                                 </label>
+                                <input type="radio" class="loanType" id="loantype-business" name="loantype" value="Business Finance">
                             </div>
 
                             <div class="w-1/2 md:w-1/3 lg:w-1/5 xl:flex-1 px-1">
-                                <input type="radio" class="loanType" id="loantype-other" name="loantype" value="Other Finance">
-                                <label for="loantype-other" class="loantype group">
+                                <label for="loantype-other" class="loantype group duration-500">
                                     <div class="grow flex justify-center items-center">
                                         <?= renderImg('option-others.png', 'lib', 'group-hover:scale-105 duration-100') ?>
                                     </div>
                                     <span class="bg-primary group-hover:bg-white text-sm text-white group-hover:text-primary duration-150 px-3 py-1 rounded-full leading-none">Other</span>
                                 </label>
+                                <input type="radio" class="loanType" id="loantype-other" name="loantype" value="Other Finance">
                             </div>
                         </div>
                     </div>
